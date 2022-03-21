@@ -55,6 +55,18 @@
 
 ## 实验设计
 
+- 模型选择
+  - ResNet50 (on ImageNet)
+    - 含有BottleNeck结构
+    - 适用于大图输入(224x224)
+  - ResNet56 (on CIFAR10)
+    - 无BottleNeck结构
+    - 适用于小图输入(32x32)
+  - 两者层数相近，易于比较结构带来的差异
+  - 可以考虑再研究一下？
+    - ResNet34? (ImageNet 无BottleNeck)
+    - ResNet38? (CIFAR10  无BottleNeck)
+    - 再次排除BottleNeck因素，且层数相近
 - 参数1(如初始化方式)
   - 取值1
   - 取值2
