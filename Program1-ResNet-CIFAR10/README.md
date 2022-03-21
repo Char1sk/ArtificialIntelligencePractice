@@ -19,8 +19,24 @@
 
 ## 模型选择
 
-- ResNet50
-  - 模型结构：1个3x3卷积 + 3x3 + 3x4 + 3x6 + 3x3 + 1个全连接
+- ResNet50 (on ImageNet)
+  - 模型结构：
+    - conv1+bn+relu：Bx3x224x224 -> Bx64x112x112
+    - maxpool：Bx64x112x112 -> Bx64x56x56
+    - conv2：Bx64x56x56 -> Bx256x56x56
+      - 3BottleNeck
+    - conv3：Bx256x56x56 -> Bx512x28x28
+      - 4BottleNeck
+    - conv4：Bx512x28x28 -> Bx1024x14x14
+      - 6BottleNeck
+    - conv5：Bx1024x14x14 -> Bx2048x7x7
+      - 3BottleNeck
+    - avgpool：Bx2048x7x7 -> Bx2048x1x1
+    - flatten+fc：Bx2048x1x1 -> Bx10
+  - 输入输出：
+    - 接收输入：Bx3x224x224
+    - 产生输出：Bx10
+  - 残差连接：BottleNeck, identity + projection (Type B)
 - ResNet56
   - 模型结构：1 + 2x9 + 2x9 + 2x9 + 1 ...
 
