@@ -1,1 +1,5 @@
+__pycache__
 *.txt
+*.zip
+saves
+cifar-10-batches-py
