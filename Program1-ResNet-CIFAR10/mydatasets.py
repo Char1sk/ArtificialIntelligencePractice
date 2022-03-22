@@ -123,9 +123,10 @@ class MyDataLoader:
 
     def __next__(self) -> Tuple[torch.Tensor, torch.Tensor]:
         if(self.count < self.max_iter):
+            self.count += self.batch_size
             dataTensor = None
             labelTensor = None
-            for index in range(self.count, self.count + self.batch_size):     
+            for index in range(self.count - self.batch_size, self.count):
                 data, label = self.dataset[index]
                 data = data.unsqueeze(0)
                 if dataTensor is None:
@@ -137,9 +138,9 @@ class MyDataLoader:
                     labelTensor = label
                 else:
                     labelTensor = torch.cat((labelTensor, label), 0)
-            self.count += self.batch_size
             return [dataTensor, labelTensor]
         else:
+            self.count = 0
             raise StopIteration
 
     def __len__(self) -> int:
