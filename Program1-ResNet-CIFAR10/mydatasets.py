@@ -115,7 +115,7 @@ class MyDataLoader:
     def __init__(self, dataset, batch_size=1) -> None:
         self.dataset = dataset
         self.batch_size = batch_size
-        self.max_iter = dataset.data.shape[0]
+        self.max_iter = len(dataset)
         self.count = 0
 
     def __iter__(self) -> 'MyDataLoader':
@@ -125,24 +125,22 @@ class MyDataLoader:
         if(self.count < self.max_iter):
             dataTensor = None
             labelTensor = None
-            for index in range(self.count, self.count + self.batch_size):
-                self.count += self.batch_size
+            for index in range(self.count, self.count + self.batch_size):     
                 data, label = self.dataset[index]
-
                 data = data.unsqueeze(0)
                 if dataTensor is None:
                     dataTensor = data
                 else:
                     dataTensor = torch.cat((dataTensor, data), 0)
-                
                 label = torch.from_numpy(np.array(label)).unsqueeze(0)
                 if labelTensor is None:
                     labelTensor = label
                 else:
                     labelTensor = torch.cat((labelTensor, label), 0)
+            self.count += self.batch_size
             return [dataTensor, labelTensor]
         else:
             raise StopIteration
 
     def __len__(self) -> int:
-        return len(self.dataset.data)
+        return len(self.dataset)
