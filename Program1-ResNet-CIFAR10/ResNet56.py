@@ -12,17 +12,16 @@ Reference:
 [2] https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py
 '''
 
-import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.nn.init as init
 
-from torch.autograd import Variable
 
 def _weights_init(m):
-    classname = m.__class__.__name__
+    # classname = m.__class__.__name__
     if isinstance(m, nn.Linear) or isinstance(m, nn.Conv2d):
         init.kaiming_normal_(m.weight)
+
 
 class LambdaLayer(nn.Module):
     def __init__(self, lambd):
@@ -98,15 +97,20 @@ class ResNet(nn.Module):
         out = self.linear(out)
         return out
 
-#都是6n加2，看看到时候用那个
+# 都是6n加2，看看到时候用那个
+
+
 def resnet20():
     return ResNet(BasicBlock, [3, 3, 3])
+
 
 def resnet32():
     return ResNet(BasicBlock, [5, 5, 5])
 
+
 def resnet44():
     return ResNet(BasicBlock, [7, 7, 7])
+
 
 def resnet56():
     return ResNet(BasicBlock, [9, 9, 9])
