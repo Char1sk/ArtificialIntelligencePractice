@@ -21,8 +21,10 @@ def loadData():
 
 def train(trainLoader, model, lossFunction, optimizer, device):
     model.train()
+    tloss, totalBatch = 0, 0
     correct, totalSize = 0, 0
     for batch, (data, label) in enumerate(trainLoader):
+        totalBatch += 1
         # convert
         data, label = data.to(device), label.to(device)
         label = label.to(torch.int64)
@@ -34,21 +36,23 @@ def train(trainLoader, model, lossFunction, optimizer, device):
         loss.backward()
         optimizer.step()
         # stats
+        tloss += loss.item()
         totalSize += label.shape[0]
         correct += (pred.argmax(1) == label).type(torch.float).sum().item()
         # print
         if (batch+1) % 10 == 0:
-            print(f'    Batch: {batch+1:>4}, Loss:{loss.item():7.6f}, AvgAcc:{100*correct/totalSize:6.4f}%')
+            print(f'    Batch: {batch+1:>4}, Loss:{loss.item():>7.6f}, AvgAcc:{100*correct/totalSize:>6.4f}%')
+    return (tloss/totalBatch, correct/totalSize)
 
 
 def test(testLoader, model, lossFunction, device):
     model.eval()
+    tloss, totalBatch = 0, 0
+    correct = 0
+    totalCount = len(testLoader)
     with torch.no_grad():
-        tloss, correct = 0, 0
-        batchCount = 0
-        totalCount = len(testLoader)
         for batch, (data, label) in enumerate(testLoader):
-            batchCount += 1
+            totalBatch += 1
             # convert
             data, label = data.to(device), label.to(device)
             label = label.to(torch.int64)
@@ -58,10 +62,7 @@ def test(testLoader, model, lossFunction, device):
             # add
             tloss += loss.item()
             correct += (pred.argmax(1) == label).type(torch.float).sum().item()
-    tloss /= batchCount
-    correct /= totalCount
-    # print
-    print(f'Test: Acc: {correct}, Loss:{tloss}')
+    return (tloss/totalBatch, correct/totalCount)
 
 
 def main():
@@ -77,31 +78,15 @@ def main():
     print("Begin Training")
     for epoch in range(100):
         print(f"Epoch:{epoch+1:>3}, learning rate = {0.01}")
-        train(trainLoader, model, lossFunction, optimizer, device)
-        test(testLoader, model, lossFunction, device)
+        trainLoss, trainAcc = train(trainLoader, model, lossFunction, optimizer, device)
+        testLoss, testAcc = test(testLoader, model, lossFunction, device)
+        with open('./result.txt', 'a') as f:
+            f.write(f'Epoch{epoch+1:>3d}\n')
+            f.write(f'    Train: Loss {trainLoss:>7.6f}, Acc {trainAcc:>6.4f}%\n')
+            f.write(f'    Test:  Loss {testLoss :>7.6f}, Acc {testAcc :>6.4f}%\n')
         torch.save(model.state_dict(), './saves/model.pth')
     print("Done")
-
-    # print('iter1')
-    # for i, (d, l) in enumerate(testLoader):
-    #     print(i)
-    # print('iter2')
-    # for i, (d, l) in enumerate(testLoader):
-    #     print(i)
 
 
 if __name__ == '__main__':
     main()
-    # lossfun = nn.CrossEntropyLoss()
-    # pred = torch.tensor([
-    #     [1., 0.],
-    #     [0., 1.]
-    # ])
-    # # label = torch.tensor([
-    # #     [1., 0.],
-    # #     [0., 1.]
-    # # ])
-    # label = torch.tensor([
-    #     0, 1
-    # ])
-    # print(lossfun(pred, label))
