@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 from torchvision import transforms
+import time
 
 import ResNet56
 import mydatasets
@@ -40,7 +41,8 @@ def train(trainLoader, model, lossFunction, optimizer, device):
         correct += (pred.argmax(1) == label).type(torch.float).sum().item()
         # print
         if (batch+1) % 10 == 0:
-            print(f'    Batch: {batch+1:>4}, Loss:{loss.item():>7.6f}, AvgAcc:{100*correct/totalSize:>6.4f}%')
+            nowTime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+            print(f'[{nowTime}]    Batch: {batch+1:>4}, Loss:{loss.item():>7.6f}, AvgAcc:{100*correct/totalSize:>6.4f}%')
     return (tloss/totalBatch, correct/totalSize)
 
 
@@ -80,7 +82,8 @@ def main():
         trainLoss, trainAcc = train(trainLoader, model, lossFunction, optimizer, device)
         testLoss, testAcc = test(testLoader, model, lossFunction, device)
         with open('./result.txt', 'a') as f:
-            f.write(f'Epoch{epoch+1:>3d}\n')
+            nowTime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+            f.write(f'[{nowTime}] Epoch{epoch+1:>3d}\n')
             f.write(f'    Train: Loss {trainLoss:>7.6f}, Acc {trainAcc:>6.4f}%\n')
             f.write(f'    Test:  Loss {testLoss :>7.6f}, Acc {testAcc :>6.4f}%\n')
         torch.save(model.state_dict(), './saves/model.pth')
