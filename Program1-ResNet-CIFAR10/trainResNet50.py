@@ -75,11 +75,19 @@ def main():
 
     model = ResNet50.resnet50().to(device)
     lossFunction = nn.CrossEntropyLoss()
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
+    lr =0.1
+    optimizer = torch.optim.SGD(model.parameters(), lr, momentum=0.9, weight_decay=1e-4)
 
     print("Begin Training")
-    for epoch in range(100):
-        print(f"Epoch:{epoch+1:>3}, learning rate = {0.01}")
+    for epoch in range(64):
+        print(f"Epoch:{epoch+1:>3}, learning rate = {lr}")
+        if (epoch==32):
+            lr = lr /10
+            optimizer.param_groups[0]["lr"]=lr
+        if (epoch==48):
+            lr = lr /10
+            optimizer.param_groups[0]["lr"]=lr
+
         trainLoss, trainAcc = train(trainLoader, model, lossFunction, optimizer, device)
         testLoss, testAcc = test(testLoader, model, lossFunction, device)
         with open('./result.txt', 'a') as f:
@@ -90,6 +98,6 @@ def main():
         torch.save(model.state_dict(), './saves/model.pth')
     print("Done")
 
-
 if __name__ == '__main__':
     main()
+
