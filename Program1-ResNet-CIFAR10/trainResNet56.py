@@ -13,9 +13,9 @@ def loadData():
         transforms.ToTensor()
     ])
     train_dataset = mydatasets.MyCifar10(cifar10path, True, data_transforms)
-    train_loader = mydatasets.MyDataLoader(train_dataset, 16)
+    train_loader = mydatasets.MyDataLoader(train_dataset, 128)
     test_dataset = mydatasets.MyCifar10(cifar10path, False, data_transforms)
-    test_loader = mydatasets.MyDataLoader(test_dataset, 16)
+    test_loader = mydatasets.MyDataLoader(test_dataset, 128)
     return (train_loader, test_loader)
 
 
@@ -74,11 +74,18 @@ def main():
 
     model = ResNet56.resnet56().to(device)
     lossFunction = nn.CrossEntropyLoss()
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
+    lr = 1e-1
+    #optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
+    optimizer = torch.optim.SGD(model.parameters(), lr, momentum=0.9, weight_decay=1e-4)
 
     print("Begin Training")
-    for epoch in range(100):
-        print(f"Epoch:{epoch+1:>3}, learning rate = {0.01}")
+    for epoch in range(164):
+        if epoch == 82:
+            lr/=10
+        elif epoch ==123:
+            lr/=10
+
+        print(f"Epoch:{epoch+1:>3}, learning rate = {lr}")
         trainLoss, trainAcc = train(trainLoader, model, lossFunction, optimizer, device)
         testLoss, testAcc = test(testLoader, model, lossFunction, device)
         with open('./result.txt', 'a') as f:
