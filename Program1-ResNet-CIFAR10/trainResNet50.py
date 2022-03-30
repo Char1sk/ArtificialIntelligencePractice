@@ -10,7 +10,7 @@ import mydatasets
 def loadData():
     cifar10path = '.'
     data_transforms = transforms.Compose([
-        transforms.Resize([224, 224]),
+        # transforms.Resize([224, 224]),
         transforms.ToTensor()
     ])
     train_dataset = mydatasets.MyCifar10(cifar10path, True, data_transforms)

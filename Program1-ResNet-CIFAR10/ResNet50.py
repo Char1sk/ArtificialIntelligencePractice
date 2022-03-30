@@ -99,11 +99,12 @@ class ResNet(nn.Module):
     def __init__(self, block, layers):
         super(ResNet, self).__init__()
         # Bx3x224x224 -> Bx64x112x112
-        self.conv1 = nn.Conv2d(3, 64, 7, 2, 3, bias=False)
+        # self.conv1 = nn.Conv2d(3, 64, 7, 2, 3, bias=False)
+        self.conv1 = nn.Conv2d(3, 64, 3, 1, 1, bias=False)
         self.bn1 = nn.BatchNorm2d(64)
         self.relu = nn.ReLU()
-        # Bx64x112x112 -> Bx64x56x56
-        self.maxpool = nn.MaxPool2d(3, 2, 1)
+        # # Bx64x112x112 -> Bx64x56x56
+        # self.maxpool = nn.MaxPool2d(3, 2, 1)
         # BasicBlock Layers, for 18 34
         if block == BasicBlock:
             # Bx64x56x56 -> Bx64x56x56
@@ -197,7 +198,7 @@ class ResNet(nn.Module):
         x = self.bn1(x)
         x = self.relu(x)
 
-        x = self.maxpool(x)
+        # x = self.maxpool(x)
 
         x = self.conv2(x)
         x = self.conv3(x)
@@ -229,3 +230,11 @@ def resnet101():
 
 def resnet152():
     return ResNet(BottleNeck, [3, 8, 36, 3])
+
+
+if __name__ == '__main__':
+    import torch
+    model = resnet50()
+    input = torch.randn(2, 3, 32, 32)
+    output = model(input)
+    print(output.shape)
