@@ -46,11 +46,13 @@ class MyCifar10:
         root: str,
         train: bool = True,
         transform: Optional[Callable] = None,
+        Augmentation: bool = False,
     ) -> None:
 
         self.root = root
         self.transform = transform
         self.train = train  # training set or test set
+        self.Augmentation = Augmentation
 
         if self.train:
             downloaded_list = self.train_list
@@ -73,6 +75,16 @@ class MyCifar10:
 
         self.data = np.vstack(self.data).reshape(-1, 3, 32, 32)
         self.data = self.data.transpose((0, 2, 3, 1))  # convert to HWC
+
+        if self.Augmentation:
+            c_data = np.pad(self.data,((0,0), (2,2), (2,2), (0,0)), 'constant')
+            for k in range(50000):
+                i = random.randint(0,4)
+                j = random.randint(0,4)
+            
+                self.data[k,:,:,:] = c_data[k,i:i+32,j:j+32,:]
+            #    print("\r{}".format(k),end='')
+            #print(self.data.shape)
 
         self._load_meta()
 

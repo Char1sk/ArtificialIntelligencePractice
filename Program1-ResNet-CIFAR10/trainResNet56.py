@@ -12,7 +12,7 @@ def loadData():
     data_transforms = transforms.Compose([
         transforms.ToTensor()
     ])
-    train_dataset = mydatasets.MyCifar10(cifar10path, True, data_transforms)
+    train_dataset = mydatasets.MyCifar10(cifar10path, True, data_transforms, True)
     train_loader = mydatasets.MyDataLoader(train_dataset, 128)
     test_dataset = mydatasets.MyCifar10(cifar10path, False, data_transforms)
     test_loader = mydatasets.MyDataLoader(test_dataset, 128)
