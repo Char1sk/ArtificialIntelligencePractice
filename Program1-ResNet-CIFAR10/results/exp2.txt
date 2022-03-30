@@ -1,0 +1,93 @@
+Epoch  1
+    Train: Loss 1.921723, Acc 0.2869%
+    Test:  Loss 1.706441, Acc 0.3954%
+Epoch  2
+    Train: Loss 1.428848, Acc 0.4796%
+    Test:  Loss 1.165775, Acc 0.5739%
+Epoch  3
+    Train: Loss 1.111730, Acc 0.6017%
+    Test:  Loss 0.968046, Acc 0.6541%
+Epoch  4
+    Train: Loss 0.904873, Acc 0.6795%
+    Test:  Loss 0.834935, Acc 0.7063%
+Epoch  5
+    Train: Loss 0.755152, Acc 0.7367%
+    Test:  Loss 0.761536, Acc 0.7314%
+Epoch  6
+    Train: Loss 0.638007, Acc 0.7779%
+    Test:  Loss 0.770654, Acc 0.7425%
+Epoch  7
+    Train: Loss 0.540922, Acc 0.8126%
+    Test:  Loss 0.780152, Acc 0.7458%
+Epoch  8
+    Train: Loss 0.444535, Acc 0.8446%
+    Test:  Loss 0.797368, Acc 0.7564%
+Epoch  9
+    Train: Loss 0.370085, Acc 0.8677%
+    Test:  Loss 0.848258, Acc 0.7563%
+Epoch 10
+    Train: Loss 0.306182, Acc 0.8897%
+    Test:  Loss 0.896595, Acc 0.7587%
+Epoch 11
+    Train: Loss 0.263032, Acc 0.9056%
+    Test:  Loss 0.938247, Acc 0.7603%
+Epoch 12
+    Train: Loss 0.231410, Acc 0.9184%
+    Test:  Loss 1.039563, Acc 0.7587%
+Epoch 13
+    Train: Loss 0.203334, Acc 0.9263%
+    Test:  Loss 1.056301, Acc 0.7707%
+Epoch 14
+    Train: Loss 0.185250, Acc 0.9336%
+    Test:  Loss 1.054734, Acc 0.7725%
+Epoch 15
+    Train: Loss 0.164281, Acc 0.9420%
+    Test:  Loss 1.040177, Acc 0.7811%
+Epoch 16
+    Train: Loss 0.148774, Acc 0.9474%
+    Test:  Loss 1.100519, Acc 0.7799%
+Epoch 17
+    Train: Loss 0.140828, Acc 0.9509%
+    Test:  Loss 1.065871, Acc 0.7834%
+Epoch 18
+    Train: Loss 0.131627, Acc 0.9540%
+    Test:  Loss 1.108343, Acc 0.7843%
+Epoch 19
+    Train: Loss 0.119156, Acc 0.9579%
+    Test:  Loss 1.189066, Acc 0.7822%
+Epoch 20
+    Train: Loss 0.117890, Acc 0.9588%
+    Test:  Loss 1.195432, Acc 0.7713%
+Epoch 21
+    Train: Loss 0.105398, Acc 0.9629%
+    Test:  Loss 1.182017, Acc 0.7886%
+Epoch 22
+    Train: Loss 0.101914, Acc 0.9639%
+    Test:  Loss 1.141236, Acc 0.7860%
+Epoch 23
+    Train: Loss 0.094036, Acc 0.9676%
+    Test:  Loss 1.199313, Acc 0.7883%
+Epoch 24
+    Train: Loss 0.088470, Acc 0.9690%
+    Test:  Loss 1.266723, Acc 0.7810%
+Epoch 25
+    Train: Loss 0.085379, Acc 0.9707%
+    Test:  Loss 1.295720, Acc 0.7839%
+Epoch 26
+    Train: Loss 0.085448, Acc 0.9708%
+    Test:  Loss 1.233096, Acc 0.7922%
+Epoch 27
+    Train: Loss 0.078429, Acc 0.9727%
+    Test:  Loss 1.293213, Acc 0.7880%
+Epoch 28
+    Train: Loss 0.075335, Acc 0.9745%
+    Test:  Loss 1.397595, Acc 0.7831%
+Epoch 29
+    Train: Loss 0.077507, Acc 0.9742%
+    Test:  Loss 1.250177, Acc 0.7936%
+Epoch 30
+    Train: Loss 0.070176, Acc 0.9754%
+    Test:  Loss 1.350981, Acc 0.7859%
+Epoch 31
+    Train: Loss 0.070821, Acc 0.9765%
+    Test:  Loss 1.291668, Acc 0.7867%
