@@ -77,13 +77,15 @@
   - ...
 - ...
 
-| 实验编号 |       模型        | Batch Size |  Loss Function   | Optimizer | Learning Rate | Data Augmentation | Pre-Trained |
-| :------: | :---------------: | :--------: | :--------------: | :-------: | :-----------: | :---------------: | :---------: |
-|   (1)    | ResNet50(224x224) |     16     | CrossEntropyLoss |   Adam    |     0.01      |       None        |    False    |
-|   (2)    |  ResNet50(32x32)  |     8      | CrossEntropyLoss |   Adam    |     0.01      |       None        |    False    |
-|   (3)    |  ResNet56(6n+2)   |     16     | CrossEntropyLoss |   Adam    |     0.01      |       None        |    False    |
-|   (4)    |  ResNet50(32x32)  |      16    | CrossEntropyLoss |   SGD     |     0.1       |       None        |    False    |
-|   (5)    |  ResNet56(6n+2)   |   128      | CrossEntropyLoss |   SGD     |     0.1       |       None        |    False    |
+| 实验编号  |       模型        | Epoch | Batch Size |  Loss Function   | Optimizer | Learning Rate | Data Augmentation | Pre-Trained |
+| :------: | :---------------: | :--------: | :--------: | :--------------: | :-------: | :-----------: | :---------------: | :---------: |
+|   (1)    | ResNet50(224x224) |     18     |     16     | CrossEntropyLoss |   Adam    |     0.01      |       None        |    False    |
+|   (2)    |  ResNet50(32x32)  |     31     |     8      | CrossEntropyLoss |   Adam    |     0.01      |       None        |    False    |
+|   (3)    |  ResNet56(6n+2)   |     8      |     16     | CrossEntropyLoss |   Adam    |     0.01      |       None        |    False    |
+|   (4)    |  ResNet50(32x32)  |     43     |     16     | CrossEntropyLoss |   SGD     |    0.1, 0.01(32), 0.001(48)       |       None        |    False    |
+|   (5)    |  ResNet56(6n+2)   |     79     |     128   | CrossEntropyLoss |   SGD     |     0.1, 0.01(82), 0.001(123)      |       None        |    False    |
+|   (6)    |  ResNet56(6n+2)   |     ??     |     16    | CrossEntropyLoss |   SGD     |     0.1, 0.01(82), 0.001(123)      |       None        |    False    |
+
 
 ## 实验结果
 

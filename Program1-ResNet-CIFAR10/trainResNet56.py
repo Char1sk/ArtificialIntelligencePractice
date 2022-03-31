@@ -79,10 +79,10 @@ def main():
     optimizer = torch.optim.SGD(model.parameters(), lr, momentum=0.9, weight_decay=1e-4)
 
     print("Begin Training")
-    for epoch in range(164):
-        if epoch == 82:
+    for epoch in range(64):
+        if epoch == 24:
             lr/=10
-        elif epoch ==123:
+        elif epoch == 48:
             lr/=10
 
         print(f"Epoch:{epoch+1:>3}, learning rate = {lr}")
