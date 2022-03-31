@@ -83,7 +83,7 @@
 |   (2)    |  ResNet50(32x32)  |     8      | CrossEntropyLoss |   Adam    |     0.01      |       None        |    False    |
 |   (3)    |  ResNet56(6n+2)   |     16     | CrossEntropyLoss |   Adam    |     0.01      |       None        |    False    |
 |   (4)    |  ResNet50(32x32)  |          |  |       |           |               |        |
-|   (5)    |  ResNet56(6n+2)   |          |  |       |           |               |        |
+|   (5)    |  ResNet56(6n+2)   |   128    | CrossEntropyLoss    |    SGD     |     0.1      |     None   |  False  |
 
 ## 实验结果
 
