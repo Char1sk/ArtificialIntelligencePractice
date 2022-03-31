@@ -77,19 +77,24 @@
   - ...
 - ...
 
-## 实验结果
-
 | 实验编号 |       模型        | Batch Size |  Loss Function   | Optimizer | Learning Rate | Data Augmentation | Pre-Trained |
 | :------: | :---------------: | :--------: | :--------------: | :-------: | :-----------: | :---------------: | :---------: |
 |   (1)    | ResNet50(224x224) |     16     | CrossEntropyLoss |   Adam    |     0.01      |       None        |    False    |
 |   (2)    |  ResNet50(32x32)  |     8      | CrossEntropyLoss |   Adam    |     0.01      |       None        |    False    |
 |   (3)    |  ResNet56(6n+2)   |     16     | CrossEntropyLoss |   Adam    |     0.01      |       None        |    False    |
+|   (4)    |  ResNet50(32x32)  |          |  |       |           |               |        |
+|   (5)    |  ResNet56(6n+2)   |          |  |       |           |               |        |
 
-| 实验编号 | Train Acc | Test Acc | Train Loss | Test Loss |
+## 实验结果
+
+
+| 实验编号  | Train Acc | Test Acc | Train Loss | Test Loss |
 | :------: | :-------: | :------: | :--------: | :-------: |
 |   (1)    |  90.16%   |  73.02%  |    0.07    |   1.29    |
 |   (2)    |  97.65%   |  78.67%  |    0.07    |   1.29    |
-|   (3)    |   忘了    |   忘了   |    忘了    |   忘了    |
+|   (3)    |  91.75%   |  78.90%  |    0.23    |   0.80    |
+|   (4)    |     |    |        |       |
+|   (5)    |     |    |        |       |
 
 注：实验1我重新跑个完整版，实验3我上local系统上查一下再改
 

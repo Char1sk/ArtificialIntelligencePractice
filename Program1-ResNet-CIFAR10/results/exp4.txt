@@ -1,267 +1,129 @@
-[2022-03-30 06:35:43] Epoch  1
-    Train: Loss 1.696043, Acc 0.3801%
-    Test:  Loss 1.241682, Acc 0.5410%
-[2022-03-30 06:40:19] Epoch  2
-    Train: Loss 1.083288, Acc 0.6145%
-    Test:  Loss 1.011136, Acc 0.6467%
-[2022-03-30 06:45:09] Epoch  3
-    Train: Loss 0.800623, Acc 0.7233%
-    Test:  Loss 0.791803, Acc 0.7240%
-[2022-03-30 06:49:42] Epoch  4
-    Train: Loss 0.639548, Acc 0.7800%
-    Test:  Loss 0.822333, Acc 0.7255%
-[2022-03-30 06:54:22] Epoch  5
-    Train: Loss 0.519568, Acc 0.8199%
-    Test:  Loss 0.745607, Acc 0.7531%
-[2022-03-30 06:59:16] Epoch  6
-    Train: Loss 0.418052, Acc 0.8558%
-    Test:  Loss 0.778148, Acc 0.7595%
-[2022-03-30 07:04:00] Epoch  1
-    Train: Loss 1.900546, Acc 0.3014%
-    Test:  Loss 1.572748, Acc 0.4241%
-[2022-03-30 07:08:12] Epoch  2
-    Train: Loss 1.319450, Acc 0.5249%
-    Test:  Loss 1.131262, Acc 0.5940%
-[2022-03-30 07:13:15] Epoch  3
-    Train: Loss 1.012005, Acc 0.6442%
-    Test:  Loss 0.909974, Acc 0.6826%
-[2022-03-30 07:18:08] Epoch  4
-    Train: Loss 0.837246, Acc 0.7094%
-    Test:  Loss 0.889769, Acc 0.6920%
-[2022-03-30 07:23:00] Epoch  5
-    Train: Loss 0.732291, Acc 0.7470%
-    Test:  Loss 0.837486, Acc 0.7179%
-[2022-03-30 08:15:13] Epoch  1
-    Train: Loss 2.413647, Acc 0.1383%
-    Test:  Loss 2.051717, Acc 0.2474%
-[2022-03-30 08:23:00] Epoch  1
-    Train: Loss 2.481475, Acc 0.1326%
-    Test:  Loss 2.108515, Acc 0.1858%
-[2022-03-30 08:30:22] Epoch  2
-    Train: Loss 1.820138, Acc 0.2894%
-    Test:  Loss 1.787058, Acc 0.3538%
-[2022-03-30 08:38:12] Epoch  3
-    Train: Loss 1.513072, Acc 0.4339%
-    Test:  Loss 1.418398, Acc 0.4685%
-[2022-03-30 08:46:55] Epoch  4
-    Train: Loss 1.293984, Acc 0.5264%
-    Test:  Loss 1.374085, Acc 0.5059%
-[2022-03-30 08:54:40] Epoch  5
-    Train: Loss 1.112569, Acc 0.5982%
-    Test:  Loss 1.241666, Acc 0.5670%
-[2022-03-30 09:02:58] Epoch  6
-    Train: Loss 0.974496, Acc 0.6521%
-    Test:  Loss 1.044729, Acc 0.6440%
-[2022-03-30 09:11:14] Epoch  7
-    Train: Loss 0.862294, Acc 0.6939%
-    Test:  Loss 1.017411, Acc 0.6670%
-[2022-03-30 09:15:00] Epoch  8
-    Train: Loss 0.767458, Acc 0.7301%
-    Test:  Loss 1.036582, Acc 0.6664%
-[2022-03-30 09:18:20] Epoch  9
-    Train: Loss 0.688990, Acc 0.7564%
-    Test:  Loss 1.060251, Acc 0.6632%
-[2022-03-30 09:24:33] Epoch 10
-    Train: Loss 0.621516, Acc 0.7815%
-    Test:  Loss 1.074808, Acc 0.6761%
-[2022-03-30 09:57:55] Epoch  1
-    Train: Loss 2.128568, Acc 0.2704%
-    Test:  Loss 1.829552, Acc 0.3534%
-[2022-03-30 10:03:56] Epoch  2
-    Train: Loss 1.446610, Acc 0.4693%
-    Test:  Loss 1.507858, Acc 0.4672%
-[2022-03-30 10:10:05] Epoch  3
-    Train: Loss 1.169558, Acc 0.5775%
-    Test:  Loss 1.415551, Acc 0.5327%
-[2022-03-30 10:16:26] Epoch  4
-    Train: Loss 0.972954, Acc 0.6552%
-    Test:  Loss 1.273814, Acc 0.5846%
-[2022-03-30 10:22:46] Epoch  5
-    Train: Loss 0.828068, Acc 0.7094%
-    Test:  Loss 1.165717, Acc 0.6121%
-[2022-03-30 10:29:10] Epoch  6
-    Train: Loss 0.714239, Acc 0.7513%
-    Test:  Loss 1.229501, Acc 0.6304%
-[2022-03-30 10:35:39] Epoch  7
-    Train: Loss 0.627317, Acc 0.7802%
-    Test:  Loss 1.254812, Acc 0.6676%
-[2022-03-30 10:41:52] Epoch  8
-    Train: Loss 0.556459, Acc 0.8056%
-    Test:  Loss 1.719209, Acc 0.6516%
-[2022-03-30 10:48:22] Epoch  9
-    Train: Loss 0.506823, Acc 0.8210%
-    Test:  Loss 1.304103, Acc 0.6626%
-[2022-03-30 10:54:33] Epoch 10
-    Train: Loss 0.448028, Acc 0.8414%
-    Test:  Loss 1.182757, Acc 0.6907%
-[2022-03-30 11:01:00] Epoch 11
-    Train: Loss 0.398771, Acc 0.8598%
-    Test:  Loss 1.516747, Acc 0.6585%
-[2022-03-30 11:08:43] Epoch 12
-    Train: Loss 0.365021, Acc 0.8693%
-    Test:  Loss 1.318871, Acc 0.6719%
-[2022-03-30 11:18:34] Epoch 13
-    Train: Loss 0.337934, Acc 0.8788%
-    Test:  Loss 1.130872, Acc 0.7091%
-[2022-03-30 11:28:06] Epoch 14
-    Train: Loss 0.292956, Acc 0.8949%
-    Test:  Loss 1.202147, Acc 0.7079%
-[2022-03-30 11:38:14] Epoch 15
-    Train: Loss 0.264220, Acc 0.9048%
-    Test:  Loss 1.163129, Acc 0.7138%
-[2022-03-30 11:48:10] Epoch 16
-    Train: Loss 0.241502, Acc 0.9142%
-    Test:  Loss 1.483112, Acc 0.6707%
-[2022-03-30 11:57:32] Epoch 17
-    Train: Loss 0.224938, Acc 0.9190%
-    Test:  Loss 1.286093, Acc 0.7083%
-[2022-03-30 12:04:15] Epoch 18
-    Train: Loss 0.205182, Acc 0.9268%
-    Test:  Loss 1.211854, Acc 0.7130%
-[2022-03-30 12:10:39] Epoch 19
-    Train: Loss 0.186929, Acc 0.9333%
-    Test:  Loss 1.236187, Acc 0.7155%
-[2022-03-30 12:17:12] Epoch 20
-    Train: Loss 0.174502, Acc 0.9382%
-    Test:  Loss 1.261997, Acc 0.7241%
-[2022-03-30 12:23:31] Epoch 21
-    Train: Loss 0.162999, Acc 0.9424%
-    Test:  Loss 1.192897, Acc 0.7279%
-[2022-03-30 12:30:13] Epoch 22
-    Train: Loss 0.156468, Acc 0.9432%
-    Test:  Loss 1.195736, Acc 0.7385%
-[2022-03-30 12:36:31] Epoch 23
-    Train: Loss 0.142446, Acc 0.9498%
-    Test:  Loss 1.193560, Acc 0.7424%
-[2022-03-30 12:42:39] Epoch 24
-    Train: Loss 0.135715, Acc 0.9515%
-    Test:  Loss 1.252486, Acc 0.7313%
-[2022-03-30 12:49:15] Epoch 25
-    Train: Loss 0.130182, Acc 0.9540%
-    Test:  Loss 1.241540, Acc 0.7347%
-[2022-03-30 12:55:29] Epoch 26
-    Train: Loss 0.121146, Acc 0.9573%
-    Test:  Loss 1.343490, Acc 0.7257%
-[2022-03-30 13:02:00] Epoch 27
-    Train: Loss 0.131759, Acc 0.9530%
-    Test:  Loss 1.353454, Acc 0.7260%
-[2022-03-30 13:08:13] Epoch 28
-    Train: Loss 0.118445, Acc 0.9578%
-    Test:  Loss 1.249850, Acc 0.7374%
-[2022-03-30 13:14:43] Epoch 29
-    Train: Loss 0.116085, Acc 0.9584%
-    Test:  Loss 1.311413, Acc 0.7139%
-[2022-03-30 13:20:52] Epoch 30
-    Train: Loss 0.115063, Acc 0.9588%
-    Test:  Loss 1.274132, Acc 0.7405%
-[2022-03-30 13:27:06] Epoch 31
-    Train: Loss 0.109275, Acc 0.9611%
-    Test:  Loss 1.414415, Acc 0.7115%
-[2022-03-30 13:32:38] Epoch 32
-    Train: Loss 0.113188, Acc 0.9601%
-    Test:  Loss 1.252819, Acc 0.7337%
-[2022-03-30 13:36:09] Epoch 33
-    Train: Loss 0.106320, Acc 0.9616%
-    Test:  Loss 1.419488, Acc 0.7303%
-[2022-03-30 13:40:04] Epoch 34
-    Train: Loss 0.102358, Acc 0.9643%
-    Test:  Loss 1.321064, Acc 0.7340%
-[2022-03-30 13:43:59] Epoch 35
-    Train: Loss 0.104425, Acc 0.9624%
-    Test:  Loss 1.251975, Acc 0.7378%
-[2022-03-30 13:47:51] Epoch 36
-    Train: Loss 0.107031, Acc 0.9624%
-    Test:  Loss 1.231559, Acc 0.7453%
-[2022-03-30 13:51:36] Epoch 37
-    Train: Loss 0.098316, Acc 0.9661%
-    Test:  Loss 1.419953, Acc 0.7229%
-[2022-03-30 13:55:12] Epoch 38
-    Train: Loss 0.099094, Acc 0.9655%
-    Test:  Loss 1.236784, Acc 0.7470%
-[2022-03-30 13:59:26] Epoch 39
-    Train: Loss 0.098078, Acc 0.9654%
-    Test:  Loss 1.221818, Acc 0.7361%
-[2022-03-30 14:03:01] Epoch 40
-    Train: Loss 0.095375, Acc 0.9671%
-    Test:  Loss 1.254484, Acc 0.7395%
-[2022-03-30 14:07:02] Epoch 41
-    Train: Loss 0.109017, Acc 0.9616%
-    Test:  Loss 1.231759, Acc 0.7455%
-[2022-03-30 14:10:23] Epoch 42
-    Train: Loss 0.088706, Acc 0.9689%
-    Test:  Loss 1.323641, Acc 0.7371%
-[2022-03-30 14:14:16] Epoch 43
-    Train: Loss 0.099185, Acc 0.9653%
-    Test:  Loss 1.377940, Acc 0.7224%
-[2022-03-30 14:17:50] Epoch 44
-    Train: Loss 0.102528, Acc 0.9639%
-    Test:  Loss 1.250065, Acc 0.7438%
-[2022-03-30 14:21:35] Epoch 45
-    Train: Loss 0.095847, Acc 0.9666%
-    Test:  Loss 1.183217, Acc 0.7503%
-[2022-03-30 14:25:13] Epoch 46
-    Train: Loss 0.090975, Acc 0.9680%
-    Test:  Loss 1.378755, Acc 0.7240%
-[2022-03-30 14:29:17] Epoch 47
-    Train: Loss 0.090189, Acc 0.9679%
-    Test:  Loss 1.269493, Acc 0.7440%
-[2022-03-30 14:32:47] Epoch 48
-    Train: Loss 0.100712, Acc 0.9642%
-    Test:  Loss 1.238518, Acc 0.7473%
-[2022-03-30 14:36:18] Epoch 49
-    Train: Loss 0.094935, Acc 0.9662%
-    Test:  Loss 1.187744, Acc 0.7485%
-[2022-03-30 14:39:56] Epoch 50
-    Train: Loss 0.089697, Acc 0.9687%
-    Test:  Loss 1.217146, Acc 0.7554%
-[2022-03-30 14:43:49] Epoch 51
-    Train: Loss 0.086936, Acc 0.9694%
-    Test:  Loss 1.379583, Acc 0.7227%
-[2022-03-30 14:47:27] Epoch 52
-    Train: Loss 0.091881, Acc 0.9677%
-    Test:  Loss 1.409641, Acc 0.7357%
-[2022-03-30 14:51:08] Epoch 53
-    Train: Loss 0.088679, Acc 0.9681%
-    Test:  Loss 1.288035, Acc 0.7523%
-[2022-03-30 14:54:51] Epoch 54
-    Train: Loss 0.100879, Acc 0.9649%
-    Test:  Loss 1.213656, Acc 0.7524%
-[2022-03-30 14:58:53] Epoch 55
-    Train: Loss 0.087457, Acc 0.9694%
-    Test:  Loss 1.332008, Acc 0.7470%
-[2022-03-30 15:02:40] Epoch 56
-    Train: Loss 0.084610, Acc 0.9701%
-    Test:  Loss 1.411313, Acc 0.7286%
-[2022-03-30 15:06:40] Epoch 57
-    Train: Loss 0.092907, Acc 0.9677%
-    Test:  Loss 1.370289, Acc 0.7397%
-[2022-03-30 15:10:04] Epoch 58
-    Train: Loss 0.096476, Acc 0.9664%
-    Test:  Loss 1.243067, Acc 0.7432%
-[2022-03-30 15:13:57] Epoch 59
-    Train: Loss 0.087250, Acc 0.9691%
-    Test:  Loss 1.188146, Acc 0.7486%
-[2022-03-30 15:17:23] Epoch 60
-    Train: Loss 0.090068, Acc 0.9685%
-    Test:  Loss 1.208983, Acc 0.7524%
-[2022-03-30 15:20:30] Epoch 61
-    Train: Loss 0.078081, Acc 0.9729%
-    Test:  Loss 1.175448, Acc 0.7526%
-[2022-03-30 15:24:19] Epoch 62
-    Train: Loss 0.084628, Acc 0.9713%
-    Test:  Loss 1.398346, Acc 0.7309%
-[2022-03-30 15:27:38] Epoch 63
-    Train: Loss 0.093717, Acc 0.9673%
-    Test:  Loss 1.202309, Acc 0.7533%
-[2022-03-30 15:31:49] Epoch 64
-    Train: Loss 0.091796, Acc 0.9678%
-    Test:  Loss 1.279277, Acc 0.7477%
-[2022-03-30 15:35:09] Epoch 65
-    Train: Loss 0.081296, Acc 0.9713%
-    Test:  Loss 1.305202, Acc 0.7364%
-[2022-03-30 15:39:00] Epoch 66
-    Train: Loss 0.083563, Acc 0.9713%
-    Test:  Loss 1.223361, Acc 0.7516%
-[2022-03-30 15:42:04] Epoch 67
-    Train: Loss 0.080412, Acc 0.9722%
-    Test:  Loss 1.259509, Acc 0.7497%
+﻿[2022-03-30 09:30:20] Epoch  1
+    Train: Loss 2.376315, Acc 0.1429%
+    Test:  Loss 1.989690, Acc 0.2563%
+[2022-03-30 09:35:06] Epoch  2
+    Train: Loss 1.813151, Acc 0.3174%
+    Test:  Loss 1.782233, Acc 0.3593%
+[2022-03-30 09:39:52] Epoch  3
+    Train: Loss 1.546297, Acc 0.4320%
+    Test:  Loss 1.467211, Acc 0.4849%
+[2022-03-30 09:44:37] Epoch  4
+    Train: Loss 1.299328, Acc 0.5337%
+    Test:  Loss 1.182532, Acc 0.5752%
+[2022-03-30 09:49:23] Epoch  5
+    Train: Loss 1.077108, Acc 0.6178%
+    Test:  Loss 1.024397, Acc 0.6330%
+[2022-03-30 09:54:28] Epoch  6
+    Train: Loss 0.952825, Acc 0.6641%
+    Test:  Loss 0.949260, Acc 0.6669%
+[2022-03-30 09:59:50] Epoch  7
+    Train: Loss 0.867179, Acc 0.6933%
+    Test:  Loss 0.872562, Acc 0.6941%
+[2022-03-30 10:05:12] Epoch  8
+    Train: Loss 0.800356, Acc 0.7195%
+    Test:  Loss 0.910263, Acc 0.6850%
+[2022-03-30 10:10:39] Epoch  9
+    Train: Loss 0.733351, Acc 0.7418%
+    Test:  Loss 0.910951, Acc 0.6910%
+[2022-03-30 10:16:09] Epoch 10
+    Train: Loss 0.672962, Acc 0.7638%
+    Test:  Loss 0.824091, Acc 0.7174%
+[2022-03-30 10:21:38] Epoch 11
+    Train: Loss 0.620983, Acc 0.7824%
+    Test:  Loss 0.866622, Acc 0.7029%
+[2022-03-30 10:27:03] Epoch 12
+    Train: Loss 0.582975, Acc 0.7964%
+    Test:  Loss 0.917492, Acc 0.7006%
+[2022-03-30 10:32:45] Epoch 13
+    Train: Loss 0.544917, Acc 0.8104%
+    Test:  Loss 0.814139, Acc 0.7272%
+[2022-03-30 10:38:17] Epoch 14
+    Train: Loss 0.521093, Acc 0.8179%
+    Test:  Loss 0.848058, Acc 0.7224%
+[2022-03-30 10:43:52] Epoch 15
+    Train: Loss 0.493589, Acc 0.8252%
+    Test:  Loss 0.857236, Acc 0.7249%
+[2022-03-30 10:49:17] Epoch 16
+    Train: Loss 0.473416, Acc 0.8332%
+    Test:  Loss 0.827663, Acc 0.7312%
+[2022-03-30 10:54:44] Epoch 17
+    Train: Loss 0.464600, Acc 0.8362%
+    Test:  Loss 0.952262, Acc 0.6949%
+[2022-03-30 11:00:19] Epoch 18
+    Train: Loss 0.444449, Acc 0.8437%
+    Test:  Loss 0.908607, Acc 0.7215%
+[2022-03-30 11:06:06] Epoch 19
+    Train: Loss 0.428462, Acc 0.8496%
+    Test:  Loss 0.886052, Acc 0.7241%
+[2022-03-30 11:12:28] Epoch 20
+    Train: Loss 0.426792, Acc 0.8493%
+    Test:  Loss 0.945562, Acc 0.7204%
+[2022-03-30 11:19:01] Epoch 21
+    Train: Loss 0.411871, Acc 0.8553%
+    Test:  Loss 0.901648, Acc 0.7230%
+[2022-03-30 11:25:21] Epoch 22
+    Train: Loss 0.404885, Acc 0.8565%
+    Test:  Loss 0.799969, Acc 0.7531%
+[2022-03-30 11:31:56] Epoch 23
+    Train: Loss 0.395707, Acc 0.8610%
+    Test:  Loss 0.801635, Acc 0.7377%
+[2022-03-30 11:38:20] Epoch 24
+    Train: Loss 0.391929, Acc 0.8627%
+    Test:  Loss 0.765137, Acc 0.7524%
+[2022-03-30 11:44:59] Epoch 25
+    Train: Loss 0.388557, Acc 0.8626%
+    Test:  Loss 0.944437, Acc 0.7118%
+[2022-03-30 11:51:24] Epoch 26
+    Train: Loss 0.382535, Acc 0.8646%
+    Test:  Loss 0.793169, Acc 0.7508%
+[2022-03-30 11:57:36] Epoch 27
+    Train: Loss 0.371570, Acc 0.8702%
+    Test:  Loss 0.854869, Acc 0.7464%
+[2022-03-30 12:03:18] Epoch 28
+    Train: Loss 0.378698, Acc 0.8678%
+    Test:  Loss 0.802953, Acc 0.7567%
+[2022-03-30 12:08:51] Epoch 29
+    Train: Loss 0.367987, Acc 0.8702%
+    Test:  Loss 0.859934, Acc 0.7473%
+[2022-03-30 12:14:32] Epoch 30
+    Train: Loss 0.367352, Acc 0.8710%
+    Test:  Loss 0.756079, Acc 0.7658%
+[2022-03-30 12:19:57] Epoch 31
+    Train: Loss 0.364144, Acc 0.8731%
+    Test:  Loss 0.769926, Acc 0.7579%
+[2022-03-30 12:25:28] Epoch 32
+    Train: Loss 0.355955, Acc 0.8735%
+    Test:  Loss 0.776187, Acc 0.7627%
+[2022-03-30 12:31:12] Epoch 33
+    Train: Loss 0.155684, Acc 0.9476%
+    Test:  Loss 0.445071, Acc 0.8654%
+[2022-03-30 12:36:45] Epoch 34
+    Train: Loss 0.047534, Acc 0.9884%
+    Test:  Loss 0.492806, Acc 0.8659%
+[2022-03-30 12:42:07] Epoch 35
+    Train: Loss 0.014532, Acc 0.9983%
+    Test:  Loss 0.537697, Acc 0.8663%
+[2022-03-30 12:47:47] Epoch 36
+    Train: Loss 0.005688, Acc 0.9999%
+    Test:  Loss 0.569690, Acc 0.8674%
+[2022-03-30 12:53:17] Epoch 37
+    Train: Loss 0.003380, Acc 1.0000%
+    Test:  Loss 0.589030, Acc 0.8668%
+[2022-03-30 12:58:49] Epoch 38
+    Train: Loss 0.002509, Acc 1.0000%
+    Test:  Loss 0.601445, Acc 0.8675%
+[2022-03-30 13:04:15] Epoch 39
+    Train: Loss 0.002057, Acc 1.0000%
+    Test:  Loss 0.610008, Acc 0.8684%
+[2022-03-30 13:09:45] Epoch 40
+    Train: Loss 0.001778, Acc 1.0000%
+    Test:  Loss 0.616297, Acc 0.8685%
+[2022-03-30 13:15:23] Epoch 41
+    Train: Loss 0.001587, Acc 1.0000%
+    Test:  Loss 0.621321, Acc 0.8689%
+[2022-03-30 13:20:48] Epoch 42
+    Train: Loss 0.001445, Acc 1.0000%
+    Test:  Loss 0.625516, Acc 0.8683%
+[2022-03-30 13:26:17] Epoch 43
+    Train: Loss 0.001332, Acc 1.0000%
+    Test:  Loss 0.629309, Acc 0.8683%
