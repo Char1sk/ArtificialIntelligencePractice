@@ -80,7 +80,7 @@ def main():
 
     print("Begin Training")
     for epoch in range(64):
-        if epoch == 24:
+        if epoch == 32:
             lr/=10
         elif epoch == 48:
             lr/=10
