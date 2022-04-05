@@ -83,10 +83,10 @@
 |   (2)    |  ResNet50(32x32)  |     31     |     8      | CrossEntropyLoss |   Adam    |     0.01      |       None        |    False    |
 |   (3)    |  ResNet56(6n+2)   |     8      |     16     | CrossEntropyLoss |   Adam    |     0.01      |       None        |    False    |
 |   (4)    |  ResNet50(32x32)  |     43     |     16     | CrossEntropyLoss |   SGD     |    0.1, 0.01(32), 0.001(48)       |       None        |    False    |
-|   (5)    |  ResNet56(6n+2)   |     79     |     128   | CrossEntropyLoss |   SGD     |     0.1, 0.01(82), 0.001(123)      |       None        |    False    |
-|   (6)    |  ResNet56(6n+2)   |     64     |    128    | CrossEntropyLoss |   SGD     |     0.1, 0.01(32), 0.001(48)       |       None        |    False    |
-| (7) | ResNet56(32x32) | 64 | 128 | CrossEntropyLoss | SGD | 0.1, 0.01(32), 0.001(48) | RandomCrop HorizontalFlip | ImageNet |
-|   (8)    |  ResNet56(6n+2)   |  64   |    128     | CrossEntropyLoss |    SGD    | 0.1, 0.01(32), 0.001(48)  | RandomCrop HorizontalFlip |   找不到    |
+|   (5)    |  ResNet56(6n+2)   |     79     |     128    | CrossEntropyLoss |   SGD     |    0.1, 0.01(82), 0.001(123)      |       None        |    False    |
+|   (6)    |  ResNet56(6n+2)   |     64     |     128    | CrossEntropyLoss |   SGD     |    0.1, 0.01(32), 0.001(48)       |       None        |    False    |
+|   (7)    | ResNet56(32x32)   |     64     |     128    | CrossEntropyLoss |   SGD     |    0.1, 0.01(32), 0.001(48)       | RandomCrop HorizontalFlip | ImageNet |
+|   (8)    |  ResNet56(6n+2)   |     64     |     128    | CrossEntropyLoss |    SGD    |    0.1, 0.01(32), 0.001(48)       | RandomCrop HorizontalFlip |   找不到    |
 
 ## 实验结果
 
@@ -97,6 +97,6 @@
 |   (3)    |  91.75%   |  78.90%  |    0.23    |   0.80    |
 |   (4)    |  100.00%  |  86.83%  |    0.001   |   0.629   |
 |   (5)    |  97.59%   |  75.87%  |    0.06    |   1.21    |
-| (6) |  |  |  |  |
-| (7) |  |  |  |  |
-| (8) |  |  |  |  |
+|   (6)    |  97.23%   |  77.63%  |    0.08    |   1.06    |
+|   (7)    |           |          |            |           |
+|   (8)    |           |          |            |           |
