@@ -10,7 +10,9 @@ import mydatasets
 def loadData():
     cifar10path = '.'
     data_transforms = transforms.Compose([
-        # transforms.Resize([224, 224]),
+
+        transforms.RandomCrop(32, padding=4), #随机裁剪
+        transforms.RandomHorizontalFlip(), # 翻转图片
         transforms.ToTensor()
     ])
     train_dataset = mydatasets.MyCifar10(cifar10path, True, data_transforms)
@@ -73,7 +75,9 @@ def main():
 
     trainLoader, testLoader = loadData()
 
-    model = ResNet50.resnet50().to(device)
+    #model = ResNet50.resnet50().to(device)
+    model = models.resnet50(pretrained=True)
+    model.to('cuda')
     lossFunction = nn.CrossEntropyLoss()
     lr =0.1
     optimizer = torch.optim.SGD(model.parameters(), lr, momentum=0.9, weight_decay=1e-4)
@@ -81,10 +85,10 @@ def main():
     print("Begin Training")
     for epoch in range(64):
         print(f"Epoch:{epoch+1:>3}, learning rate = {lr}")
-        if (epoch==32):
+        if (epoch==31):
             lr = lr /10
             optimizer.param_groups[0]["lr"]=lr
-        if (epoch==48):
+        if (epoch==47):
             lr = lr /10
             optimizer.param_groups[0]["lr"]=lr
 
