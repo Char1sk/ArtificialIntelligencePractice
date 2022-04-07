@@ -87,6 +87,7 @@
 |   (6)    |  ResNet56(6n+2)   |     64     |     128    | CrossEntropyLoss |   SGD     |    0.1, 0.01(32), 0.001(48)       |       None        |    False    |
 |   (7)    |  ResNet50(32x32)  |     64     |     128    | CrossEntropyLoss |   SGD     |    0.1, 0.01(32), 0.001(48)       | RandomCrop HorizontalFlip | ImageNet |
 |   (8)    |  ResNet56(6n+2)   |     64     |     128    | CrossEntropyLoss |   SGD     |    0.1, 0.01(32), 0.001(48)       | RandomCrop HorizontalFlip |   找不到    |
+|   (9)    |  ResNet50(32x32)  |     64     |     128    | CrossEntropyLoss |   SGD     |    0.1, 0.01(32), 0.001(48)       | RandomCrop HorizontalFlip | ImageNet*|
 
 ## 实验结果
 

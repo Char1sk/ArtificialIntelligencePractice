@@ -1,4 +1,5 @@
 __pycache__
 *.zip
+models
 saves
 cifar-10-batches-py

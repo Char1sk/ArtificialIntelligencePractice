@@ -1,3 +1,4 @@
+import torch
 import torch.nn as nn
 
 
@@ -210,6 +211,22 @@ class ResNet(nn.Module):
         x = self.fc(x)
 
         return x
+
+    def load_model(self, path):
+        sd = torch.load(path)
+        nsd = {}
+        for (k, v) in sd.items():
+            if k == 'conv1.weight':
+                continue
+            k = k.replace('layer1', 'conv2')
+            k = k.replace('layer2', 'conv3')
+            k = k.replace('layer3', 'conv4')
+            k = k.replace('layer4', 'conv5')
+            k = k.replace('fc', 'dont')
+            k = k.replace('Bottleneck', 'BottleNeck')
+            k = k.replace('downsample', 'downSample')
+            nsd[k] = v
+        self.load_state_dict(nsd, strict=False)
 
 
 def resnet18():
