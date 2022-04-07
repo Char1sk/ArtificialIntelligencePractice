@@ -8,6 +8,7 @@ import pickle
 import torch
 from PIL import Image
 from typing import Any, Callable, Optional, Tuple
+import random
 
 
 class MyCifar10:

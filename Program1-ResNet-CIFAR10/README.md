@@ -85,8 +85,8 @@
 |   (4)    |  ResNet50(32x32)  |     43     |     16     | CrossEntropyLoss |   SGD     |    0.1, 0.01(32), 0.001(48)       |       None        |    False    |
 |   (5)    |  ResNet56(6n+2)   |     79     |     128    | CrossEntropyLoss |   SGD     |    0.1, 0.01(82), 0.001(123)      |       None        |    False    |
 |   (6)    |  ResNet56(6n+2)   |     64     |     128    | CrossEntropyLoss |   SGD     |    0.1, 0.01(32), 0.001(48)       |       None        |    False    |
-|   (7)    | ResNet56(32x32)   |     64     |     128    | CrossEntropyLoss |   SGD     |    0.1, 0.01(32), 0.001(48)       | RandomCrop HorizontalFlip | ImageNet |
-|   (8)    |  ResNet56(6n+2)   |     64     |     128    | CrossEntropyLoss |    SGD    |    0.1, 0.01(32), 0.001(48)       | RandomCrop HorizontalFlip |   找不到    |
+|   (7)    |  ResNet50(32x32)  |     64     |     128    | CrossEntropyLoss |   SGD     |    0.1, 0.01(32), 0.001(48)       | RandomCrop HorizontalFlip | ImageNet |
+|   (8)    |  ResNet56(6n+2)   |     64     |     128    | CrossEntropyLoss |   SGD     |    0.1, 0.01(32), 0.001(48)       | RandomCrop HorizontalFlip |   找不到    |
 
 ## 实验结果
 
@@ -98,5 +98,5 @@
 |   (4)    |  100.00%  |  86.83%  |    0.001   |   0.629   |
 |   (5)    |  97.59%   |  75.87%  |    0.06    |   1.21    |
 |   (6)    |  97.23%   |  77.63%  |    0.08    |   1.06    |
-|   (7)    |  88.24%   |  79.95%  |    0.32    |   0.61    |
-|   (8)    |           |          |            |           |
+|   (7)    |  89.00%   |  82.65%  |    0.31    |   0.53    |
+|   (8)    |  92.95%   |  86.23%  |    0.20    |   0.47    |

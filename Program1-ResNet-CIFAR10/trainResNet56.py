@@ -10,6 +10,9 @@ import mydatasets
 def loadData():
     cifar10path = '.'
     data_transforms = transforms.Compose([
+
+        transforms.RandomCrop(32, padding=4), #随机裁剪
+        transforms.RandomHorizontalFlip(), # 翻转图片
         transforms.ToTensor()
     ])
     train_dataset = mydatasets.MyCifar10(cifar10path, True, data_transforms, True)
