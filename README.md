@@ -3,4 +3,5 @@
 ## 项目列表
 
 - Program1-ResNet-CIFAR10 (developing)
+- Program2-Segmentation
 - More...
