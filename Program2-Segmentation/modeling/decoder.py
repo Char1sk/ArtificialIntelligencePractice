@@ -2,7 +2,6 @@ import math
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from modeling.sync_batchnorm.batchnorm import SynchronizedBatchNorm2d
 
 class Decoder(nn.Module):
     def __init__(self, num_classes, backbone, BatchNorm):
@@ -46,9 +45,6 @@ class Decoder(nn.Module):
         for m in self.modules():
             if isinstance(m, nn.Conv2d):
                 torch.nn.init.kaiming_normal_(m.weight)
-            elif isinstance(m, SynchronizedBatchNorm2d):
-                m.weight.data.fill_(1)
-                m.bias.data.zero_()
             elif isinstance(m, nn.BatchNorm2d):
                 m.weight.data.fill_(1)
                 m.bias.data.zero_()
