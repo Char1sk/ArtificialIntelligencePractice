@@ -59,7 +59,8 @@ class MyDataset(Dataset):
                     break
                 m = [int(i) if len(i)==1 else 8 for i in line.split(' ')]
                 mask.append(m)
-        mask = Image.fromarray(np.array(mask))
+        # mask = Image.fromarray(np.array(mask))
+        mask = Image.fromarray(np.int8(np.array(mask)))
         mask = self.transform(mask)
         return mask
     
