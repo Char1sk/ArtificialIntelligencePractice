@@ -5,7 +5,7 @@ from torch.utils.data import DataLoader
 import time
 import numpy as np
 
-from modeling.deeplab import DeepLab
+from modeling.unet import Unet
 from dataset.custom_dataset import MyDataset
 from utils import calMIOU, calPA
 
@@ -15,6 +15,7 @@ def loadData():
     data_transforms = transforms.Compose([
         # transforms.RandomCrop(32, padding=4), #随机裁剪
         # transforms.RandomHorizontalFlip(), # 翻转图片
+        transforms.Resize((240, 320)),
         transforms.ToTensor()
     ])
     train_dataset = MyDataset(datapath, True, data_transforms)
@@ -78,7 +79,7 @@ def main():
 
     trainLoader, testLoader = loadData()
 
-    model = DeepLab(backbone='resnet', output_stride=16, num_classes=9).to(device)
+    model = Unet(3, 9).to(device)
     lossFunction = nn.CrossEntropyLoss()
     optimizer = torch.optim.SGD(model.parameters(), lr=0.1, momentum=0.9, weight_decay=1e-4)
 
