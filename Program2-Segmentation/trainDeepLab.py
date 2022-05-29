@@ -79,7 +79,7 @@ def main():
     trainLoader, testLoader = loadData()
 
     model = DeepLab(backbone='resnet', output_stride=16, num_classes=9).to(device)
-    lossFunction = nn.CrossEntropyLoss()
+    lossFunction = nn.CrossEntropyLoss(ignore_index=8)
     optimizer = torch.optim.SGD(model.parameters(), lr=0.1, momentum=0.9, weight_decay=1e-4)
 
     print("Begin Training")

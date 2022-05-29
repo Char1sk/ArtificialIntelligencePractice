@@ -1,6 +1,7 @@
 __pycache__
 *.zip
 *.tar.gz
+result.txt
 models
 saves
 Old

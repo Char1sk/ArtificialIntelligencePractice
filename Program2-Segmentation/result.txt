@@ -388,3 +388,127 @@
 [2022-05-29 15:47:58] Epoch 40
     Train: Loss 1.506212, mIOU 0.3471
     Test:  Loss 1.682628, mIOU 0.2481
+[2022-05-29 20:03:29] Epoch  1
+    Train: Loss 1.817152, mIOU 0.1719
+    Test:  Loss 1.849605, mIOU 0.1571
+[2022-05-29 20:04:57] Epoch  2
+    Train: Loss 1.718114, mIOU 0.1969
+    Test:  Loss 1.978150, mIOU 0.0697
+[2022-05-29 20:06:25] Epoch  3
+    Train: Loss 1.694660, mIOU 0.2084
+    Test:  Loss 1.850119, mIOU 0.1165
+[2022-05-29 20:08:03] Epoch  4
+    Train: Loss 1.675266, mIOU 0.2171
+    Test:  Loss 1.786533, mIOU 0.1722
+[2022-05-29 20:09:32] Epoch  5
+    Train: Loss 1.654693, mIOU 0.2282
+    Test:  Loss 1.760923, mIOU 0.1888
+[2022-05-29 20:10:58] Epoch  6
+    Train: Loss 1.638537, mIOU 0.2490
+    Test:  Loss 1.727339, mIOU 0.2072
+[2022-05-29 20:12:25] Epoch  7
+    Train: Loss 1.629501, mIOU 0.2614
+    Test:  Loss 1.741715, mIOU 0.2236
+[2022-05-29 20:13:53] Epoch  8
+    Train: Loss 1.622481, mIOU 0.2690
+    Test:  Loss 1.737196, mIOU 0.2286
+[2022-05-29 20:15:22] Epoch  9
+    Train: Loss 1.612733, mIOU 0.2811
+    Test:  Loss 1.734416, mIOU 0.2313
+[2022-05-29 20:16:47] Epoch 10
+    Train: Loss 1.607523, mIOU 0.2875
+    Test:  Loss 1.716056, mIOU 0.2424
+[2022-05-29 20:18:16] Epoch 11
+    Train: Loss 1.600779, mIOU 0.2978
+    Test:  Loss 1.721926, mIOU 0.2452
+[2022-05-29 20:19:44] Epoch 12
+    Train: Loss 1.594929, mIOU 0.3063
+    Test:  Loss 1.703847, mIOU 0.2555
+[2022-05-29 20:21:13] Epoch 13
+    Train: Loss 1.591843, mIOU 0.3137
+    Test:  Loss 1.714455, mIOU 0.2580
+[2022-05-29 20:22:41] Epoch 14
+    Train: Loss 1.588182, mIOU 0.3179
+    Test:  Loss 1.714112, mIOU 0.2633
+[2022-05-29 20:24:09] Epoch 15
+    Train: Loss 1.584134, mIOU 0.3222
+    Test:  Loss 1.712478, mIOU 0.2624
+[2022-05-29 20:25:37] Epoch 16
+    Train: Loss 1.579357, mIOU 0.3261
+    Test:  Loss 1.726088, mIOU 0.2534
+[2022-05-29 20:27:05] Epoch 17
+    Train: Loss 1.577604, mIOU 0.3288
+    Test:  Loss 1.709874, mIOU 0.2588
+[2022-05-29 20:28:32] Epoch 18
+    Train: Loss 1.572829, mIOU 0.3325
+    Test:  Loss 1.705094, mIOU 0.2607
+[2022-05-29 20:30:02] Epoch 19
+    Train: Loss 1.574995, mIOU 0.3305
+    Test:  Loss 1.710232, mIOU 0.2630
+[2022-05-29 20:31:35] Epoch 20
+    Train: Loss 1.570495, mIOU 0.3343
+    Test:  Loss 1.704722, mIOU 0.2600
+[2022-05-29 20:32:59] Epoch 21
+    Train: Loss 1.566805, mIOU 0.3376
+    Test:  Loss 1.711045, mIOU 0.2657
+[2022-05-29 20:34:15] Epoch 22
+    Train: Loss 1.561141, mIOU 0.3432
+    Test:  Loss 1.722362, mIOU 0.2537
+[2022-05-29 20:35:31] Epoch 23
+    Train: Loss 1.555879, mIOU 0.3477
+    Test:  Loss 1.726099, mIOU 0.2563
+[2022-05-29 20:37:09] Epoch 24
+    Train: Loss 1.551371, mIOU 0.3521
+    Test:  Loss 1.715001, mIOU 0.2615
+[2022-05-29 20:38:52] Epoch 25
+    Train: Loss 1.550594, mIOU 0.3526
+    Test:  Loss 1.714638, mIOU 0.2630
+[2022-05-29 20:40:35] Epoch 26
+    Train: Loss 1.546844, mIOU 0.3558
+    Test:  Loss 1.732462, mIOU 0.2597
+[2022-05-29 20:42:22] Epoch 27
+    Train: Loss 1.543649, mIOU 0.3581
+    Test:  Loss 1.712651, mIOU 0.2669
+[2022-05-29 20:44:05] Epoch 28
+    Train: Loss 1.538889, mIOU 0.3623
+    Test:  Loss 1.706677, mIOU 0.2663
+[2022-05-29 20:45:43] Epoch 29
+    Train: Loss 1.536045, mIOU 0.3643
+    Test:  Loss 1.708655, mIOU 0.2670
+[2022-05-29 20:47:20] Epoch 30
+    Train: Loss 1.536718, mIOU 0.3640
+    Test:  Loss 1.701596, mIOU 0.2732
+[2022-05-29 20:48:55] Epoch 31
+    Train: Loss 1.532796, mIOU 0.3678
+    Test:  Loss 1.708646, mIOU 0.2668
+[2022-05-29 20:50:21] Epoch 32
+    Train: Loss 1.530455, mIOU 0.3682
+    Test:  Loss 1.683069, mIOU 0.2810
+[2022-05-29 20:51:46] Epoch 33
+    Train: Loss 1.527080, mIOU 0.3714
+    Test:  Loss 1.687196, mIOU 0.2828
+[2022-05-29 20:53:19] Epoch 34
+    Train: Loss 1.533217, mIOU 0.3675
+    Test:  Loss 1.704981, mIOU 0.2676
+[2022-05-29 20:54:40] Epoch 35
+    Train: Loss 1.524288, mIOU 0.3746
+    Test:  Loss 1.695028, mIOU 0.2742
+    
+[2022-05-29 21:50:48] Epoch  1
+    Train: Loss 1.278916, mIOU 0.2191
+    Test:  Loss 1.689680, mIOU 0.1743
+[2022-05-29 21:52:32] Epoch  2
+    Train: Loss 1.232160, mIOU 0.2339
+    Test:  Loss 1.734260, mIOU 0.1433
+[2022-05-29 21:54:13] Epoch  3
+    Train: Loss 1.248814, mIOU 0.2165
+    Test:  Loss 1.564254, mIOU 0.1779
+[2022-05-29 21:55:58] Epoch  4
+    Train: Loss 1.089748, mIOU 0.2539
+    Test:  Loss 2.131831, mIOU 0.1748
+[2022-05-29 21:57:49] Epoch  5
+    Train: Loss 1.026882, mIOU 0.2672
+    Test:  Loss 3.515198, mIOU 0.1559
+[2022-05-29 21:59:39] Epoch  6
+    Train: Loss 0.999545, mIOU 0.2729
+    Test:  Loss 1.393337, mIOU 0.2198
