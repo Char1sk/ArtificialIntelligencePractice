@@ -1,20 +1,30 @@
+from pickletools import optimize
+from tkinter import N
 import torch
 import torch.nn as nn
 from torchvision import transforms
 from torch.utils.data import DataLoader
 import time
 import numpy as np
-
+import os
+import yaml
 from modeling.deeplab import DeepLab
+from modeling.loss import FocalLossV1
 from dataset.custom_dataset import MyDataset
 from utils import calMIOU, calPA
 
 
+# load config.yml globally
+with open("./config.yml", "r") as f:
+    config = yaml.load(f.read(), Loader=yaml.CLoader)
+
 def loadData():
     datapath = './iccv09Data'
     data_transforms = transforms.Compose([
-        # transforms.RandomCrop(32, padding=4), #随机裁剪
-        # transforms.RandomHorizontalFlip(), # 翻转图片
+        transforms.RandomCrop(32), #随机裁剪
+        transforms.RandomHorizontalFlip(), # 翻转图片
+        transforms.RandomVerticalFlip(),
+        # transforms.RandomPerspective(),
         transforms.ToTensor()
     ])
     train_dataset = MyDataset(datapath, True, data_transforms)
@@ -36,7 +46,8 @@ def train(trainLoader, model, lossFunction, optimizer, device):
         # calculate
         pred = model(data)
         loss = lossFunction(pred, label)
-        # print(pred.shape, label.shape, loss)
+        if config['DEBUG_MODE']:
+            print(pred.shape, label.shape, loss)
         # optimize
         optimizer.zero_grad()
         loss.backward()
@@ -71,6 +82,19 @@ def test(testLoader, model, lossFunction, device):
             tiou += calMIOU(pred, label)
     return (tloss/totalBatch, tiou/totalCount)
 
+def init_dir(config):
+    if not os.path.exists(config['SAVE_MODEL_DIR']):
+        os.mkdir(config['SAVE_MODEL_DIR'])
+    if not os.path.exists(config['RESULT_DIR']):
+        os.mkdir(config['RESULT_DIR'])
+
+def get_result_file_name(config):
+    n = 1
+    name = "DeepLab-" + config['BACKBONE'] + '-' + str(n) + '.txt'
+    while os.path.exists(config['RESULT_DIR'] + os.sep + name):
+        n += 1
+        name = "DeepLab-" + config['BACKBONE'] + '-' + str(n) + '.txt'
+    return config['RESULT_DIR'] + os.sep + name
 
 def main():
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -78,22 +102,36 @@ def main():
 
     trainLoader, testLoader = loadData()
 
-    model = DeepLab(backbone='resnet', output_stride=16, num_classes=9).to(device)
-    lossFunction = nn.CrossEntropyLoss(ignore_index=8)
-    optimizer = torch.optim.SGD(model.parameters(), lr=0.1, momentum=0.9, weight_decay=1e-4)
+    model = DeepLab(backbone=config['BACKBONE'], output_stride=16, num_classes=9).to(device)
+    lossFunction = nn.CrossEntropyLoss()
+    # lossFunction = FocalLossV1()
+    optimizer = torch.optim.Adam(model.parameters(), lr=config['LR'])
+    lr_scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=5, factor=0.8)
 
+    init_dir(config)
     print("Begin Training")
-    for epoch in range(64):
-        print(f"Epoch:{epoch+1:>3}, learning rate = {0.1}")
+    init_msg = ">> DeepLabv3\n".format(config['BACKBONE'])
+    result_file_name = get_result_file_name(config)
+    with open(result_file_name, "w") as f:
+        f.write(init_msg)
+        f.write(str(config))
+
+    for epoch in range(config['NUM_EPOCH']):
+        now_lr = optimizer.state_dict()['param_groups'][0]['lr']
+        print(f"Epoch:{epoch+1:>3}, learning rate = {now_lr}")
 
         trainLoss, trainAcc = train(trainLoader, model, lossFunction, optimizer, device)
         testLoss, testAcc = test(testLoader, model, lossFunction, device)
-        with open('./result.txt', 'a') as f:
-            nowTime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-            f.write(f'[{nowTime}] Epoch{epoch+1:>3d}\n')
+            
+        nowTime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+        with open(result_file_name, "a") as f:
+            f.write(f'[{nowTime}] Epoch{epoch+1:>3d}, lr = {now_lr}\n')
             f.write(f'    Train: Loss {trainLoss:>7.6f}, mIOU {trainAcc:>6.4f}\n')
             f.write(f'    Test:  Loss {testLoss :>7.6f}, mIOU {testAcc :>6.4f}\n')
+
         torch.save(model.state_dict(), './saves/model.pth')
+        lr_scheduler.step(trainLoss)
+
     print("Done")
 
 

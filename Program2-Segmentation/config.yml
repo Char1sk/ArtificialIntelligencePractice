@@ -1,0 +1,14 @@
+# training
+NUM_EPOCH: 100
+LR: 0.05
+BACKBONE: 'resnet'
+  # - 'mobilenet'
+  # - 'drn'
+  # - 'xception'
+
+# results
+RESULT_DIR: './results'
+SAVE_MODEL_DIR: './saves'
+
+# else
+DEBUG_MODE: false
