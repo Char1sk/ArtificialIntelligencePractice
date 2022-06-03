@@ -1,6 +1,9 @@
 # training
 NUM_EPOCH: 100
+TRAIN_BATCH_SIZE: 4
+TEST_BATCH_SIZE: 1
 LR: 0.05
+LOSS: 'CE'
 BACKBONE: 'resnet'
   # - 'mobilenet'
   # - 'drn'
@@ -11,4 +14,4 @@ RESULT_DIR: './results'
 SAVE_MODEL_DIR: './saves'
 
 # else
-DEBUG_MODE: false
+DEBUG_MODE: False

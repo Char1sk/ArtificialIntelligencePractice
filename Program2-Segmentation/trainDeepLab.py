@@ -28,9 +28,9 @@ def loadData():
         transforms.ToTensor()
     ])
     train_dataset = MyDataset(datapath, True, data_transforms)
-    train_loader = DataLoader(train_dataset, 4)
+    train_loader = DataLoader(train_dataset, config['TRAIN_BATCH_SIZE'])
     test_dataset = MyDataset(datapath, False, data_transforms)
-    test_loader = DataLoader(test_dataset, 1)
+    test_loader = DataLoader(test_dataset, config['TEST_BATCH_SIZE'])
     return (train_loader, test_loader)
 
 
@@ -103,7 +103,8 @@ def main():
     trainLoader, testLoader = loadData()
 
     model = DeepLab(backbone=config['BACKBONE'], output_stride=16, num_classes=9).to(device)
-    lossFunction = nn.CrossEntropyLoss()
+    if config['LOSS'] == 'CE':
+        lossFunction = nn.CrossEntropyLoss()
     # lossFunction = FocalLossV1()
     optimizer = torch.optim.Adam(model.parameters(), lr=config['LR'])
     lr_scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=5, factor=0.8)
@@ -114,7 +115,10 @@ def main():
     result_file_name = get_result_file_name(config)
     with open(result_file_name, "w") as f:
         f.write(init_msg)
-        f.write(str(config))
+        f.write('---------------config.yml-------------------\n')
+        for key in config:
+            f.write(str(key)+':'+str(config[key])+'\n')
+        f.write('--------------------------------------------\n\n')
 
     for epoch in range(config['NUM_EPOCH']):
         now_lr = optimizer.state_dict()['param_groups'][0]['lr']
