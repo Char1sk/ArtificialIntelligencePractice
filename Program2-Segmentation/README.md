@@ -28,6 +28,7 @@
 |   (6)    | Deeplabv3(backbone:resnet101) |     60     |     16     |    Focalloss     |    SGD    |     0.01      |        16        |  resnet101  |
 |   (7)    | Deeplabv3(backbone:resnet101) |     60     |     4      |    Focalloss     |    SGD    |     0.01      |        8         |  resnet101  |
 |   (8)    | Deeplabv3(backbone:resnet101) |     60     |     4      |    Focalloss     |    SGD    |     0.01      |        32        |  resnet101  |
+|   (9)    |    Deeplabv3(backbone:drn)    |     60     |     4      | CrossEntropyLoss |    SGD    |     0.01      |        16        |     drn     |
 
 ## 实验结果
 | 实验编号  |        结果文件           | 
@@ -40,3 +41,4 @@
 |   (6)    | result_batchsize16.txt |
 |   (7)    | result_os8.txt |
 |   (8)    | result_os32.txt |
+|   (9)    | result_drn.txt |
