@@ -41,7 +41,7 @@ with open("./config.yml", "r") as f:
 def loadData():
     datapath = './iccv09Data'
     data_transforms = transforms.Compose([
-        # transforms.RandomCrop(180, pad_if_needed=True), #随机裁剪
+        # transforms.RandomCrop(100), #随机裁剪
         # transforms.RandomHorizontalFlip(), # 翻转图片
         # transforms.RandomVerticalFlip(),
         # transforms.GaussianBlur(kernel_size=5),

@@ -3,7 +3,7 @@ NUM_EPOCH: 100
 TRAIN_BATCH_SIZE: 8
 TEST_BATCH_SIZE: 1
 LR: 0.01
-LOSS: 'CE'
+LOSS: 'FocalLoss'
   # - 'FocalLoss'
   # - 'CE'
 
@@ -13,7 +13,7 @@ BACKBONE: 'resnet'
   # - 'mobilenet'
   # - 'drn'
   # - 'xception'
-OUTPUT_STRIDE: 16
+OUTPUT_STRIDE: 8
 
 
 # results
