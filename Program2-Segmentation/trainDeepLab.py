@@ -12,6 +12,7 @@ import yaml
 from modeling.deeplab import DeepLab
 from modeling.loss import FocalLossV1
 from dataset.custom_dataset import MyDataset
+from myTransforms import ScaleCrop
 from utils import calMIOU, calPA
 
 
@@ -38,19 +39,41 @@ class FocalLoss(nn.Module):
 with open("./config.yml", "r") as f:
     config = yaml.load(f.read(), Loader=yaml.CLoader)
 
+# def loadData():
+#     datapath = './iccv09Data'
+#     data_transforms = transforms.Compose([
+#         # transforms.RandomCrop(180, pad_if_needed=True), #随机裁剪
+#         # transforms.RandomHorizontalFlip(), # 翻转图片
+#         # transforms.RandomVerticalFlip(),
+#         # transforms.GaussianBlur(kernel_size=5),
+#         # transforms.RandomPerspective(),
+#         transforms.ToTensor()
+#     ])
+#     train_dataset = MyDataset(datapath, True, data_transforms)
+#     train_loader = DataLoader(train_dataset, config['TRAIN_BATCH_SIZE'])
+#     test_dataset = MyDataset(datapath, False, data_transforms)
+#     test_loader = DataLoader(test_dataset, config['TEST_BATCH_SIZE'])
+#     return (train_loader, test_loader)
+
 def loadData():
     datapath = './iccv09Data'
-    data_transforms = transforms.Compose([
-        # transforms.RandomCrop(100), #随机裁剪
+    image_transforms = transforms.Compose([
+        # transforms.RandomCrop(32, padding=4), #随机裁剪
         # transforms.RandomHorizontalFlip(), # 翻转图片
-        # transforms.RandomVerticalFlip(),
-        # transforms.GaussianBlur(kernel_size=5),
-        # transforms.RandomPerspective(),
+        # ScaleCrop((240, 320), True),
+        # transforms.Resize((240, 320)),
         transforms.ToTensor()
     ])
-    train_dataset = MyDataset(datapath, True, data_transforms)
+    mask_transforms = transforms.Compose([
+        # transforms.RandomCrop(32, padding=4), #随机裁剪
+        # transforms.RandomHorizontalFlip(), # 翻转图片
+        # ScaleCrop((240, 320), False),
+        # transforms.Resize((240, 320)),
+        transforms.ToTensor()
+    ])
+    train_dataset = MyDataset(datapath, True, image_transforms, mask_transforms)
     train_loader = DataLoader(train_dataset, config['TRAIN_BATCH_SIZE'])
-    test_dataset = MyDataset(datapath, False, data_transforms)
+    test_dataset = MyDataset(datapath, False, image_transforms, mask_transforms)
     test_loader = DataLoader(test_dataset, config['TEST_BATCH_SIZE'])
     return (train_loader, test_loader)
 
@@ -101,6 +124,8 @@ def test(testLoader, model, lossFunction, device):
             # add
             tloss += loss.item()
             tiou += calMIOU(pred, label)
+    nowTime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+    print(f'[{nowTime}]    Loss:{tloss/totalBatch:>7.6f}, mIOU:{tiou/totalCount:>6.4f}')
     return (tloss/totalBatch, tiou/totalCount)
 
 def init_dir(config):

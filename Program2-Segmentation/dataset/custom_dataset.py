@@ -13,10 +13,11 @@ import numpy as np
 
 class MyDataset(Dataset):
     
-    def __init__(self, path, isTrain, transform):
+    def __init__(self, path, isTrain, imageTransform, maskTransform):
         self.path = path
         self.isTrain = isTrain
-        self.transform = transform
+        self.imageTransform = imageTransform
+        self.maskTransform = maskTransform
         
         self.horizonPath = 'horizons.txt'
         self.imagesPath = 'images'
@@ -47,7 +48,7 @@ class MyDataset(Dataset):
     
     def loadimage(self, path):
         img_pil = Image.open(os.path.join(self.path, self.imagesPath, f'{path}.jpg'))
-        img_pil = self.transform(img_pil)
+        img_pil = self.imageTransform(img_pil)
         return img_pil
     
     def loadmask(self, path):
@@ -62,7 +63,7 @@ class MyDataset(Dataset):
                 mask.append(m)
         # mask = Image.fromarray(np.array(mask))
         mask = Image.fromarray(np.int8(np.array(mask)))
-        mask = self.transform(mask)
+        mask = self.maskTransform(mask)
         return mask
     
 
