@@ -7,20 +7,29 @@ import numpy as np
 
 from modeling.unet import Unet
 from dataset.custom_dataset import MyDataset
+from myTransforms import ScaleCrop
 from utils import calMIOU, calPA
 
 
 def loadData():
     datapath = './iccv09Data'
-    data_transforms = transforms.Compose([
+    image_transforms = transforms.Compose([
         # transforms.RandomCrop(32, padding=4), #随机裁剪
         # transforms.RandomHorizontalFlip(), # 翻转图片
-        transforms.Resize((240, 320)),
+        ScaleCrop((240, 320), True),
+        # transforms.Resize((240, 320), transforms.InterpolationMode.BILINEAR),
         transforms.ToTensor()
     ])
-    train_dataset = MyDataset(datapath, True, data_transforms)
+    mask_transforms = transforms.Compose([
+        # transforms.RandomCrop(32, padding=4), #随机裁剪
+        # transforms.RandomHorizontalFlip(), # 翻转图片
+        ScaleCrop((240, 320), False),
+        # transforms.Resize((240, 320), transforms.InterpolationMode.NEAREST),
+        transforms.ToTensor()
+    ])
+    train_dataset = MyDataset(datapath, True, image_transforms, mask_transforms)
     train_loader = DataLoader(train_dataset, 4)
-    test_dataset = MyDataset(datapath, False, data_transforms)
+    test_dataset = MyDataset(datapath, False, image_transforms, mask_transforms)
     test_loader = DataLoader(test_dataset, 1)
     return (train_loader, test_loader)
 
