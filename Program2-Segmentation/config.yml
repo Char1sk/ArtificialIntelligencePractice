@@ -1,0 +1,24 @@
+# training
+NUM_EPOCH: 100
+TRAIN_BATCH_SIZE: 8
+TEST_BATCH_SIZE: 1
+LR: 0.01
+LOSS: 'CE'
+  # - 'FocalLoss'
+  # - 'CE'
+
+# model
+BACKBONE: 'resnet'
+  # - 'resnet'
+  # - 'mobilenet'
+  # - 'drn'
+  # - 'xception'
+OUTPUT_STRIDE: 16
+
+
+# results
+RESULT_DIR: './results'
+SAVE_MODEL_DIR: './saves'
+
+# else
+DEBUG_MODE: False

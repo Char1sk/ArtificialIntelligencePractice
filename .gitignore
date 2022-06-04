@@ -1,8 +1,10 @@
 __pycache__
 *.zip
 *.tar.gz
+result.txt
 models
 saves
 Old
 cifar-10-batches-py
 iccv09Data
+.vscode

@@ -1,45 +1,80 @@
+from pickletools import optimize
+from tkinter import N
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 from torchvision import transforms
 from torch.utils.data import DataLoader
 import time
 import numpy as np
-
+import os
+import yaml
 from modeling.deeplab import DeepLab
+from modeling.loss import FocalLossV1
 from dataset.custom_dataset import MyDataset
+from myTransforms import ScaleCrop
+from utils import calMIOU, calPA
 
 
-def calMIOU(pred, label):
-    nc = pred.shape[1]
-    _, index = pred.max(dim=1)
-    # print(index.shape, label.shape)
-    index, label = index.cpu().numpy(), label.cpu().numpy()
-    miou = 0.0
-    for i, l in zip(index, label):
-        # print(i.shape, l.shape)
-        hist = np.zeros((nc, nc), dtype=int)
-        for ri, rl in zip(i, l):
-            # print(nc*rl.astype(int)+ri)
-            hist += np.bincount(nc*rl.astype(int)+ri, minlength=nc**2).reshape(nc, nc)
-        # print('hist:', hist)
-        # print(np.diag(hist))
-        # print((hist.sum(axis=1) + hist.sum(axis=0) - np.diag(hist)))
-        miou += (np.diag(hist) / (hist.sum(axis=1) + hist.sum(axis=0) - np.diag(hist) + 1) ).mean()
-        # print('miou:', miou)
-    return miou
+class FocalLoss(nn.Module):
+    def __init__(self, alpha=1, gamma=0, size_average=True, ignore_index=255):
+        super(FocalLoss, self).__init__()
+        self.alpha = alpha
+        self.gamma = gamma
+        self.ignore_index = ignore_index
+        self.size_average = size_average
 
+    def forward(self, inputs, targets):
+        ce_loss = F.cross_entropy(inputs, targets, 
+                                  reduction='none', ignore_index=self.ignore_index)
+        pt = torch.exp(-ce_loss)
+        focal_loss = self.alpha * (1-pt)**self.gamma * ce_loss
+        if self.size_average:
+            return focal_loss.mean()
+        else:
+            return focal_loss.sum()
+
+
+# load config.yml globally
+with open("./config.yml", "r") as f:
+    config = yaml.load(f.read(), Loader=yaml.CLoader)
+
+# def loadData():
+#     datapath = './iccv09Data'
+#     data_transforms = transforms.Compose([
+#         # transforms.RandomCrop(180, pad_if_needed=True), #随机裁剪
+#         # transforms.RandomHorizontalFlip(), # 翻转图片
+#         # transforms.RandomVerticalFlip(),
+#         # transforms.GaussianBlur(kernel_size=5),
+#         # transforms.RandomPerspective(),
+#         transforms.ToTensor()
+#     ])
+#     train_dataset = MyDataset(datapath, True, data_transforms)
+#     train_loader = DataLoader(train_dataset, config['TRAIN_BATCH_SIZE'])
+#     test_dataset = MyDataset(datapath, False, data_transforms)
+#     test_loader = DataLoader(test_dataset, config['TEST_BATCH_SIZE'])
+#     return (train_loader, test_loader)
 
 def loadData():
     datapath = './iccv09Data'
-    data_transforms = transforms.Compose([
+    image_transforms = transforms.Compose([
         # transforms.RandomCrop(32, padding=4), #随机裁剪
         # transforms.RandomHorizontalFlip(), # 翻转图片
+        # ScaleCrop((240, 320), True),
+        # transforms.Resize((240, 320)),
         transforms.ToTensor()
     ])
-    train_dataset = MyDataset(datapath, True, data_transforms)
-    train_loader = DataLoader(train_dataset, 4)
-    test_dataset = MyDataset(datapath, False, data_transforms)
-    test_loader = DataLoader(test_dataset, 1)
+    mask_transforms = transforms.Compose([
+        # transforms.RandomCrop(32, padding=4), #随机裁剪
+        # transforms.RandomHorizontalFlip(), # 翻转图片
+        # ScaleCrop((240, 320), False),
+        # transforms.Resize((240, 320)),
+        transforms.ToTensor()
+    ])
+    train_dataset = MyDataset(datapath, True, image_transforms, mask_transforms)
+    train_loader = DataLoader(train_dataset, config['TRAIN_BATCH_SIZE'])
+    test_dataset = MyDataset(datapath, False, image_transforms, mask_transforms)
+    test_loader = DataLoader(test_dataset, config['TEST_BATCH_SIZE'])
     return (train_loader, test_loader)
 
 
@@ -55,7 +90,8 @@ def train(trainLoader, model, lossFunction, optimizer, device):
         # calculate
         pred = model(data)
         loss = lossFunction(pred, label)
-        # print(pred.shape, label.shape, loss)
+        if config['DEBUG_MODE']:
+            print(pred.shape, label.shape, loss)
         # optimize
         optimizer.zero_grad()
         loss.backward()
@@ -88,8 +124,23 @@ def test(testLoader, model, lossFunction, device):
             # add
             tloss += loss.item()
             tiou += calMIOU(pred, label)
+    nowTime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+    print(f'[{nowTime}]    Loss:{tloss/totalBatch:>7.6f}, mIOU:{tiou/totalCount:>6.4f}')
     return (tloss/totalBatch, tiou/totalCount)
 
+def init_dir(config):
+    if not os.path.exists(config['SAVE_MODEL_DIR']):
+        os.mkdir(config['SAVE_MODEL_DIR'])
+    if not os.path.exists(config['RESULT_DIR']):
+        os.mkdir(config['RESULT_DIR'])
+
+def get_result_file_name(config):
+    n = 1
+    name = "DeepLab-" + config['BACKBONE'] + '-' + str(n) + '.txt'
+    while os.path.exists(config['RESULT_DIR'] + os.sep + name):
+        n += 1
+        name = "DeepLab-" + config['BACKBONE'] + '-' + str(n) + '.txt'
+    return config['RESULT_DIR'] + os.sep + name
 
 def main():
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -97,28 +148,48 @@ def main():
 
     trainLoader, testLoader = loadData()
 
-    model = DeepLab(backbone='resnet', output_stride=16, num_classes=9).to(device)
-    lossFunction = nn.CrossEntropyLoss()
-    optimizer = torch.optim.SGD(model.parameters(), lr=0.1, momentum=0.9, weight_decay=1e-4)
+    model = DeepLab(
+        backbone=config['BACKBONE'], 
+        output_stride = config['OUTPUT_STRIDE'], 
+        num_classes=9
+    ).to(device)
 
+    if config['LOSS'] == 'CE':
+        lossFunction = nn.CrossEntropyLoss()
+    elif config['LOSS'] == 'FocalLoss':
+        lossFunction = FocalLoss()
+    optimizer = torch.optim.Adam(model.parameters(), lr=config['LR'])
+    # lr_scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=5, factor=0.8)
+    lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=8, gamma=0.7)
+
+    init_dir(config)
     print("Begin Training")
-    for epoch in range(64):
-        print(f"Epoch:{epoch+1:>3}, learning rate = {0.1}")
-        # if (epoch==31):
-        #     lr = lr /10
-        #     optimizer.param_groups[0]["lr"]=lr
-        # if (epoch==47):
-        #     lr = lr /10
-        #     optimizer.param_groups[0]["lr"]=lr 
+    init_msg = ">> DeepLabv3\n".format(config['BACKBONE'])
+    result_file_name = get_result_file_name(config)
+    with open(result_file_name, "w") as f:
+        f.write(init_msg)
+        f.write('---------------config.yml-------------------\n')
+        for key in config:
+            f.write(str(key)+':'+str(config[key])+'\n')
+        f.write('--------------------------------------------\n\n')
+
+    for epoch in range(config['NUM_EPOCH']):
+        now_lr = optimizer.state_dict()['param_groups'][0]['lr']
+        print(f"Epoch:{epoch+1:>3}, learning rate = {now_lr}")
 
         trainLoss, trainAcc = train(trainLoader, model, lossFunction, optimizer, device)
         testLoss, testAcc = test(testLoader, model, lossFunction, device)
-        with open('./result.txt', 'a') as f:
-            nowTime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-            f.write(f'[{nowTime}] Epoch{epoch+1:>3d}\n')
+            
+        nowTime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+        with open(result_file_name, "a") as f:
+            f.write(f'[{nowTime}] Epoch{epoch+1:>3d}, lr = {now_lr}\n')
             f.write(f'    Train: Loss {trainLoss:>7.6f}, mIOU {trainAcc:>6.4f}\n')
             f.write(f'    Test:  Loss {testLoss :>7.6f}, mIOU {testAcc :>6.4f}\n')
+
         torch.save(model.state_dict(), './saves/model.pth')
+        # lr_scheduler.step(trainLoss)
+        lr_scheduler.step()
+
     print("Done")
 
 
