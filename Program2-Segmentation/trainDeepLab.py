@@ -2,6 +2,7 @@ from pickletools import optimize
 from tkinter import N
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 from torchvision import transforms
 from torch.utils.data import DataLoader
 import time
@@ -40,9 +41,10 @@ with open("./config.yml", "r") as f:
 def loadData():
     datapath = './iccv09Data'
     data_transforms = transforms.Compose([
-        transforms.RandomCrop(32), #随机裁剪
-        transforms.RandomHorizontalFlip(), # 翻转图片
-        transforms.RandomVerticalFlip(),
+        # transforms.RandomCrop(180, pad_if_needed=True), #随机裁剪
+        # transforms.RandomHorizontalFlip(), # 翻转图片
+        # transforms.RandomVerticalFlip(),
+        # transforms.GaussianBlur(kernel_size=5),
         # transforms.RandomPerspective(),
         transforms.ToTensor()
     ])
@@ -123,12 +125,19 @@ def main():
 
     trainLoader, testLoader = loadData()
 
-    model = DeepLab(backbone=config['BACKBONE'], output_stride=16, num_classes=9).to(device)
+    model = DeepLab(
+        backbone=config['BACKBONE'], 
+        output_stride = config['OUTPUT_STRIDE'], 
+        num_classes=9
+    ).to(device)
+
     if config['LOSS'] == 'CE':
         lossFunction = nn.CrossEntropyLoss()
-    # lossFunction = FocalLossV1()
+    elif config['LOSS'] == 'FocalLoss':
+        lossFunction = FocalLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=config['LR'])
-    lr_scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=5, factor=0.8)
+    # lr_scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=5, factor=0.8)
+    lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=8, gamma=0.7)
 
     init_dir(config)
     print("Begin Training")
@@ -155,7 +164,8 @@ def main():
             f.write(f'    Test:  Loss {testLoss :>7.6f}, mIOU {testAcc :>6.4f}\n')
 
         torch.save(model.state_dict(), './saves/model.pth')
-        lr_scheduler.step(trainLoss)
+        # lr_scheduler.step(trainLoss)
+        lr_scheduler.step()
 
     print("Done")
 
