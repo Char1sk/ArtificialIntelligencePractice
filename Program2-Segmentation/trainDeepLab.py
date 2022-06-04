@@ -99,6 +99,8 @@ def test(testLoader, model, lossFunction, device):
             # add
             tloss += loss.item()
             tiou += calMIOU(pred, label)
+    nowTime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+    print(f'[{nowTime}]    Loss:{tloss/totalBatch:>7.6f}, mIOU:{tiou/totalCount:>6.4f}')
     return (tloss/totalBatch, tiou/totalCount)
 
 def init_dir(config):
