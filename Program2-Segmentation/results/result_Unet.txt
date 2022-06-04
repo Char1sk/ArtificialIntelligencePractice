@@ -1,0 +1,1263 @@
+#U-net(lr:1e-2)# [2022-06-02 23:08:11] Epoch  1
+#U-net(lr:1e-2)#    Train: Loss 1.232786, mIOU 0.2137
+#U-net(lr:1e-2)#    Test: Loss 1.961178, mIOU 0.1536
+#U-net(lr:1e-2)# [2022-06-02 23:10:02] Epoch  2
+#U-net(lr:1e-2)#    Train: Loss 1.056497, mIOU 0.2418
+#U-net(lr:1e-2)#    Test: Loss 2.066049, mIOU 0.1617
+#U-net(lr:1e-2)# [2022-06-02 23:11:53] Epoch  3
+#U-net(lr:1e-2)#    Train: Loss 0.961287, mIOU 0.2641
+#U-net(lr:1e-2)#    Test: Loss 1.547018, mIOU 0.2016
+#U-net(lr:1e-2)# [2022-06-02 23:13:46] Epoch  4
+#U-net(lr:1e-2)#    Train: Loss 0.899949, mIOU 0.2762
+#U-net(lr:1e-2)#    Test: Loss 1.489092, mIOU 0.2114
+#U-net(lr:1e-2)# [2022-06-02 23:15:39] Epoch  5
+#U-net(lr:1e-2)#    Train: Loss 0.845052, mIOU 0.3310
+#U-net(lr:1e-2)#    Test: Loss 1.406314, mIOU 0.2789
+#U-net(lr:1e-2)# [2022-06-02 23:17:31] Epoch  6
+#U-net(lr:1e-2)#    Train: Loss 0.804917, mIOU 0.3751
+#U-net(lr:1e-2)#    Test: Loss 1.394617, mIOU 0.3035
+#U-net(lr:1e-2)# [2022-06-02 23:19:24] Epoch  7
+#U-net(lr:1e-2)#    Train: Loss 0.786921, mIOU 0.3897
+#U-net(lr:1e-2)#    Test: Loss 1.325503, mIOU 0.3171
+#U-net(lr:1e-2)# [2022-06-02 23:21:18] Epoch  8
+#U-net(lr:1e-2)#    Train: Loss 0.752269, mIOU 0.3983
+#U-net(lr:1e-2)#    Test: Loss 1.269412, mIOU 0.3230
+#U-net(lr:1e-2)# [2022-06-02 23:23:11] Epoch  9
+#U-net(lr:1e-2)#    Train: Loss 0.719872, mIOU 0.4036
+#U-net(lr:1e-2)#    Test: Loss 1.256016, mIOU 0.3219
+#U-net(lr:1e-2)# [2022-06-02 23:25:02] Epoch 10
+#U-net(lr:1e-2)#    Train: Loss 0.685420, mIOU 0.4086
+#U-net(lr:1e-2)#    Test: Loss 1.277749, mIOU 0.3228
+#U-net(lr:1e-2)# [2022-06-02 23:26:52] Epoch 11
+#U-net(lr:1e-2)#    Train: Loss 0.664232, mIOU 0.4107
+#U-net(lr:1e-2)#    Test: Loss 1.364459, mIOU 0.3054
+#U-net(lr:1e-2)# [2022-06-02 23:28:46] Epoch 12
+#U-net(lr:1e-2)#    Train: Loss 0.643308, mIOU 0.4148
+#U-net(lr:1e-2)#    Test: Loss 1.365631, mIOU 0.3061
+#U-net(lr:1e-2)# [2022-06-02 23:30:42] Epoch 13
+#U-net(lr:1e-2)#    Train: Loss 0.628917, mIOU 0.4164
+#U-net(lr:1e-2)#    Test: Loss 1.286365, mIOU 0.3173
+#U-net(lr:1e-2)# [2022-06-02 23:32:34] Epoch 14
+#U-net(lr:1e-2)#    Train: Loss 0.605246, mIOU 0.4224
+#U-net(lr:1e-2)#    Test: Loss 1.291276, mIOU 0.3192
+#U-net(lr:1e-2)# [2022-06-02 23:34:22] Epoch 15
+#U-net(lr:1e-2)#    Train: Loss 0.584437, mIOU 0.4264
+#U-net(lr:1e-2)#    Test: Loss 1.352023, mIOU 0.3047
+#U-net(lr:1e-2)# [2022-06-02 23:36:10] Epoch 16
+#U-net(lr:1e-2)#    Train: Loss 0.560138, mIOU 0.4305
+#U-net(lr:1e-2)#    Test: Loss 1.474964, mIOU 0.3084
+#U-net(lr:1e-2)# [2022-06-02 23:37:57] Epoch 17
+#U-net(lr:1e-2)#    Train: Loss 0.565465, mIOU 0.4290
+#U-net(lr:1e-2)#    Test: Loss 1.334567, mIOU 0.3089
+#U-net(lr:1e-2)# [2022-06-02 23:39:43] Epoch 18
+#U-net(lr:1e-2)#    Train: Loss 0.528623, mIOU 0.4357
+#U-net(lr:1e-2)#    Test: Loss 1.387461, mIOU 0.3146
+#U-net(lr:1e-2)# [2022-06-02 23:41:30] Epoch 19
+#U-net(lr:1e-2)#    Train: Loss 0.503800, mIOU 0.4403
+#U-net(lr:1e-2)#    Test: Loss 1.404464, mIOU 0.3103
+#U-net(lr:1e-2)# [2022-06-02 23:43:26] Epoch 20
+#U-net(lr:1e-2)#    Train: Loss 0.469464, mIOU 0.4471
+#U-net(lr:1e-2)#    Test: Loss 1.239542, mIOU 0.3245
+#U-net(lr:1e-2)# [2022-06-02 23:45:25] Epoch 21
+#U-net(lr:1e-2)#    Train: Loss 0.444947, mIOU 0.4519
+#U-net(lr:1e-2)#    Test: Loss 1.309052, mIOU 0.3306
+#U-net(lr:1e-2)# [2022-06-02 23:47:25] Epoch 22
+#U-net(lr:1e-2)#    Train: Loss 0.426608, mIOU 0.4560
+#U-net(lr:1e-2)#    Test: Loss 1.114741, mIOU 0.3468
+#U-net(lr:1e-2)# [2022-06-02 23:49:25] Epoch 23
+#U-net(lr:1e-2)#    Train: Loss 0.416695, mIOU 0.4582
+#U-net(lr:1e-2)#    Test: Loss 1.124353, mIOU 0.3468
+#U-net(lr:1e-2)# [2022-06-02 23:51:25] Epoch 24
+#U-net(lr:1e-2)#    Train: Loss 0.399905, mIOU 0.4619
+#U-net(lr:1e-2)#    Test: Loss 1.064529, mIOU 0.3538
+#U-net(lr:1e-2)# [2022-06-02 23:53:26] Epoch 25
+#U-net(lr:1e-2)#    Train: Loss 0.379674, mIOU 0.4673
+#U-net(lr:1e-2)#    Test: Loss 1.025200, mIOU 0.3557
+#U-net(lr:1e-2)# [2022-06-02 23:55:27] Epoch 26
+#U-net(lr:1e-2)#    Train: Loss 0.361295, mIOU 0.4718
+#U-net(lr:1e-2)#    Test: Loss 1.072818, mIOU 0.3537
+#U-net(lr:1e-2)# [2022-06-02 23:57:27] Epoch 27
+#U-net(lr:1e-2)#    Train: Loss 0.333337, mIOU 0.4787
+#U-net(lr:1e-2)#    Test: Loss 1.087542, mIOU 0.3499
+#U-net(lr:1e-2)# [2022-06-02 23:59:29] Epoch 28
+#U-net(lr:1e-2)#    Train: Loss 0.314591, mIOU 0.4843
+#U-net(lr:1e-2)#    Test: Loss 1.133331, mIOU 0.3509
+#U-net(lr:1e-2)# [2022-06-03 00:01:30] Epoch 29
+#U-net(lr:1e-2)#    Train: Loss 0.296819, mIOU 0.4880
+#U-net(lr:1e-2)#    Test: Loss 1.192377, mIOU 0.3530
+#U-net(lr:1e-2)# [2022-06-03 00:03:31] Epoch 30
+#U-net(lr:1e-2)#    Train: Loss 0.293324, mIOU 0.4880
+#U-net(lr:1e-2)#    Test: Loss 1.242469, mIOU 0.3504
+#U-net(lr:1e-2)# [2022-06-03 00:05:32] Epoch 31
+#U-net(lr:1e-2)#    Train: Loss 0.284677, mIOU 0.4897
+#U-net(lr:1e-2)#    Test: Loss 1.045254, mIOU 0.3630
+#U-net(lr:1e-2)# [2022-06-03 00:07:33] Epoch 32
+#U-net(lr:1e-2)#    Train: Loss 0.282915, mIOU 0.4905
+#U-net(lr:1e-2)#    Test: Loss 1.220658, mIOU 0.3503
+#U-net(lr:1e-2)# [2022-06-03 00:09:36] Epoch 33
+#U-net(lr:1e-2)#    Train: Loss 0.271240, mIOU 0.4961
+#U-net(lr:1e-2)#    Test: Loss 1.137185, mIOU 0.3595
+#U-net(lr:1e-2)# [2022-06-03 00:11:37] Epoch 34
+#U-net(lr:1e-2)#    Train: Loss 0.246839, mIOU 0.5018
+#U-net(lr:1e-2)#    Test: Loss 1.226909, mIOU 0.3528
+#U-net(lr:1e-2)# [2022-06-03 00:13:26] Epoch 35
+#U-net(lr:1e-2)#    Train: Loss 0.227687, mIOU 0.5079
+#U-net(lr:1e-2)#    Test: Loss 1.157200, mIOU 0.3640
+#U-net(lr:1e-2)# [2022-06-03 00:15:14] Epoch 36
+#U-net(lr:1e-2)#    Train: Loss 0.211765, mIOU 0.5127
+#U-net(lr:1e-2)#    Test: Loss 1.233320, mIOU 0.3561
+#U-net(lr:1e-2)# [2022-06-03 00:17:11] Epoch 37
+#U-net(lr:1e-2)#    Train: Loss 0.208913, mIOU 0.5141
+#U-net(lr:1e-2)#    Test: Loss 1.229602, mIOU 0.3513
+#U-net(lr:1e-2)# [2022-06-03 00:19:09] Epoch 38
+#U-net(lr:1e-2)#    Train: Loss 0.212593, mIOU 0.5123
+#U-net(lr:1e-2)#    Test: Loss 1.255541, mIOU 0.3485
+#U-net(lr:1e-2)# [2022-06-03 00:21:06] Epoch 39
+#U-net(lr:1e-2)#    Train: Loss 0.227609, mIOU 0.5074
+#U-net(lr:1e-2)#    Test: Loss 1.160728, mIOU 0.3620
+#U-net(lr:1e-2)# [2022-06-03 00:23:05] Epoch 40
+#U-net(lr:1e-2)#    Train: Loss 0.195840, mIOU 0.5190
+#U-net(lr:1e-2)#    Test: Loss 1.254092, mIOU 0.3576
+#U-net(lr:1e-2)# [2022-06-03 00:25:02] Epoch 41
+#U-net(lr:1e-2)#    Train: Loss 0.186391, mIOU 0.5227
+#U-net(lr:1e-2)#    Test: Loss 1.220971, mIOU 0.3493
+#U-net(lr:1e-2)# [2022-06-03 00:27:00] Epoch 42
+#U-net(lr:1e-2)#    Train: Loss 0.188087, mIOU 0.5219
+#U-net(lr:1e-2)#    Test: Loss 1.280648, mIOU 0.3526
+#U-net(lr:1e-2)# [2022-06-03 00:28:59] Epoch 43
+#U-net(lr:1e-2)#    Train: Loss 0.175364, mIOU 0.5260
+#U-net(lr:1e-2)#    Test: Loss 1.312421, mIOU 0.3500
+#U-net(lr:1e-2)# [2022-06-03 00:30:56] Epoch 44
+#U-net(lr:1e-2)#    Train: Loss 0.166588, mIOU 0.5294
+#U-net(lr:1e-2)#    Test: Loss 1.250886, mIOU 0.3493
+#U-net(lr:1e-2)# [2022-06-03 00:32:54] Epoch 45
+#U-net(lr:1e-2)#    Train: Loss 0.158120, mIOU 0.5334
+#U-net(lr:1e-2)#    Test: Loss 1.411999, mIOU 0.3468
+#U-net(lr:1e-2)# [2022-06-03 00:34:51] Epoch 46
+#U-net(lr:1e-2)#    Train: Loss 0.154571, mIOU 0.5346
+#U-net(lr:1e-2)#    Test: Loss 1.326229, mIOU 0.3440
+#U-net(lr:1e-2)# [2022-06-03 00:36:49] Epoch 47
+#U-net(lr:1e-2)#    Train: Loss 0.148267, mIOU 0.5383
+#U-net(lr:1e-2)#    Test: Loss 1.379310, mIOU 0.3425
+#U-net(lr:1e-2)# [2022-06-03 00:38:45] Epoch 48
+#U-net(lr:1e-2)#    Train: Loss 0.143332, mIOU 0.5398
+#U-net(lr:1e-2)#    Test: Loss 1.421033, mIOU 0.3452
+#U-net(lr:1e-2)# [2022-06-03 00:40:41] Epoch 49
+#U-net(lr:1e-2)#    Train: Loss 0.134981, mIOU 0.5433
+#U-net(lr:1e-2)#    Test: Loss 1.418882, mIOU 0.3354
+#U-net(lr:1e-2)# [2022-06-03 00:42:39] Epoch 50
+#U-net(lr:1e-2)#    Train: Loss 0.133762, mIOU 0.5442
+#U-net(lr:1e-2)#    Test: Loss 1.434940, mIOU 0.3463
+#U-net(lr:1e-2)# [2022-06-03 00:44:38] Epoch 51
+#U-net(lr:1e-2)#    Train: Loss 0.130290, mIOU 0.5458
+#U-net(lr:1e-2)#    Test: Loss 1.339150, mIOU 0.3430
+#U-net(lr:1e-2)# [2022-06-03 00:46:35] Epoch 52
+#U-net(lr:1e-2)#    Train: Loss 0.127086, mIOU 0.5480
+#U-net(lr:1e-2)#    Test: Loss 1.363493, mIOU 0.3434
+#U-net(lr:1e-2)# [2022-06-03 00:48:31] Epoch 53
+#U-net(lr:1e-2)#    Train: Loss 0.122996, mIOU 0.5487
+#U-net(lr:1e-2)#    Test: Loss 1.369804, mIOU 0.3238
+#U-net(lr:1e-2)# [2022-06-03 00:50:19] Epoch 54
+#U-net(lr:1e-2)#    Train: Loss 0.118998, mIOU 0.5518
+#U-net(lr:1e-2)#    Test: Loss 1.391051, mIOU 0.3299
+#U-net(lr:1e-2)# [2022-06-03 00:52:04] Epoch 55
+#U-net(lr:1e-2)#    Train: Loss 0.113763, mIOU 0.5548
+#U-net(lr:1e-2)#    Test: Loss 1.380200, mIOU 0.3236
+#U-net(lr:1e-2)# [2022-06-03 00:53:48] Epoch 56
+#U-net(lr:1e-2)#    Train: Loss 0.109682, mIOU 0.5570
+#U-net(lr:1e-2)#    Test: Loss 1.390676, mIOU 0.3348
+#U-net(lr:1e-2)# [2022-06-03 00:55:33] Epoch 57
+#U-net(lr:1e-2)#    Train: Loss 0.108953, mIOU 0.5569
+#U-net(lr:1e-2)#    Test: Loss 1.374139, mIOU 0.3282
+#U-net(lr:1e-2)# [2022-06-03 00:57:17] Epoch 58
+#U-net(lr:1e-2)#    Train: Loss 0.109355, mIOU 0.5573
+#U-net(lr:1e-2)#    Test: Loss 1.456848, mIOU 0.3273
+#U-net(lr:1e-2)# [2022-06-03 00:59:01] Epoch 59
+#U-net(lr:1e-2)#    Train: Loss 0.108403, mIOU 0.5583
+#U-net(lr:1e-2)#    Test: Loss 1.424364, mIOU 0.3408
+#U-net(lr:1e-2)# [2022-06-03 01:00:47] Epoch 60
+#U-net(lr:1e-2)#    Train: Loss 0.108552, mIOU 0.5574
+#U-net(lr:1e-2)#    Test: Loss 1.477380, mIOU 0.3457
+#U-net(lr:1e-1)# [2022-06-03 10:39:12] Epoch  1
+#U-net(lr:1e-1)#    Train: Loss 1.486321, mIOU 0.1528
+#U-net(lr:1e-1)#    Test: Loss 1.829703, mIOU 0.1207
+#U-net(lr:1e-1)# [2022-06-03 10:40:57] Epoch  2
+#U-net(lr:1e-1)#    Train: Loss 1.209731, mIOU 0.2114
+#U-net(lr:1e-1)#    Test: Loss 1.574889, mIOU 0.1632
+#U-net(lr:1e-1)# [2022-06-03 10:42:44] Epoch  3
+#U-net(lr:1e-1)#    Train: Loss 1.129889, mIOU 0.2212
+#U-net(lr:1e-1)#    Test: Loss 1.370676, mIOU 0.1963
+#U-net(lr:1e-1)# [2022-06-03 10:44:33] Epoch  4
+#U-net(lr:1e-1)#    Train: Loss 1.080036, mIOU 0.2331
+#U-net(lr:1e-1)#    Test: Loss 2.061074, mIOU 0.0674
+#U-net(lr:1e-1)# [2022-06-03 10:46:22] Epoch  5
+#U-net(lr:1e-1)#    Train: Loss 1.047641, mIOU 0.2412
+#U-net(lr:1e-1)#    Test: Loss 1.578758, mIOU 0.1580
+#U-net(lr:1e-1)# [2022-06-03 10:48:12] Epoch  6
+#U-net(lr:1e-1)#    Train: Loss 1.023014, mIOU 0.2447
+#U-net(lr:1e-1)#    Test: Loss 1.399521, mIOU 0.2003
+#U-net(lr:1e-1)# [2022-06-03 10:50:01] Epoch  7
+#U-net(lr:1e-1)#    Train: Loss 0.989911, mIOU 0.2498
+#U-net(lr:1e-1)#    Test: Loss 1.497640, mIOU 0.1818
+#U-net(lr:1e-1)# [2022-06-03 10:51:52] Epoch  8
+#U-net(lr:1e-1)#    Train: Loss 0.971538, mIOU 0.2543
+#U-net(lr:1e-1)#    Test: Loss 1.439184, mIOU 0.1872
+#U-net(lr:1e-1)# [2022-06-03 10:53:42] Epoch  9
+#U-net(lr:1e-1)#    Train: Loss 0.946262, mIOU 0.2587
+#U-net(lr:1e-1)#    Test: Loss 1.350133, mIOU 0.2173
+#U-net(lr:1e-1)# [2022-06-03 10:55:33] Epoch 10
+#U-net(lr:1e-1)#    Train: Loss 0.914340, mIOU 0.2636
+#U-net(lr:1e-1)#    Test: Loss 1.319935, mIOU 0.2141
+#U-net(lr:1e-1)# [2022-06-03 10:57:23] Epoch 11
+#U-net(lr:1e-1)#    Train: Loss 0.905390, mIOU 0.2690
+#U-net(lr:1e-1)#    Test: Loss 1.465871, mIOU 0.2408
+#U-net(lr:1e-1)# [2022-06-03 10:59:14] Epoch 12
+#U-net(lr:1e-1)#    Train: Loss 0.887359, mIOU 0.3007
+#U-net(lr:1e-1)#    Test: Loss 1.183819, mIOU 0.3279
+#U-net(lr:1e-1)# [2022-06-03 11:01:04] Epoch 13
+#U-net(lr:1e-1)#    Train: Loss 0.847655, mIOU 0.3672
+#U-net(lr:1e-1)#    Test: Loss 1.190251, mIOU 0.3300
+#U-net(lr:1e-1)# [2022-06-03 11:02:55] Epoch 14
+#U-net(lr:1e-1)#    Train: Loss 0.831257, mIOU 0.3779
+#U-net(lr:1e-1)#    Test: Loss 1.196113, mIOU 0.3314
+#U-net(lr:1e-1)# [2022-06-03 11:04:46] Epoch 15
+#U-net(lr:1e-1)#    Train: Loss 0.812355, mIOU 0.3815
+#U-net(lr:1e-1)#    Test: Loss 1.263043, mIOU 0.3244
+#U-net(lr:1e-1)# [2022-06-03 11:06:37] Epoch 16
+#U-net(lr:1e-1)#    Train: Loss 0.795301, mIOU 0.3840
+#U-net(lr:1e-1)#    Test: Loss 1.196511, mIOU 0.3256
+#U-net(lr:1e-1)# [2022-06-03 11:08:28] Epoch 17
+#U-net(lr:1e-1)#    Train: Loss 0.781554, mIOU 0.3866
+#U-net(lr:1e-1)#    Test: Loss 1.239970, mIOU 0.3209
+#U-net(lr:1e-1)# [2022-06-03 11:10:19] Epoch 18
+#U-net(lr:1e-1)#    Train: Loss 0.765231, mIOU 0.3892
+#U-net(lr:1e-1)#    Test: Loss 1.336459, mIOU 0.3184
+#U-net(lr:1e-1)# [2022-06-03 11:12:10] Epoch 19
+#U-net(lr:1e-1)#    Train: Loss 0.747789, mIOU 0.3928
+#U-net(lr:1e-1)#    Test: Loss 1.376026, mIOU 0.3131
+#U-net(lr:1e-1)# [2022-06-03 11:14:00] Epoch 20
+#U-net(lr:1e-1)#    Train: Loss 0.743214, mIOU 0.3949
+#U-net(lr:1e-1)#    Test: Loss 1.309098, mIOU 0.3161
+#U-net(lr:1e-1)# [2022-06-03 11:15:51] Epoch 21
+#U-net(lr:1e-1)#    Train: Loss 0.721157, mIOU 0.3990
+#U-net(lr:1e-1)#    Test: Loss 1.320758, mIOU 0.3144
+#U-net(lr:1e-1)# [2022-06-03 11:17:42] Epoch 22
+#U-net(lr:1e-1)#    Train: Loss 0.714657, mIOU 0.3983
+#U-net(lr:1e-1)#    Test: Loss 1.275809, mIOU 0.3216
+#U-net(lr:1e-1)# [2022-06-03 11:19:33] Epoch 23
+#U-net(lr:1e-1)#    Train: Loss 0.702895, mIOU 0.4000
+#U-net(lr:1e-1)#    Test: Loss 1.296109, mIOU 0.2993
+#U-net(lr:1e-1)# [2022-06-03 11:21:25] Epoch 24
+#U-net(lr:1e-1)#    Train: Loss 0.684764, mIOU 0.4051
+#U-net(lr:1e-1)#    Test: Loss 1.530689, mIOU 0.2985
+#U-net(lr:1e-1)# [2022-06-03 11:23:17] Epoch 25
+#U-net(lr:1e-1)#    Train: Loss 0.678659, mIOU 0.4053
+#U-net(lr:1e-1)#    Test: Loss 1.289794, mIOU 0.3231
+#U-net(lr:1e-1)# [2022-06-03 11:25:08] Epoch 26
+#U-net(lr:1e-1)#    Train: Loss 0.654603, mIOU 0.4088
+#U-net(lr:1e-1)#    Test: Loss 1.378782, mIOU 0.3125
+#U-net(lr:1e-1)# [2022-06-03 11:26:59] Epoch 27
+#U-net(lr:1e-1)#    Train: Loss 0.643378, mIOU 0.4094
+#U-net(lr:1e-1)#    Test: Loss 1.446604, mIOU 0.3061
+#U-net(lr:1e-1)# [2022-06-03 11:28:50] Epoch 28
+#U-net(lr:1e-1)#    Train: Loss 0.666022, mIOU 0.4060
+#U-net(lr:1e-1)#    Test: Loss 1.354096, mIOU 0.3042
+#U-net(lr:1e-1)# [2022-06-03 11:30:41] Epoch 29
+#U-net(lr:1e-1)#    Train: Loss 0.650010, mIOU 0.4075
+#U-net(lr:1e-1)#    Test: Loss 1.268403, mIOU 0.3215
+#U-net(lr:1e-1)# [2022-06-03 11:32:30] Epoch 30
+#U-net(lr:1e-1)#    Train: Loss 0.599730, mIOU 0.4179
+#U-net(lr:1e-1)#    Test: Loss 1.290360, mIOU 0.3223
+#U-net(lr:1e-1)# [2022-06-03 11:34:19] Epoch 31
+#U-net(lr:1e-1)#    Train: Loss 0.585900, mIOU 0.4201
+#U-net(lr:1e-1)#    Test: Loss 1.334769, mIOU 0.3117
+#U-net(lr:1e-1)# [2022-06-03 11:36:09] Epoch 32
+#U-net(lr:1e-1)#    Train: Loss 0.576709, mIOU 0.4211
+#U-net(lr:1e-1)#    Test: Loss 1.288730, mIOU 0.3213
+#U-net(lr:1e-1)# [2022-06-03 11:37:58] Epoch 33
+#U-net(lr:1e-1)#    Train: Loss 0.569469, mIOU 0.4218
+#U-net(lr:1e-1)#    Test: Loss 1.193867, mIOU 0.3313
+#U-net(lr:1e-1)# [2022-06-03 11:39:47] Epoch 34
+#U-net(lr:1e-1)#    Train: Loss 0.631425, mIOU 0.4118
+#U-net(lr:1e-1)#    Test: Loss 1.220005, mIOU 0.3182
+#U-net(lr:1e-1)# [2022-06-03 11:41:36] Epoch 35
+#U-net(lr:1e-1)#    Train: Loss 0.604615, mIOU 0.4161
+#U-net(lr:1e-1)#    Test: Loss 1.181804, mIOU 0.3364
+#U-net(lr:1e-1)# [2022-06-03 11:43:25] Epoch 36
+#U-net(lr:1e-1)#    Train: Loss 0.560143, mIOU 0.4225
+#U-net(lr:1e-1)#    Test: Loss 1.244145, mIOU 0.3311
+#U-net(lr:1e-1)# [2022-06-03 11:45:13] Epoch 37
+#U-net(lr:1e-1)#    Train: Loss 0.524224, mIOU 0.4307
+#U-net(lr:1e-1)#    Test: Loss 1.170942, mIOU 0.3444
+#U-net(lr:1e-1)# [2022-06-03 11:47:02] Epoch 38
+#U-net(lr:1e-1)#    Train: Loss 0.507389, mIOU 0.4337
+#U-net(lr:1e-1)#    Test: Loss 1.226874, mIOU 0.3455
+#U-net(lr:1e-1)# [2022-06-03 11:48:51] Epoch 39
+#U-net(lr:1e-1)#    Train: Loss 0.514321, mIOU 0.4311
+#U-net(lr:1e-1)#    Test: Loss 1.463685, mIOU 0.3272
+#U-net(lr:1e-1)# [2022-06-03 11:50:40] Epoch 40
+#U-net(lr:1e-1)#    Train: Loss 0.522736, mIOU 0.4304
+#U-net(lr:1e-1)#    Test: Loss 1.345594, mIOU 0.3285
+#U-net(lr:1e-1)# [2022-06-03 11:52:29] Epoch 41
+#U-net(lr:1e-1)#    Train: Loss 0.495775, mIOU 0.4335
+#U-net(lr:1e-1)#    Test: Loss 1.334475, mIOU 0.3251
+#U-net(lr:1e-1)# [2022-06-03 11:54:18] Epoch 42
+#U-net(lr:1e-1)#    Train: Loss 0.508196, mIOU 0.4339
+#U-net(lr:1e-1)#    Test: Loss 1.181521, mIOU 0.3367
+#U-net(lr:1e-1)# [2022-06-03 11:56:06] Epoch 43
+#U-net(lr:1e-1)#    Train: Loss 0.468070, mIOU 0.4408
+#U-net(lr:1e-1)#    Test: Loss 1.314128, mIOU 0.3348
+#U-net(lr:1e-1)# [2022-06-03 11:57:55] Epoch 44
+#U-net(lr:1e-1)#    Train: Loss 0.424435, mIOU 0.4498
+#U-net(lr:1e-1)#    Test: Loss 1.270150, mIOU 0.3400
+#U-net(lr:1e-1)# [2022-06-03 11:59:44] Epoch 45
+#U-net(lr:1e-1)#    Train: Loss 0.456676, mIOU 0.4424
+#U-net(lr:1e-1)#    Test: Loss 1.302412, mIOU 0.3368
+#U-net(lr:1e-1)# [2022-06-03 12:01:33] Epoch 46
+#U-net(lr:1e-1)#    Train: Loss 0.431939, mIOU 0.4487
+#U-net(lr:1e-1)#    Test: Loss 1.212135, mIOU 0.3487
+#U-net(lr:1e-1)# [2022-06-03 12:03:22] Epoch 47
+#U-net(lr:1e-1)#    Train: Loss 0.473182, mIOU 0.4387
+#U-net(lr:1e-1)#    Test: Loss 1.376006, mIOU 0.3337
+#U-net(lr:1e-1)# [2022-06-03 12:05:11] Epoch 48
+#U-net(lr:1e-1)#    Train: Loss 0.502102, mIOU 0.4364
+#U-net(lr:1e-1)#    Test: Loss 1.426169, mIOU 0.3207
+#U-net(lr:1e-1)# [2022-06-03 12:07:01] Epoch 49
+#U-net(lr:1e-1)#    Train: Loss 0.433457, mIOU 0.4491
+#U-net(lr:1e-1)#    Test: Loss 1.256680, mIOU 0.3425
+#U-net(lr:1e-1)# [2022-06-03 12:08:49] Epoch 50
+#U-net(lr:1e-1)#    Train: Loss 0.393848, mIOU 0.4571
+#U-net(lr:1e-1)#    Test: Loss 1.224149, mIOU 0.3420
+#U-net(lr:1e-1)# [2022-06-03 12:10:39] Epoch 51
+#U-net(lr:1e-1)#    Train: Loss 0.391244, mIOU 0.4570
+#U-net(lr:1e-1)#    Test: Loss 1.510231, mIOU 0.3204
+#U-net(lr:1e-1)# [2022-06-03 12:12:28] Epoch 52
+#U-net(lr:1e-1)#    Train: Loss 0.381427, mIOU 0.4589
+#U-net(lr:1e-1)#    Test: Loss 1.290404, mIOU 0.3396
+#U-net(lr:1e-1)# [2022-06-03 12:14:16] Epoch 53
+#U-net(lr:1e-1)#    Train: Loss 0.356821, mIOU 0.4671
+#U-net(lr:1e-1)#    Test: Loss 1.275874, mIOU 0.3449
+#U-net(lr:1e-1)# [2022-06-03 12:16:06] Epoch 54
+#U-net(lr:1e-1)#    Train: Loss 0.344333, mIOU 0.4682
+#U-net(lr:1e-1)#    Test: Loss 1.233273, mIOU 0.3500
+#U-net(lr:1e-1)# [2022-06-03 12:17:55] Epoch 55
+#U-net(lr:1e-1)#    Train: Loss 0.332909, mIOU 0.4723
+#U-net(lr:1e-1)#    Test: Loss 1.209542, mIOU 0.3472
+#U-net(lr:1e-1)# [2022-06-03 12:19:45] Epoch 56
+#U-net(lr:1e-1)#    Train: Loss 0.337839, mIOU 0.4687
+#U-net(lr:1e-1)#    Test: Loss 1.231868, mIOU 0.3477
+#U-net(lr:1e-1)# [2022-06-03 12:21:34] Epoch 57
+#U-net(lr:1e-1)#    Train: Loss 0.321342, mIOU 0.4756
+#U-net(lr:1e-1)#    Test: Loss 1.325688, mIOU 0.3435
+#U-net(lr:1e-1)# [2022-06-03 12:23:25] Epoch 58
+#U-net(lr:1e-1)#    Train: Loss 0.302973, mIOU 0.4809
+#U-net(lr:1e-1)#    Test: Loss 1.244162, mIOU 0.3421
+#U-net(lr:1e-1)# [2022-06-03 12:25:14] Epoch 59
+#U-net(lr:1e-1)#    Train: Loss 0.303441, mIOU 0.4807
+#U-net(lr:1e-1)#    Test: Loss 1.297874, mIOU 0.3431
+#U-net(lr:1e-1)# [2022-06-03 12:27:04] Epoch 60
+#U-net(lr:1e-1)#    Train: Loss 0.298615, mIOU 0.4829
+#U-net(lr:1e-1)#    Test: Loss 1.295118, mIOU 0.3483
+#U-net(lr:1e-3)# [2022-06-03 12:30:06] Epoch  1
+#U-net(lr:1e-3)#    Train: Loss 1.431955, mIOU 0.1967
+#U-net(lr:1e-3)#    Test: Loss 1.538666, mIOU 0.1635
+#U-net(lr:1e-3)# [2022-06-03 12:31:51] Epoch  2
+#U-net(lr:1e-3)#    Train: Loss 1.071012, mIOU 0.2494
+#U-net(lr:1e-3)#    Test: Loss 1.480752, mIOU 0.1700
+#U-net(lr:1e-3)# [2022-06-03 12:33:36] Epoch  3
+#U-net(lr:1e-3)#    Train: Loss 0.942539, mIOU 0.2737
+#U-net(lr:1e-3)#    Test: Loss 1.433777, mIOU 0.1745
+#U-net(lr:1e-3)# [2022-06-03 12:35:21] Epoch  4
+#U-net(lr:1e-3)#    Train: Loss 0.860481, mIOU 0.2874
+#U-net(lr:1e-3)#    Test: Loss 1.321955, mIOU 0.1914
+#U-net(lr:1e-3)# [2022-06-03 12:37:07] Epoch  5
+#U-net(lr:1e-3)#    Train: Loss 0.802142, mIOU 0.2967
+#U-net(lr:1e-3)#    Test: Loss 1.327038, mIOU 0.1890
+#U-net(lr:1e-3)# [2022-06-03 12:38:53] Epoch  6
+#U-net(lr:1e-3)#    Train: Loss 0.747903, mIOU 0.3075
+#U-net(lr:1e-3)#    Test: Loss 1.346948, mIOU 0.1869
+#U-net(lr:1e-3)# [2022-06-03 12:40:39] Epoch  7
+#U-net(lr:1e-3)#    Train: Loss 0.709010, mIOU 0.3161
+#U-net(lr:1e-3)#    Test: Loss 1.346341, mIOU 0.2063
+#U-net(lr:1e-3)# [2022-06-03 12:42:24] Epoch  8
+#U-net(lr:1e-3)#    Train: Loss 0.664384, mIOU 0.3298
+#U-net(lr:1e-3)#    Test: Loss 1.478828, mIOU 0.2046
+#U-net(lr:1e-3)# [2022-06-03 12:44:11] Epoch  9
+#U-net(lr:1e-3)#    Train: Loss 0.615014, mIOU 0.3495
+#U-net(lr:1e-3)#    Test: Loss 1.463160, mIOU 0.2258
+#U-net(lr:1e-3)# [2022-06-03 12:45:57] Epoch 10
+#U-net(lr:1e-3)#    Train: Loss 0.579659, mIOU 0.3714
+#U-net(lr:1e-3)#    Test: Loss 1.588254, mIOU 0.2475
+#U-net(lr:1e-3)# [2022-06-03 12:47:43] Epoch 11
+#U-net(lr:1e-3)#    Train: Loss 0.558839, mIOU 0.3995
+#U-net(lr:1e-3)#    Test: Loss 1.344904, mIOU 0.2861
+#U-net(lr:1e-3)# [2022-06-03 12:49:28] Epoch 12
+#U-net(lr:1e-3)#    Train: Loss 0.523742, mIOU 0.4246
+#U-net(lr:1e-3)#    Test: Loss 1.271484, mIOU 0.3166
+#U-net(lr:1e-3)# [2022-06-03 12:51:14] Epoch 13
+#U-net(lr:1e-3)#    Train: Loss 0.486345, mIOU 0.4487
+#U-net(lr:1e-3)#    Test: Loss 1.343559, mIOU 0.3159
+#U-net(lr:1e-3)# [2022-06-03 12:53:01] Epoch 14
+#U-net(lr:1e-3)#    Train: Loss 0.455217, mIOU 0.4619
+#U-net(lr:1e-3)#    Test: Loss 1.518069, mIOU 0.3043
+#U-net(lr:1e-3)# [2022-06-03 12:54:48] Epoch 15
+#U-net(lr:1e-3)#    Train: Loss 0.444359, mIOU 0.4647
+#U-net(lr:1e-3)#    Test: Loss 1.367783, mIOU 0.3174
+#U-net(lr:1e-3)# [2022-06-03 12:56:34] Epoch 16
+#U-net(lr:1e-3)#    Train: Loss 0.434518, mIOU 0.4670
+#U-net(lr:1e-3)#    Test: Loss 1.316287, mIOU 0.3211
+#U-net(lr:1e-3)# [2022-06-03 12:58:20] Epoch 17
+#U-net(lr:1e-3)#    Train: Loss 0.418677, mIOU 0.4700
+#U-net(lr:1e-3)#    Test: Loss 1.368099, mIOU 0.3211
+#U-net(lr:1e-3)# [2022-06-03 13:00:06] Epoch 18
+#U-net(lr:1e-3)#    Train: Loss 0.386922, mIOU 0.4782
+#U-net(lr:1e-3)#    Test: Loss 1.270824, mIOU 0.3307
+#U-net(lr:1e-3)# [2022-06-03 13:01:51] Epoch 19
+#U-net(lr:1e-3)#    Train: Loss 0.359053, mIOU 0.4848
+#U-net(lr:1e-3)#    Test: Loss 1.317410, mIOU 0.3260
+#U-net(lr:1e-3)# [2022-06-03 13:03:37] Epoch 20
+#U-net(lr:1e-3)#    Train: Loss 0.332683, mIOU 0.4920
+#U-net(lr:1e-3)#    Test: Loss 1.241780, mIOU 0.3331
+#U-net(lr:1e-3)# [2022-06-03 13:05:23] Epoch 21
+#U-net(lr:1e-3)#    Train: Loss 0.314906, mIOU 0.4952
+#U-net(lr:1e-3)#    Test: Loss 1.236548, mIOU 0.3365
+#U-net(lr:1e-3)# [2022-06-03 13:07:09] Epoch 22
+#U-net(lr:1e-3)#    Train: Loss 0.298633, mIOU 0.5005
+#U-net(lr:1e-3)#    Test: Loss 1.227994, mIOU 0.3385
+#U-net(lr:1e-3)# [2022-06-03 13:08:56] Epoch 23
+#U-net(lr:1e-3)#    Train: Loss 0.279774, mIOU 0.5074
+#U-net(lr:1e-3)#    Test: Loss 1.263581, mIOU 0.3353
+#U-net(lr:1e-3)# [2022-06-03 13:10:41] Epoch 24
+#U-net(lr:1e-3)#    Train: Loss 0.260111, mIOU 0.5131
+#U-net(lr:1e-3)#    Test: Loss 1.238545, mIOU 0.3423
+#U-net(lr:1e-3)# [2022-06-03 13:12:27] Epoch 25
+#U-net(lr:1e-3)#    Train: Loss 0.246260, mIOU 0.5168
+#U-net(lr:1e-3)#    Test: Loss 1.371524, mIOU 0.3335
+#U-net(lr:1e-3)# [2022-06-03 13:14:12] Epoch 26
+#U-net(lr:1e-3)#    Train: Loss 0.231673, mIOU 0.5204
+#U-net(lr:1e-3)#    Test: Loss 1.437853, mIOU 0.3311
+#U-net(lr:1e-3)# [2022-06-03 13:15:58] Epoch 27
+#U-net(lr:1e-3)#    Train: Loss 0.221314, mIOU 0.5246
+#U-net(lr:1e-3)#    Test: Loss 1.395146, mIOU 0.3339
+#U-net(lr:1e-3)# [2022-06-03 13:17:44] Epoch 28
+#U-net(lr:1e-3)#    Train: Loss 0.204980, mIOU 0.5301
+#U-net(lr:1e-3)#    Test: Loss 1.534492, mIOU 0.3270
+#U-net(lr:1e-3)# [2022-06-03 13:19:30] Epoch 29
+#U-net(lr:1e-3)#    Train: Loss 0.192817, mIOU 0.5346
+#U-net(lr:1e-3)#    Test: Loss 1.350744, mIOU 0.3354
+#U-net(lr:1e-3)# [2022-06-03 13:21:15] Epoch 30
+#U-net(lr:1e-3)#    Train: Loss 0.183505, mIOU 0.5381
+#U-net(lr:1e-3)#    Test: Loss 1.367726, mIOU 0.3385
+#U-net(lr:1e-3)# [2022-06-03 13:23:03] Epoch 31
+#U-net(lr:1e-3)#    Train: Loss 0.186750, mIOU 0.5360
+#U-net(lr:1e-3)#    Test: Loss 1.264859, mIOU 0.3449
+#U-net(lr:1e-3)# [2022-06-03 13:24:49] Epoch 32
+#U-net(lr:1e-3)#    Train: Loss 0.177639, mIOU 0.5395
+#U-net(lr:1e-3)#    Test: Loss 1.246790, mIOU 0.3477
+#U-net(lr:1e-3)# [2022-06-03 13:26:35] Epoch 33
+#U-net(lr:1e-3)#    Train: Loss 0.170081, mIOU 0.5419
+#U-net(lr:1e-3)#    Test: Loss 1.305377, mIOU 0.3426
+#U-net(lr:1e-3)# [2022-06-03 13:28:21] Epoch 34
+#U-net(lr:1e-3)#    Train: Loss 0.159065, mIOU 0.5459
+#U-net(lr:1e-3)#    Test: Loss 1.352945, mIOU 0.3398
+#U-net(lr:1e-3)# [2022-06-03 13:30:07] Epoch 35
+#U-net(lr:1e-3)#    Train: Loss 0.153429, mIOU 0.5488
+#U-net(lr:1e-3)#    Test: Loss 1.283127, mIOU 0.3463
+#U-net(lr:1e-3)# [2022-06-03 13:31:53] Epoch 36
+#U-net(lr:1e-3)#    Train: Loss 0.149422, mIOU 0.5494
+#U-net(lr:1e-3)#    Test: Loss 1.274705, mIOU 0.3495
+#U-net(lr:1e-3)# [2022-06-03 13:33:39] Epoch 37
+#U-net(lr:1e-3)#    Train: Loss 0.146530, mIOU 0.5498
+#U-net(lr:1e-3)#    Test: Loss 1.407931, mIOU 0.3418
+#U-net(lr:1e-3)# [2022-06-03 13:35:25] Epoch 38
+#U-net(lr:1e-3)#    Train: Loss 0.141942, mIOU 0.5520
+#U-net(lr:1e-3)#    Test: Loss 1.366881, mIOU 0.3452
+#U-net(lr:1e-3)# [2022-06-03 13:37:11] Epoch 39
+#U-net(lr:1e-3)#    Train: Loss 0.138951, mIOU 0.5524
+#U-net(lr:1e-3)#    Test: Loss 1.357977, mIOU 0.3466
+#U-net(lr:1e-3)# [2022-06-03 13:38:58] Epoch 40
+#U-net(lr:1e-3)#    Train: Loss 0.132450, mIOU 0.5551
+#U-net(lr:1e-3)#    Test: Loss 1.353797, mIOU 0.3429
+#U-net(lr:1e-3)# [2022-06-03 13:40:44] Epoch 41
+#U-net(lr:1e-3)#    Train: Loss 0.127483, mIOU 0.5579
+#U-net(lr:1e-3)#    Test: Loss 1.391536, mIOU 0.3382
+#U-net(lr:1e-3)# [2022-06-03 13:42:31] Epoch 42
+#U-net(lr:1e-3)#    Train: Loss 0.123302, mIOU 0.5593
+#U-net(lr:1e-3)#    Test: Loss 1.392455, mIOU 0.3301
+#U-net(lr:1e-3)# [2022-06-03 13:44:20] Epoch 43
+#U-net(lr:1e-3)#    Train: Loss 0.119297, mIOU 0.5619
+#U-net(lr:1e-3)#    Test: Loss 1.390322, mIOU 0.3341
+#U-net(lr:1e-3)# [2022-06-03 13:46:08] Epoch 44
+#U-net(lr:1e-3)#    Train: Loss 0.114446, mIOU 0.5641
+#U-net(lr:1e-3)#    Test: Loss 1.415137, mIOU 0.3362
+#U-net(lr:1e-3)# [2022-06-03 13:47:56] Epoch 45
+#U-net(lr:1e-3)#    Train: Loss 0.113096, mIOU 0.5645
+#U-net(lr:1e-3)#    Test: Loss 1.335749, mIOU 0.3393
+#U-net(lr:1e-3)# [2022-06-03 13:49:42] Epoch 46
+#U-net(lr:1e-3)#    Train: Loss 0.112263, mIOU 0.5644
+#U-net(lr:1e-3)#    Test: Loss 1.347129, mIOU 0.3361
+#U-net(lr:1e-3)# [2022-06-03 13:51:29] Epoch 47
+#U-net(lr:1e-3)#    Train: Loss 0.110068, mIOU 0.5656
+#U-net(lr:1e-3)#    Test: Loss 1.346398, mIOU 0.3422
+#U-net(lr:1e-3)# [2022-06-03 13:53:17] Epoch 48
+#U-net(lr:1e-3)#    Train: Loss 0.108566, mIOU 0.5656
+#U-net(lr:1e-3)#    Test: Loss 1.358578, mIOU 0.3352
+#U-net(lr:1e-3)# [2022-06-03 13:55:03] Epoch 49
+#U-net(lr:1e-3)#    Train: Loss 0.106768, mIOU 0.5663
+#U-net(lr:1e-3)#    Test: Loss 1.407078, mIOU 0.3332
+#U-net(lr:1e-3)# [2022-06-03 13:56:49] Epoch 50
+#U-net(lr:1e-3)#    Train: Loss 0.105249, mIOU 0.5675
+#U-net(lr:1e-3)#    Test: Loss 1.393331, mIOU 0.3414
+#U-net(lr:1e-3)# [2022-06-03 13:58:35] Epoch 51
+#U-net(lr:1e-3)#    Train: Loss 0.099219, mIOU 0.5700
+#U-net(lr:1e-3)#    Test: Loss 1.391941, mIOU 0.3375
+#U-net(lr:1e-3)# [2022-06-03 14:00:22] Epoch 52
+#U-net(lr:1e-3)#    Train: Loss 0.093223, mIOU 0.5734
+#U-net(lr:1e-3)#    Test: Loss 1.381444, mIOU 0.3432
+#U-net(lr:1e-3)# [2022-06-03 14:02:08] Epoch 53
+#U-net(lr:1e-3)#    Train: Loss 0.089484, mIOU 0.5756
+#U-net(lr:1e-3)#    Test: Loss 1.436755, mIOU 0.3360
+#U-net(lr:1e-3)# [2022-06-03 14:03:55] Epoch 54
+#U-net(lr:1e-3)#    Train: Loss 0.087578, mIOU 0.5762
+#U-net(lr:1e-3)#    Test: Loss 1.435812, mIOU 0.3435
+#U-net(lr:1e-3)# [2022-06-03 14:05:41] Epoch 55
+#U-net(lr:1e-3)#    Train: Loss 0.087812, mIOU 0.5764
+#U-net(lr:1e-3)#    Test: Loss 1.506191, mIOU 0.3444
+#U-net(lr:1e-3)# [2022-06-03 14:07:28] Epoch 56
+#U-net(lr:1e-3)#    Train: Loss 0.087177, mIOU 0.5765
+#U-net(lr:1e-3)#    Test: Loss 1.557958, mIOU 0.3398
+#U-net(lr:1e-3)# [2022-06-03 14:09:15] Epoch 57
+#U-net(lr:1e-3)#    Train: Loss 0.085882, mIOU 0.5770
+#U-net(lr:1e-3)#    Test: Loss 1.506111, mIOU 0.3438
+#U-net(lr:1e-3)# [2022-06-03 14:11:01] Epoch 58
+#U-net(lr:1e-3)#    Train: Loss 0.085587, mIOU 0.5765
+#U-net(lr:1e-3)#    Test: Loss 1.429954, mIOU 0.3459
+#U-net(lr:1e-3)# [2022-06-03 14:13:01] Epoch 59
+#U-net(lr:1e-3)#    Train: Loss 0.085050, mIOU 0.5770
+#U-net(lr:1e-3)#    Test: Loss 1.384922, mIOU 0.3363
+#U-net(lr:1e-3)# [2022-06-03 14:15:07] Epoch 60
+#U-net(lr:1e-3)#    Train: Loss 0.082580, mIOU 0.5783
+#U-net(lr:1e-3)#    Test: Loss 1.436360, mIOU 0.3395
+#U-net(bs:6)# [2022-06-03 14:18:39] Epoch  1
+#U-net(bs:6)#    Train: Loss 1.252457, mIOU 0.2097
+#U-net(bs:6)#    Test: Loss 2.019938, mIOU 0.1255
+#U-net(bs:6)# [2022-06-03 14:20:32] Epoch  2
+#U-net(bs:6)#    Train: Loss 1.086992, mIOU 0.2428
+#U-net(bs:6)#    Test: Loss 1.679129, mIOU 0.1514
+#U-net(bs:6)# [2022-06-03 14:22:26] Epoch  3
+#U-net(bs:6)#    Train: Loss 0.999043, mIOU 0.2583
+#U-net(bs:6)#    Test: Loss 1.473240, mIOU 0.1821
+#U-net(bs:6)# [2022-06-03 14:24:20] Epoch  4
+#U-net(bs:6)#    Train: Loss 0.934479, mIOU 0.2714
+#U-net(bs:6)#    Test: Loss 1.454616, mIOU 0.1915
+#U-net(bs:6)# [2022-06-03 14:26:18] Epoch  5
+#U-net(bs:6)#    Train: Loss 0.894096, mIOU 0.2774
+#U-net(bs:6)#    Test: Loss 1.409109, mIOU 0.2100
+#U-net(bs:6)# [2022-06-03 14:28:20] Epoch  6
+#U-net(bs:6)#    Train: Loss 0.856665, mIOU 0.2837
+#U-net(bs:6)#    Test: Loss 1.310477, mIOU 0.2117
+#U-net(bs:6)# [2022-06-03 14:30:53] Epoch  7
+#U-net(bs:6)#    Train: Loss 0.816373, mIOU 0.2907
+#U-net(bs:6)#    Test: Loss 1.252632, mIOU 0.2345
+#U-net(bs:6)# [2022-06-03 14:33:17] Epoch  8
+#U-net(bs:6)#    Train: Loss 0.790719, mIOU 0.3181
+#U-net(bs:6)#    Test: Loss 1.427395, mIOU 0.2368
+#U-net(bs:6)# [2022-06-03 14:35:43] Epoch  9
+#U-net(bs:6)#    Train: Loss 0.779823, mIOU 0.3721
+#U-net(bs:6)#    Test: Loss 1.313800, mIOU 0.2913
+#U-net(bs:6)# [2022-06-03 14:38:10] Epoch 10
+#U-net(bs:6)#    Train: Loss 0.740346, mIOU 0.3976
+#U-net(bs:6)#    Test: Loss 1.198698, mIOU 0.3231
+#U-net(bs:6)# [2022-06-03 14:40:38] Epoch 11
+#U-net(bs:6)#    Train: Loss 0.718812, mIOU 0.4036
+#U-net(bs:6)#    Test: Loss 1.264435, mIOU 0.3170
+#U-net(bs:6)# [2022-06-03 14:43:04] Epoch 12
+#U-net(bs:6)#    Train: Loss 0.710570, mIOU 0.4038
+#U-net(bs:6)#    Test: Loss 1.300088, mIOU 0.3119
+#U-net(bs:6)# [2022-06-03 14:45:22] Epoch 13
+#U-net(bs:6)#    Train: Loss 0.697798, mIOU 0.4081
+#U-net(bs:6)#    Test: Loss 1.229486, mIOU 0.3315
+#U-net(bs:6)# [2022-06-03 14:47:54] Epoch 14
+#U-net(bs:6)#    Train: Loss 0.677496, mIOU 0.4112
+#U-net(bs:6)#    Test: Loss 1.280175, mIOU 0.3177
+#U-net(bs:6)# [2022-06-03 14:50:48] Epoch 15
+#U-net(bs:6)#    Train: Loss 0.650935, mIOU 0.4172
+#U-net(bs:6)#    Test: Loss 1.198945, mIOU 0.3283
+#U-net(bs:6)# [2022-06-03 14:53:01] Epoch 16
+#U-net(bs:6)#    Train: Loss 0.612725, mIOU 0.4251
+#U-net(bs:6)#    Test: Loss 1.183254, mIOU 0.3367
+#U-net(bs:6)# [2022-06-03 14:56:16] Epoch 17
+#U-net(bs:6)#    Train: Loss 0.592513, mIOU 0.4283
+#U-net(bs:6)#    Test: Loss 1.215843, mIOU 0.3329
+#U-net(bs:6)# [2022-06-03 14:59:29] Epoch 18
+#U-net(bs:6)#    Train: Loss 0.560297, mIOU 0.4334
+#U-net(bs:6)#    Test: Loss 1.139519, mIOU 0.3443
+#U-net(bs:6)# [2022-06-03 15:02:40] Epoch 19
+#U-net(bs:6)#    Train: Loss 0.540961, mIOU 0.4364
+#U-net(bs:6)#    Test: Loss 1.173664, mIOU 0.3427
+#U-net(bs:6)# [2022-06-03 15:05:52] Epoch 20
+#U-net(bs:6)#    Train: Loss 0.522466, mIOU 0.4397
+#U-net(bs:6)#    Test: Loss 1.156235, mIOU 0.3454
+#U-net(bs:6)# [2022-06-03 15:09:06] Epoch 21
+#U-net(bs:6)#    Train: Loss 0.503777, mIOU 0.4445
+#U-net(bs:6)#    Test: Loss 1.253824, mIOU 0.3369
+#U-net(bs:6)# [2022-06-03 15:12:19] Epoch 22
+#U-net(bs:6)#    Train: Loss 0.527359, mIOU 0.4388
+#U-net(bs:6)#    Test: Loss 1.231712, mIOU 0.3313
+#U-net(bs:6)# [2022-06-03 15:14:33] Epoch 23
+#U-net(bs:6)#    Train: Loss 0.558089, mIOU 0.4327
+#U-net(bs:6)#    Test: Loss 1.226884, mIOU 0.3273
+#U-net(bs:6)# [2022-06-03 15:17:35] Epoch 24
+#U-net(bs:6)#    Train: Loss 0.489102, mIOU 0.4458
+#U-net(bs:6)#    Test: Loss 1.087033, mIOU 0.3528
+#U-net(bs:6)# [2022-06-03 15:20:39] Epoch 25
+#U-net(bs:6)#    Train: Loss 0.453829, mIOU 0.4521
+#U-net(bs:6)#    Test: Loss 1.239289, mIOU 0.3377
+#U-net(bs:6)# [2022-06-03 15:23:43] Epoch 26
+#U-net(bs:6)#    Train: Loss 0.437536, mIOU 0.4548
+#U-net(bs:6)#    Test: Loss 1.110885, mIOU 0.3473
+#U-net(bs:6)# [2022-06-03 15:26:52] Epoch 27
+#U-net(bs:6)#    Train: Loss 0.421451, mIOU 0.4596
+#U-net(bs:6)#    Test: Loss 1.119635, mIOU 0.3466
+#U-net(bs:6)# [2022-06-03 15:30:01] Epoch 28
+#U-net(bs:6)#    Train: Loss 0.391171, mIOU 0.4663
+#U-net(bs:6)#    Test: Loss 1.127249, mIOU 0.3511
+#U-net(bs:6)# [2022-06-03 15:33:04] Epoch 29
+#U-net(bs:6)#    Train: Loss 0.367392, mIOU 0.4724
+#U-net(bs:6)#    Test: Loss 1.108171, mIOU 0.3526
+#U-net(bs:6)# [2022-06-03 15:36:12] Epoch 30
+#U-net(bs:6)#    Train: Loss 0.344797, mIOU 0.4775
+#U-net(bs:6)#    Test: Loss 1.194700, mIOU 0.3471
+#U-net(bs:6)# [2022-06-03 15:38:30] Epoch 31
+#U-net(bs:6)#    Train: Loss 0.333341, mIOU 0.4811
+#U-net(bs:6)#    Test: Loss 1.234149, mIOU 0.3539
+#U-net(bs:6)# [2022-06-03 15:41:49] Epoch 32
+#U-net(bs:6)#    Train: Loss 0.339043, mIOU 0.4790
+#U-net(bs:6)#    Test: Loss 1.133684, mIOU 0.3496
+#U-net(bs:6)# [2022-06-03 15:45:02] Epoch 33
+#U-net(bs:6)#    Train: Loss 0.307733, mIOU 0.4869
+#U-net(bs:6)#    Test: Loss 1.102112, mIOU 0.3608
+#U-net(bs:6)# [2022-06-03 15:48:17] Epoch 34
+#U-net(bs:6)#    Train: Loss 0.293012, mIOU 0.4897
+#U-net(bs:6)#    Test: Loss 1.173175, mIOU 0.3563
+#U-net(bs:6)# [2022-06-03 15:51:17] Epoch 35
+#U-net(bs:6)#    Train: Loss 0.284471, mIOU 0.4919
+#U-net(bs:6)#    Test: Loss 1.128275, mIOU 0.3577
+#U-net(bs:6)# [2022-06-03 15:53:26] Epoch 36
+#U-net(bs:6)#    Train: Loss 0.278829, mIOU 0.4949
+#U-net(bs:6)#    Test: Loss 1.113471, mIOU 0.3593
+#U-net(bs:6)# [2022-06-03 15:56:40] Epoch 37
+#U-net(bs:6)#    Train: Loss 0.254818, mIOU 0.5015
+#U-net(bs:6)#    Test: Loss 1.193494, mIOU 0.3560
+#U-net(bs:6)# [2022-06-03 15:59:47] Epoch 38
+#U-net(bs:6)#    Train: Loss 0.242107, mIOU 0.5051
+#U-net(bs:6)#    Test: Loss 1.340547, mIOU 0.3570
+#U-net(bs:6)# [2022-06-03 16:02:50] Epoch 39
+#U-net(bs:6)#    Train: Loss 0.232129, mIOU 0.5084
+#U-net(bs:6)#    Test: Loss 1.253516, mIOU 0.3561
+#U-net(bs:6)# [2022-06-03 16:05:54] Epoch 40
+#U-net(bs:6)#    Train: Loss 0.228515, mIOU 0.5094
+#U-net(bs:6)#    Test: Loss 1.250217, mIOU 0.3506
+#U-net(bs:6)# [2022-06-03 16:08:56] Epoch 41
+#U-net(bs:6)#    Train: Loss 0.242023, mIOU 0.5054
+#U-net(bs:6)#    Test: Loss 1.214180, mIOU 0.3484
+#U-net(bs:6)# [2022-06-03 16:11:29] Epoch 42
+#U-net(bs:6)#    Train: Loss 0.231106, mIOU 0.5075
+#U-net(bs:6)#    Test: Loss 1.278554, mIOU 0.3467
+#U-net(bs:6)# [2022-06-03 16:13:26] Epoch 43
+#U-net(bs:6)#    Train: Loss 0.214591, mIOU 0.5149
+#U-net(bs:6)#    Test: Loss 1.185409, mIOU 0.3629
+#U-net(bs:6)# [2022-06-03 16:15:19] Epoch 44
+#U-net(bs:6)#    Train: Loss 0.198619, mIOU 0.5185
+#U-net(bs:6)#    Test: Loss 1.266855, mIOU 0.3546
+#U-net(bs:6)# [2022-06-03 16:17:15] Epoch 45
+#U-net(bs:6)#    Train: Loss 0.186041, mIOU 0.5237
+#U-net(bs:6)#    Test: Loss 1.338966, mIOU 0.3559
+#U-net(bs:6)# [2022-06-03 16:19:07] Epoch 46
+#U-net(bs:6)#    Train: Loss 0.178858, mIOU 0.5247
+#U-net(bs:6)#    Test: Loss 1.237795, mIOU 0.3593
+#U-net(bs:6)# [2022-06-03 16:20:56] Epoch 47
+#U-net(bs:6)#    Train: Loss 0.175598, mIOU 0.5258
+#U-net(bs:6)#    Test: Loss 1.160770, mIOU 0.3647
+#U-net(bs:6)# [2022-06-03 16:22:46] Epoch 48
+#U-net(bs:6)#    Train: Loss 0.174232, mIOU 0.5260
+#U-net(bs:6)#    Test: Loss 1.202886, mIOU 0.3590
+#U-net(bs:6)# [2022-06-03 16:24:37] Epoch 49
+#U-net(bs:6)#    Train: Loss 0.167140, mIOU 0.5288
+#U-net(bs:6)#    Test: Loss 1.279334, mIOU 0.3508
+#U-net(bs:6)# [2022-06-03 16:26:32] Epoch 50
+#U-net(bs:6)#    Train: Loss 0.162217, mIOU 0.5317
+#U-net(bs:6)#    Test: Loss 1.331280, mIOU 0.3492
+#U-net(bs:6)# [2022-06-03 16:28:26] Epoch 51
+#U-net(bs:6)#    Train: Loss 0.156862, mIOU 0.5331
+#U-net(bs:6)#    Test: Loss 1.262193, mIOU 0.3490
+#U-net(bs:6)# [2022-06-03 16:30:16] Epoch 52
+#U-net(bs:6)#    Train: Loss 0.153269, mIOU 0.5353
+#U-net(bs:6)#    Test: Loss 1.246584, mIOU 0.3557
+#U-net(bs:6)# [2022-06-03 16:32:07] Epoch 53
+#U-net(bs:6)#    Train: Loss 0.149326, mIOU 0.5368
+#U-net(bs:6)#    Test: Loss 1.216856, mIOU 0.3515
+#U-net(bs:6)# [2022-06-03 16:33:56] Epoch 54
+#U-net(bs:6)#    Train: Loss 0.140744, mIOU 0.5412
+#U-net(bs:6)#    Test: Loss 1.227294, mIOU 0.3488
+#U-net(bs:6)# [2022-06-03 16:35:50] Epoch 55
+#U-net(bs:6)#    Train: Loss 0.134340, mIOU 0.5432
+#U-net(bs:6)#    Test: Loss 1.253165, mIOU 0.3578
+#U-net(bs:6)# [2022-06-03 16:37:44] Epoch 56
+#U-net(bs:6)#    Train: Loss 0.133198, mIOU 0.5441
+#U-net(bs:6)#    Test: Loss 1.268736, mIOU 0.3582
+#U-net(bs:6)# [2022-06-03 16:39:35] Epoch 57
+#U-net(bs:6)#    Train: Loss 0.130656, mIOU 0.5447
+#U-net(bs:6)#    Test: Loss 1.244634, mIOU 0.3635
+#U-net(bs:6)# [2022-06-03 16:41:25] Epoch 58
+#U-net(bs:6)#    Train: Loss 0.126430, mIOU 0.5473
+#U-net(bs:6)#    Test: Loss 1.220846, mIOU 0.3643
+#U-net(bs:6)# [2022-06-03 16:43:15] Epoch 59
+#U-net(bs:6)#    Train: Loss 0.124516, mIOU 0.5480
+#U-net(bs:6)#    Test: Loss 1.227665, mIOU 0.3665
+#U-net(bs:6)# [2022-06-03 16:45:07] Epoch 60
+#U-net(bs:6)#    Train: Loss 0.119913, mIOU 0.5512
+#U-net(bs:6)#    Test: Loss 1.284130, mIOU 0.3651
+#U-net(bs:2)# [2022-06-03 19:25:30] Epoch  1
+#U-net(bs:2)#    Train: Loss 1.243560, mIOU 0.2010
+#U-net(bs:2)#    Test: Loss 1.704143, mIOU 0.1800
+#U-net(bs:2)# [2022-06-03 19:27:33] Epoch  2
+#U-net(bs:2)#    Train: Loss 1.063946, mIOU 0.2387
+#U-net(bs:2)#    Test: Loss 1.510539, mIOU 0.2017
+#U-net(bs:2)# [2022-06-03 19:29:37] Epoch  3
+#U-net(bs:2)#    Train: Loss 1.001838, mIOU 0.2505
+#U-net(bs:2)#    Test: Loss 1.361833, mIOU 0.2182
+#U-net(bs:2)# [2022-06-03 19:32:10] Epoch  4
+#U-net(bs:2)#    Train: Loss 0.958531, mIOU 0.3258
+#U-net(bs:2)#    Test: Loss 1.367966, mIOU 0.3134
+#U-net(bs:2)# [2022-06-03 19:34:54] Epoch  5
+#U-net(bs:2)#    Train: Loss 0.902523, mIOU 0.3655
+#U-net(bs:2)#    Test: Loss 1.263265, mIOU 0.3274
+#U-net(bs:2)# [2022-06-03 19:37:37] Epoch  6
+#U-net(bs:2)#    Train: Loss 0.865602, mIOU 0.3735
+#U-net(bs:2)#    Test: Loss 1.190957, mIOU 0.3310
+#U-net(bs:2)# [2022-06-03 19:40:19] Epoch  7
+#U-net(bs:2)#    Train: Loss 0.825840, mIOU 0.3829
+#U-net(bs:2)#    Test: Loss 1.135809, mIOU 0.3373
+#U-net(bs:2)# [2022-06-03 19:43:01] Epoch  8
+#U-net(bs:2)#    Train: Loss 0.790034, mIOU 0.3904
+#U-net(bs:2)#    Test: Loss 1.208404, mIOU 0.3329
+#U-net(bs:2)# [2022-06-03 19:45:41] Epoch  9
+#U-net(bs:2)#    Train: Loss 0.770703, mIOU 0.3947
+#U-net(bs:2)#    Test: Loss 1.155196, mIOU 0.3396
+#U-net(bs:2)# [2022-06-03 19:48:25] Epoch 10
+#U-net(bs:2)#    Train: Loss 0.734174, mIOU 0.4002
+#U-net(bs:2)#    Test: Loss 1.123964, mIOU 0.3412
+#U-net(bs:2)# [2022-06-03 19:51:07] Epoch 11
+#U-net(bs:2)#    Train: Loss 0.699133, mIOU 0.4078
+#U-net(bs:2)#    Test: Loss 1.090941, mIOU 0.3435
+#U-net(bs:2)# [2022-06-03 19:53:50] Epoch 12
+#U-net(bs:2)#    Train: Loss 0.673601, mIOU 0.4118
+#U-net(bs:2)#    Test: Loss 1.159457, mIOU 0.3361
+#U-net(bs:2)# [2022-06-03 19:56:02] Epoch 13
+#U-net(bs:2)#    Train: Loss 0.646138, mIOU 0.4167
+#U-net(bs:2)#    Test: Loss 1.125123, mIOU 0.3386
+#U-net(bs:2)# [2022-06-03 19:58:10] Epoch 14
+#U-net(bs:2)#    Train: Loss 0.629162, mIOU 0.4185
+#U-net(bs:2)#    Test: Loss 1.084349, mIOU 0.3452
+#U-net(bs:2)# [2022-06-03 20:01:02] Epoch 15
+#U-net(bs:2)#    Train: Loss 0.600616, mIOU 0.4236
+#U-net(bs:2)#    Test: Loss 1.202224, mIOU 0.3344
+#U-net(bs:2)# [2022-06-03 20:03:47] Epoch 16
+#U-net(bs:2)#    Train: Loss 0.577288, mIOU 0.4276
+#U-net(bs:2)#    Test: Loss 1.157512, mIOU 0.3434
+#U-net(bs:2)# [2022-06-03 20:06:34] Epoch 17
+#U-net(bs:2)#    Train: Loss 0.554899, mIOU 0.4317
+#U-net(bs:2)#    Test: Loss 1.167478, mIOU 0.3358
+#U-net(bs:2)# [2022-06-03 20:09:20] Epoch 18
+#U-net(bs:2)#    Train: Loss 0.539750, mIOU 0.4339
+#U-net(bs:2)#    Test: Loss 1.109647, mIOU 0.3449
+#U-net(bs:2)# [2022-06-03 20:12:04] Epoch 19
+#U-net(bs:2)#    Train: Loss 0.509584, mIOU 0.4410
+#U-net(bs:2)#    Test: Loss 1.195149, mIOU 0.3438
+#U-net(bs:2)# [2022-06-03 20:14:28] Epoch 20
+#U-net(bs:2)#    Train: Loss 0.491096, mIOU 0.4428
+#U-net(bs:2)#    Test: Loss 1.284212, mIOU 0.3206
+#U-net(bs:2)# [2022-06-03 20:16:41] Epoch 21
+#U-net(bs:2)#    Train: Loss 0.492545, mIOU 0.4439
+#U-net(bs:2)#    Test: Loss 1.238558, mIOU 0.3346
+#U-net(bs:2)# [2022-06-03 20:19:25] Epoch 22
+#U-net(bs:2)#    Train: Loss 0.444046, mIOU 0.4522
+#U-net(bs:2)#    Test: Loss 1.234121, mIOU 0.3339
+#U-net(bs:2)# [2022-06-03 20:22:08] Epoch 23
+#U-net(bs:2)#    Train: Loss 0.408774, mIOU 0.4608
+#U-net(bs:2)#    Test: Loss 1.341894, mIOU 0.3330
+#U-net(bs:2)# [2022-06-03 20:24:49] Epoch 24
+#U-net(bs:2)#    Train: Loss 0.389993, mIOU 0.4648
+#U-net(bs:2)#    Test: Loss 1.257797, mIOU 0.3304
+#U-net(bs:2)# [2022-06-03 20:27:33] Epoch 25
+#U-net(bs:2)#    Train: Loss 0.384107, mIOU 0.4641
+#U-net(bs:2)#    Test: Loss 1.275378, mIOU 0.3302
+#U-net(bs:2)# [2022-06-03 20:30:16] Epoch 26
+#U-net(bs:2)#    Train: Loss 0.380966, mIOU 0.4655
+#U-net(bs:2)#    Test: Loss 1.164246, mIOU 0.3419
+#U-net(bs:2)# [2022-06-03 20:32:37] Epoch 27
+#U-net(bs:2)#    Train: Loss 0.359086, mIOU 0.4706
+#U-net(bs:2)#    Test: Loss 1.174839, mIOU 0.3430
+#U-net(bs:2)# [2022-06-03 20:34:46] Epoch 28
+#U-net(bs:2)#    Train: Loss 0.340948, mIOU 0.4755
+#U-net(bs:2)#    Test: Loss 1.099875, mIOU 0.3514
+#U-net(bs:2)# [2022-06-03 20:37:10] Epoch 29
+#U-net(bs:2)#    Train: Loss 0.331331, mIOU 0.4796
+#U-net(bs:2)#    Test: Loss 1.220177, mIOU 0.3465
+#U-net(bs:2)# [2022-06-03 20:39:58] Epoch 30
+#U-net(bs:2)#    Train: Loss 0.327894, mIOU 0.4791
+#U-net(bs:2)#    Test: Loss 1.043334, mIOU 0.3526
+#U-net(bs:2)# [2022-06-03 20:42:44] Epoch 31
+#U-net(bs:2)#    Train: Loss 0.314218, mIOU 0.4828
+#U-net(bs:2)#    Test: Loss 1.123320, mIOU 0.3442
+#U-net(bs:2)# [2022-06-03 20:45:30] Epoch 32
+#U-net(bs:2)#    Train: Loss 0.291582, mIOU 0.4887
+#U-net(bs:2)#    Test: Loss 1.100929, mIOU 0.3501
+#U-net(bs:2)# [2022-06-03 20:48:18] Epoch 33
+#U-net(bs:2)#    Train: Loss 0.279455, mIOU 0.4910
+#U-net(bs:2)#    Test: Loss 1.213580, mIOU 0.3400
+#U-net(bs:2)# [2022-06-03 20:51:06] Epoch 34
+#U-net(bs:2)#    Train: Loss 0.269349, mIOU 0.4945
+#U-net(bs:2)#    Test: Loss 1.346244, mIOU 0.3393
+#U-net(bs:2)# [2022-06-03 20:53:53] Epoch 35
+#U-net(bs:2)#    Train: Loss 0.265318, mIOU 0.4945
+#U-net(bs:2)#    Test: Loss 1.139061, mIOU 0.3527
+#U-net(bs:2)# [2022-06-03 20:56:42] Epoch 36
+#U-net(bs:2)#    Train: Loss 0.258575, mIOU 0.4971
+#U-net(bs:2)#    Test: Loss 1.072917, mIOU 0.3534
+#U-net(bs:2)# [2022-06-03 20:59:30] Epoch 37
+#U-net(bs:2)#    Train: Loss 0.245430, mIOU 0.5004
+#U-net(bs:2)#    Test: Loss 1.121870, mIOU 0.3522
+#U-net(bs:2)# [2022-06-03 21:02:17] Epoch 38
+#U-net(bs:2)#    Train: Loss 0.230174, mIOU 0.5053
+#U-net(bs:2)#    Test: Loss 1.155801, mIOU 0.3584
+#U-net(bs:2)# [2022-06-03 21:04:47] Epoch 39
+#U-net(bs:2)#    Train: Loss 0.231737, mIOU 0.5052
+#U-net(bs:2)#    Test: Loss 1.102527, mIOU 0.3579
+#U-net(bs:2)# [2022-06-03 21:07:01] Epoch 40
+#U-net(bs:2)#    Train: Loss 0.218277, mIOU 0.5092
+#U-net(bs:2)#    Test: Loss 1.157904, mIOU 0.3540
+#U-net(bs:2)# [2022-06-03 21:09:23] Epoch 41
+#U-net(bs:2)#    Train: Loss 0.207006, mIOU 0.5136
+#U-net(bs:2)#    Test: Loss 1.219836, mIOU 0.3517
+#U-net(bs:2)# [2022-06-03 21:12:07] Epoch 42
+#U-net(bs:2)#    Train: Loss 0.198694, mIOU 0.5166
+#U-net(bs:2)#    Test: Loss 1.195788, mIOU 0.3487
+#U-net(bs:2)# [2022-06-03 21:14:54] Epoch 43
+#U-net(bs:2)#    Train: Loss 0.193562, mIOU 0.5178
+#U-net(bs:2)#    Test: Loss 1.230548, mIOU 0.3507
+#U-net(bs:2)# [2022-06-03 21:17:41] Epoch 44
+#U-net(bs:2)#    Train: Loss 0.176264, mIOU 0.5244
+#U-net(bs:2)#    Test: Loss 1.245033, mIOU 0.3514
+#U-net(bs:2)# [2022-06-03 21:20:25] Epoch 45
+#U-net(bs:2)#    Train: Loss 0.169986, mIOU 0.5272
+#U-net(bs:2)#    Test: Loss 1.161791, mIOU 0.3479
+#U-net(bs:2)# [2022-06-03 21:23:14] Epoch 46
+#U-net(bs:2)#    Train: Loss 0.162133, mIOU 0.5306
+#U-net(bs:2)#    Test: Loss 1.177521, mIOU 0.3422
+#U-net(bs:2)# [2022-06-03 21:25:23] Epoch 47
+#U-net(bs:2)#    Train: Loss 0.152064, mIOU 0.5358
+#U-net(bs:2)#    Test: Loss 1.232709, mIOU 0.3548
+#U-net(bs:2)# [2022-06-03 21:27:37] Epoch 48
+#U-net(bs:2)#    Train: Loss 0.149909, mIOU 0.5361
+#U-net(bs:2)#    Test: Loss 1.261098, mIOU 0.3468
+#U-net(bs:2)# [2022-06-03 21:30:22] Epoch 49
+#U-net(bs:2)#    Train: Loss 0.146180, mIOU 0.5388
+#U-net(bs:2)#    Test: Loss 1.282533, mIOU 0.3483
+#U-net(bs:2)# [2022-06-03 21:33:07] Epoch 50
+#U-net(bs:2)#    Train: Loss 0.141136, mIOU 0.5408
+#U-net(bs:2)#    Test: Loss 1.216612, mIOU 0.3459
+#U-net(bs:2)# [2022-06-03 21:35:52] Epoch 51
+#U-net(bs:2)#    Train: Loss 0.134965, mIOU 0.5427
+#U-net(bs:2)#    Test: Loss 1.206545, mIOU 0.3523
+#U-net(bs:2)# [2022-06-03 21:38:40] Epoch 52
+#U-net(bs:2)#    Train: Loss 0.132635, mIOU 0.5445
+#U-net(bs:2)#    Test: Loss 1.281993, mIOU 0.3384
+#U-net(bs:2)# [2022-06-03 21:41:26] Epoch 53
+#U-net(bs:2)#    Train: Loss 0.149217, mIOU 0.5380
+#U-net(bs:2)#    Test: Loss 1.336167, mIOU 0.3472
+#U-net(bs:2)# [2022-06-03 21:43:34] Epoch 54
+#U-net(bs:2)#    Train: Loss 0.137035, mIOU 0.5433
+#U-net(bs:2)#    Test: Loss 1.247929, mIOU 0.3470
+#U-net(bs:2)# [2022-06-03 21:45:51] Epoch 55
+#U-net(bs:2)#    Train: Loss 0.124419, mIOU 0.5489
+#U-net(bs:2)#    Test: Loss 1.275499, mIOU 0.3474
+#U-net(bs:2)# [2022-06-03 21:48:37] Epoch 56
+#U-net(bs:2)#    Train: Loss 0.116274, mIOU 0.5535
+#U-net(bs:2)#    Test: Loss 1.342718, mIOU 0.3459
+#U-net(bs:2)# [2022-06-03 21:51:20] Epoch 57
+#U-net(bs:2)#    Train: Loss 0.111331, mIOU 0.5555
+#U-net(bs:2)#    Test: Loss 1.349235, mIOU 0.3425
+#U-net(bs:2)# [2022-06-03 21:54:03] Epoch 58
+#U-net(bs:2)#    Train: Loss 0.106691, mIOU 0.5578
+#U-net(bs:2)#    Test: Loss 1.310329, mIOU 0.3350
+#U-net(bs:2)# [2022-06-03 21:56:48] Epoch 59
+#U-net(bs:2)#    Train: Loss 0.105269, mIOU 0.5589
+#U-net(bs:2)#    Test: Loss 1.265524, mIOU 0.3316
+#U-net(bs:2)# [2022-06-03 21:59:34] Epoch 60
+#U-net(bs:2)#    Train: Loss 0.103447, mIOU 0.5594
+#U-net(bs:2)#    Test: Loss 1.310015, mIOU 0.3331
+#U-net(flip)# [2022-06-04 11:46:23] Epoch  1
+#U-net(flip)#    Train: Loss 1.791126, mIOU 0.0627
+#U-net(flip)#    Test: Loss 3.357395, mIOU 0.0346
+#U-net(flip)# [2022-06-04 11:49:16] Epoch  1
+#U-net(flip)#    Train: Loss 1.662928, mIOU 0.1099
+#U-net(flip)#    Test: Loss 3.726634, mIOU 0.0559
+#U-net(flip)# [2022-06-04 11:50:58] Epoch  2
+#U-net(flip)#    Train: Loss 1.562684, mIOU 0.1384
+#U-net(flip)#    Test: Loss 2.237044, mIOU 0.1038
+#U-net(flip)# [2022-06-04 11:52:42] Epoch  3
+#U-net(flip)#    Train: Loss 1.544669, mIOU 0.1528
+#U-net(flip)#    Test: Loss 2.007551, mIOU 0.1217
+#U-net(flip)# [2022-06-04 11:54:24] Epoch  4
+#U-net(flip)#    Train: Loss 1.539425, mIOU 0.1547
+#U-net(flip)#    Test: Loss 1.928099, mIOU 0.1353
+#U-net(flip)# [2022-06-04 11:56:07] Epoch  5
+#U-net(flip)#    Train: Loss 1.501976, mIOU 0.1630
+#U-net(flip)#    Test: Loss 1.952701, mIOU 0.1366
+#U-net(flip)# [2022-06-04 11:57:51] Epoch  6
+#U-net(flip)#    Train: Loss 1.498683, mIOU 0.1879
+#U-net(flip)#    Test: Loss 1.995776, mIOU 0.1849
+#U-net(flip)# [2022-06-04 11:59:34] Epoch  7
+#U-net(flip)#    Train: Loss 1.477914, mIOU 0.2379
+#U-net(flip)#    Test: Loss 1.814027, mIOU 0.2230
+#U-net(flip)# [2022-06-04 12:01:18] Epoch  8
+#U-net(flip)#    Train: Loss 1.425247, mIOU 0.2518
+#U-net(flip)#    Test: Loss 1.943356, mIOU 0.2165
+#U-net(flip)# [2022-06-04 12:03:01] Epoch  9
+#U-net(flip)#    Train: Loss 1.454112, mIOU 0.2486
+#U-net(flip)#    Test: Loss 1.730737, mIOU 0.2298
+#U-net(flip)# [2022-06-04 12:04:43] Epoch 10
+#U-net(flip)#    Train: Loss 1.417968, mIOU 0.2562
+#U-net(flip)#    Test: Loss 1.839174, mIOU 0.2095
+#U-net(flip)# [2022-06-04 12:06:27] Epoch 11
+#U-net(flip)#    Train: Loss 1.399587, mIOU 0.2559
+#U-net(flip)#    Test: Loss 1.826577, mIOU 0.2053
+#U-net(flip)# [2022-06-04 12:08:10] Epoch 12
+#U-net(flip)#    Train: Loss 1.428860, mIOU 0.2462
+#U-net(flip)#    Test: Loss 1.880703, mIOU 0.2007
+#U-net(flip)# [2022-06-04 12:09:53] Epoch 13
+#U-net(flip)#    Train: Loss 1.405252, mIOU 0.2566
+#U-net(flip)#    Test: Loss 1.841242, mIOU 0.2088
+#U-net(flip)# [2022-06-04 12:11:37] Epoch 14
+#U-net(flip)#    Train: Loss 1.420708, mIOU 0.2531
+#U-net(flip)#    Test: Loss 1.778384, mIOU 0.2009
+#U-net(flip)# [2022-06-04 12:13:22] Epoch 15
+#U-net(flip)#    Train: Loss 1.417675, mIOU 0.2511
+#U-net(flip)#    Test: Loss 1.837225, mIOU 0.2243
+#U-net(flip)# [2022-06-04 12:15:07] Epoch 16
+#U-net(flip)#    Train: Loss 1.443659, mIOU 0.2446
+#U-net(flip)#    Test: Loss 1.742540, mIOU 0.2182
+#U-net(flip)# [2022-06-04 12:16:51] Epoch 17
+#U-net(flip)#    Train: Loss 1.431690, mIOU 0.2462
+#U-net(flip)#    Test: Loss 1.882181, mIOU 0.1894
+#U-net(flip)# [2022-06-04 12:18:35] Epoch 18
+#U-net(flip)#    Train: Loss 1.426680, mIOU 0.2456
+#U-net(flip)#    Test: Loss 1.801455, mIOU 0.2114
+#U-net(flip)# [2022-06-04 12:20:19] Epoch 19
+#U-net(flip)#    Train: Loss 1.376564, mIOU 0.2523
+#U-net(flip)#    Test: Loss 1.838843, mIOU 0.2037
+#U-net(flip)# [2022-06-04 12:22:03] Epoch 20
+#U-net(flip)#    Train: Loss 1.415088, mIOU 0.2466
+#U-net(flip)#    Test: Loss 1.792786, mIOU 0.2160
+#U-net(flip)# [2022-06-04 12:23:48] Epoch 21
+#U-net(flip)#    Train: Loss 1.344874, mIOU 0.2641
+#U-net(flip)#    Test: Loss 1.772893, mIOU 0.2267
+#U-net(flip)# [2022-06-04 12:25:32] Epoch 22
+#U-net(flip)#    Train: Loss 1.400463, mIOU 0.2517
+#U-net(flip)#    Test: Loss 1.765662, mIOU 0.2116
+#U-net(flip)# [2022-06-04 12:27:17] Epoch 23
+#U-net(flip)#    Train: Loss 1.366681, mIOU 0.2632
+#U-net(flip)#    Test: Loss 1.822478, mIOU 0.2144
+#U-net(flip)# [2022-06-04 12:29:02] Epoch 24
+#U-net(flip)#    Train: Loss 1.392357, mIOU 0.2513
+#U-net(flip)#    Test: Loss 1.714671, mIOU 0.2204
+#U-net(flip)# [2022-06-04 12:30:47] Epoch 25
+#U-net(flip)#    Train: Loss 1.329875, mIOU 0.2640
+#U-net(flip)#    Test: Loss 1.790139, mIOU 0.2133
+#U-net(flip)# [2022-06-04 12:32:32] Epoch 26
+#U-net(flip)#    Train: Loss 1.367510, mIOU 0.2534
+#U-net(flip)#    Test: Loss 1.699185, mIOU 0.2228
+#U-net(flip)# [2022-06-04 12:34:17] Epoch 27
+#U-net(flip)#    Train: Loss 1.354467, mIOU 0.2616
+#U-net(flip)#    Test: Loss 1.654465, mIOU 0.2286
+#U-net(flip)# [2022-06-04 12:36:02] Epoch 28
+#U-net(flip)#    Train: Loss 1.352104, mIOU 0.2587
+#U-net(flip)#    Test: Loss 1.689482, mIOU 0.2159
+#U-net(flip)# [2022-06-04 12:37:46] Epoch 29
+#U-net(flip)#    Train: Loss 1.353865, mIOU 0.2655
+#U-net(flip)#    Test: Loss 1.774780, mIOU 0.2154
+#U-net(flip)# [2022-06-04 12:39:31] Epoch 30
+#U-net(flip)#    Train: Loss 1.358203, mIOU 0.2550
+#U-net(flip)#    Test: Loss 1.755789, mIOU 0.2160
+#U-net(flip)# [2022-06-04 12:41:16] Epoch 31
+#U-net(flip)#    Train: Loss 1.328748, mIOU 0.2602
+#U-net(flip)#    Test: Loss 1.823652, mIOU 0.2074
+#U-net(flip)# [2022-06-04 12:43:02] Epoch 32
+#U-net(flip)#    Train: Loss 1.363280, mIOU 0.2574
+#U-net(flip)#    Test: Loss 1.712130, mIOU 0.2266
+#U-net(flip)# [2022-06-04 12:44:46] Epoch 33
+#U-net(flip)#    Train: Loss 1.313143, mIOU 0.2667
+#U-net(flip)#    Test: Loss 1.743727, mIOU 0.2103
+#U-net(flip)# [2022-06-04 12:46:31] Epoch 34
+#U-net(flip)#    Train: Loss 1.293764, mIOU 0.2726
+#U-net(flip)#    Test: Loss 1.693455, mIOU 0.2232
+#U-net(flip)# [2022-06-04 12:48:16] Epoch 35
+#U-net(flip)#    Train: Loss 1.291895, mIOU 0.2697
+#U-net(flip)#    Test: Loss 1.742422, mIOU 0.2153
+#U-net(flip)# [2022-06-04 12:50:00] Epoch 36
+#U-net(flip)#    Train: Loss 1.334212, mIOU 0.2560
+#U-net(flip)#    Test: Loss 1.727023, mIOU 0.2216
+#U-net(flip)# [2022-06-04 12:51:44] Epoch 37
+#U-net(flip)#    Train: Loss 1.298367, mIOU 0.2606
+#U-net(flip)#    Test: Loss 1.768516, mIOU 0.2167
+#U-net(flip)# [2022-06-04 12:53:29] Epoch 38
+#U-net(flip)#    Train: Loss 1.281546, mIOU 0.2694
+#U-net(flip)#    Test: Loss 1.744633, mIOU 0.2220
+#U-net(flip)# [2022-06-04 12:55:14] Epoch 39
+#U-net(flip)#    Train: Loss 1.258610, mIOU 0.2728
+#U-net(flip)#    Test: Loss 1.592458, mIOU 0.2247
+#U-net(flip)# [2022-06-04 12:56:58] Epoch 40
+#U-net(flip)#    Train: Loss 1.263037, mIOU 0.2690
+#U-net(flip)#    Test: Loss 1.712722, mIOU 0.2106
+#U-net(flip)# [2022-06-04 12:58:44] Epoch 41
+#U-net(flip)#    Train: Loss 1.263561, mIOU 0.2730
+#U-net(flip)#    Test: Loss 1.680380, mIOU 0.2170
+#U-net(flip)# [2022-06-04 13:00:28] Epoch 42
+#U-net(flip)#    Train: Loss 1.288218, mIOU 0.2673
+#U-net(flip)#    Test: Loss 1.692633, mIOU 0.2152
+#U-net(flip)# [2022-06-04 13:02:13] Epoch 43
+#U-net(flip)#    Train: Loss 1.199487, mIOU 0.2831
+#U-net(flip)#    Test: Loss 1.576313, mIOU 0.2383
+#U-net(flip)# [2022-06-04 13:03:57] Epoch 44
+#U-net(flip)#    Train: Loss 1.246529, mIOU 0.2767
+#U-net(flip)#    Test: Loss 1.734569, mIOU 0.2159
+#U-net(flip)# [2022-06-04 13:05:42] Epoch 45
+#U-net(flip)#    Train: Loss 1.204540, mIOU 0.2806
+#U-net(flip)#    Test: Loss 1.614268, mIOU 0.2310
+#U-net(flip)# [2022-06-04 13:07:27] Epoch 46
+#U-net(flip)#    Train: Loss 1.254005, mIOU 0.2710
+#U-net(flip)#    Test: Loss 1.651253, mIOU 0.2322
+#U-net(flip)# [2022-06-04 13:09:12] Epoch 47
+#U-net(flip)#    Train: Loss 1.253982, mIOU 0.2737
+#U-net(flip)#    Test: Loss 1.605720, mIOU 0.2293
+#U-net(flip)# [2022-06-04 13:10:56] Epoch 48
+#U-net(flip)#    Train: Loss 1.246090, mIOU 0.2772
+#U-net(flip)#    Test: Loss 1.658612, mIOU 0.2322
+#U-net(flip)# [2022-06-04 13:12:42] Epoch 49
+#U-net(flip)#    Train: Loss 1.226528, mIOU 0.2774
+#U-net(flip)#    Test: Loss 1.652159, mIOU 0.2149
+#U-net(flip)# [2022-06-04 13:14:27] Epoch 50
+#U-net(flip)#    Train: Loss 1.230024, mIOU 0.2786
+#U-net(flip)#    Test: Loss 1.559204, mIOU 0.2418
+#U-net(flip)# [2022-06-04 13:16:12] Epoch 51
+#U-net(flip)#    Train: Loss 1.215186, mIOU 0.2741
+#U-net(flip)#    Test: Loss 1.603513, mIOU 0.2281
+#U-net(flip)# [2022-06-04 13:17:57] Epoch 52
+#U-net(flip)#    Train: Loss 1.197655, mIOU 0.2818
+#U-net(flip)#    Test: Loss 1.575040, mIOU 0.2340
+#U-net(flip)# [2022-06-04 13:19:43] Epoch 53
+#U-net(flip)#    Train: Loss 1.279738, mIOU 0.2575
+#U-net(flip)#    Test: Loss 1.662344, mIOU 0.2238
+#U-net(flip)# [2022-06-04 13:21:27] Epoch 54
+#U-net(flip)#    Train: Loss 1.214553, mIOU 0.2751
+#U-net(flip)#    Test: Loss 1.548285, mIOU 0.2385
+#U-net(flip)# [2022-06-04 13:23:11] Epoch 55
+#U-net(flip)#    Train: Loss 1.185935, mIOU 0.2849
+#U-net(flip)#    Test: Loss 1.656250, mIOU 0.2332
+#U-net(flip)# [2022-06-04 13:24:57] Epoch 56
+#U-net(flip)#    Train: Loss 1.201450, mIOU 0.2833
+#U-net(flip)#    Test: Loss 1.708539, mIOU 0.2258
+#U-net(flip)# [2022-06-04 13:26:41] Epoch 57
+#U-net(flip)#    Train: Loss 1.161686, mIOU 0.2882
+#U-net(flip)#    Test: Loss 1.648975, mIOU 0.2282
+#U-net(flip)# [2022-06-04 13:28:27] Epoch 58
+#U-net(flip)#    Train: Loss 1.175432, mIOU 0.2876
+#U-net(flip)#    Test: Loss 1.589282, mIOU 0.2339
+#U-net(flip)# [2022-06-04 13:30:12] Epoch 59
+#U-net(flip)#    Train: Loss 1.187794, mIOU 0.2846
+#U-net(flip)#    Test: Loss 1.622918, mIOU 0.2380
+#U-net(flip)# [2022-06-04 13:31:58] Epoch 60
+#U-net(flip)#    Train: Loss 1.155659, mIOU 0.2870
+#U-net(flip)#    Test: Loss 1.644131, mIOU 0.2216
+#U-net(crop)# [2022-06-04 14:32:27] Epoch  1
+#U-net(crop)#    Train: Loss 1.242422, mIOU 0.2087
+#U-net(crop)#    Test: Loss 2.105540, mIOU 0.1580
+#U-net(crop)# [2022-06-04 14:34:14] Epoch  2
+#U-net(crop)#    Train: Loss 1.072617, mIOU 0.2396
+#U-net(crop)#    Test: Loss 1.614649, mIOU 0.1923
+#U-net(crop)# [2022-06-04 14:36:03] Epoch  3
+#U-net(crop)#    Train: Loss 0.969089, mIOU 0.2599
+#U-net(crop)#    Test: Loss 1.271705, mIOU 0.2214
+#U-net(crop)# [2022-06-04 14:37:52] Epoch  4
+#U-net(crop)#    Train: Loss 0.902055, mIOU 0.2723
+#U-net(crop)#    Test: Loss 1.477796, mIOU 0.1884
+#U-net(crop)# [2022-06-04 14:39:41] Epoch  5
+#U-net(crop)#    Train: Loss 0.852447, mIOU 0.2826
+#U-net(crop)#    Test: Loss 1.308704, mIOU 0.2181
+#U-net(crop)# [2022-06-04 14:41:29] Epoch  6
+#U-net(crop)#    Train: Loss 0.814551, mIOU 0.2892
+#U-net(crop)#    Test: Loss 1.361639, mIOU 0.2084
+#U-net(crop)# [2022-06-04 14:43:18] Epoch  7
+#U-net(crop)#    Train: Loss 0.783128, mIOU 0.3061
+#U-net(crop)#    Test: Loss 1.509597, mIOU 0.2221
+#U-net(crop)# [2022-06-04 14:45:08] Epoch  8
+#U-net(crop)#    Train: Loss 0.756226, mIOU 0.3591
+#U-net(crop)#    Test: Loss 1.375824, mIOU 0.2737
+#U-net(crop)# [2022-06-04 14:46:57] Epoch  9
+#U-net(crop)#    Train: Loss 0.727249, mIOU 0.3911
+#U-net(crop)#    Test: Loss 1.302929, mIOU 0.3089
+#U-net(crop)# [2022-06-04 14:48:46] Epoch 10
+#U-net(crop)#    Train: Loss 0.695200, mIOU 0.4052
+#U-net(crop)#    Test: Loss 1.303331, mIOU 0.3107
+#U-net(crop)# [2022-06-04 14:50:28] Epoch 11
+#U-net(crop)#    Train: Loss 0.666855, mIOU 0.4108
+#U-net(crop)#    Test: Loss 1.346319, mIOU 0.3068
+#U-net(crop)# [2022-06-04 14:52:10] Epoch 12
+#U-net(crop)#    Train: Loss 0.655737, mIOU 0.4123
+#U-net(crop)#    Test: Loss 1.379784, mIOU 0.2936
+#U-net(crop)# [2022-06-04 14:53:56] Epoch 13
+#U-net(crop)#    Train: Loss 0.643228, mIOU 0.4145
+#U-net(crop)#    Test: Loss 1.443992, mIOU 0.2898
+#U-net(crop)# [2022-06-04 14:55:46] Epoch 14
+#U-net(crop)#    Train: Loss 0.612723, mIOU 0.4192
+#U-net(crop)#    Test: Loss 1.284949, mIOU 0.3098
+#U-net(crop)# [2022-06-04 14:57:35] Epoch 15
+#U-net(crop)#    Train: Loss 0.587555, mIOU 0.4247
+#U-net(crop)#    Test: Loss 1.337916, mIOU 0.3003
+#U-net(crop)# [2022-06-04 14:59:25] Epoch 16
+#U-net(crop)#    Train: Loss 0.549560, mIOU 0.4317
+#U-net(crop)#    Test: Loss 1.275075, mIOU 0.3239
+#U-net(crop)# [2022-06-04 15:01:14] Epoch 17
+#U-net(crop)#    Train: Loss 0.532950, mIOU 0.4353
+#U-net(crop)#    Test: Loss 1.347186, mIOU 0.3174
+#U-net(crop)# [2022-06-04 15:03:04] Epoch 18
+#U-net(crop)#    Train: Loss 0.502274, mIOU 0.4402
+#U-net(crop)#    Test: Loss 1.293312, mIOU 0.3261
+#U-net(crop)# [2022-06-04 15:04:54] Epoch 19
+#U-net(crop)#    Train: Loss 0.496454, mIOU 0.4417
+#U-net(crop)#    Test: Loss 1.218625, mIOU 0.3286
+#U-net(crop)# [2022-06-04 15:06:45] Epoch 20
+#U-net(crop)#    Train: Loss 0.487438, mIOU 0.4438
+#U-net(crop)#    Test: Loss 1.136161, mIOU 0.3444
+#U-net(crop)# [2022-06-04 15:08:35] Epoch 21
+#U-net(crop)#    Train: Loss 0.444983, mIOU 0.4518
+#U-net(crop)#    Test: Loss 1.146401, mIOU 0.3453
+#U-net(crop)# [2022-06-04 15:10:27] Epoch 22
+#U-net(crop)#    Train: Loss 0.421713, mIOU 0.4572
+#U-net(crop)#    Test: Loss 1.145663, mIOU 0.3437
+#U-net(crop)# [2022-06-04 15:12:16] Epoch 23
+#U-net(crop)#    Train: Loss 0.400440, mIOU 0.4614
+#U-net(crop)#    Test: Loss 1.114137, mIOU 0.3501
+#U-net(crop)# [2022-06-04 15:14:07] Epoch 24
+#U-net(crop)#    Train: Loss 0.386177, mIOU 0.4644
+#U-net(crop)#    Test: Loss 1.188144, mIOU 0.3408
+#U-net(crop)# [2022-06-04 15:15:57] Epoch 25
+#U-net(crop)#    Train: Loss 0.370807, mIOU 0.4696
+#U-net(crop)#    Test: Loss 1.148422, mIOU 0.3498
+#U-net(crop)# [2022-06-04 15:17:47] Epoch 26
+#U-net(crop)#    Train: Loss 0.353582, mIOU 0.4726
+#U-net(crop)#    Test: Loss 1.102284, mIOU 0.3534
+#U-net(crop)# [2022-06-04 15:19:38] Epoch 27
+#U-net(crop)#    Train: Loss 0.356012, mIOU 0.4718
+#U-net(crop)#    Test: Loss 1.114550, mIOU 0.3508
+#U-net(crop)# [2022-06-04 15:21:28] Epoch 28
+#U-net(crop)#    Train: Loss 0.325015, mIOU 0.4801
+#U-net(crop)#    Test: Loss 1.121572, mIOU 0.3541
+#U-net(crop)# [2022-06-04 15:23:18] Epoch 29
+#U-net(crop)#    Train: Loss 0.316998, mIOU 0.4814
+#U-net(crop)#    Test: Loss 1.331348, mIOU 0.3285
+#U-net(crop)# [2022-06-04 15:25:07] Epoch 30
+#U-net(crop)#    Train: Loss 0.297829, mIOU 0.4870
+#U-net(crop)#    Test: Loss 1.104489, mIOU 0.3586
+#U-net(crop)# [2022-06-04 15:26:57] Epoch 31
+#U-net(crop)#    Train: Loss 0.272177, mIOU 0.4953
+#U-net(crop)#    Test: Loss 1.113862, mIOU 0.3587
+#U-net(crop)# [2022-06-04 15:28:47] Epoch 32
+#U-net(crop)#    Train: Loss 0.264602, mIOU 0.4960
+#U-net(crop)#    Test: Loss 1.108493, mIOU 0.3562
+#U-net(crop)# [2022-06-04 15:30:36] Epoch 33
+#U-net(crop)#    Train: Loss 0.279109, mIOU 0.4923
+#U-net(crop)#    Test: Loss 1.150316, mIOU 0.3529
+#U-net(crop)# [2022-06-04 15:32:26] Epoch 34
+#U-net(crop)#    Train: Loss 0.279653, mIOU 0.4929
+#U-net(crop)#    Test: Loss 1.228335, mIOU 0.3385
+#U-net(crop)# [2022-06-04 15:34:16] Epoch 35
+#U-net(crop)#    Train: Loss 0.262940, mIOU 0.4980
+#U-net(crop)#    Test: Loss 1.175810, mIOU 0.3595
+#U-net(crop)# [2022-06-04 15:36:05] Epoch 36
+#U-net(crop)#    Train: Loss 0.237228, mIOU 0.5035
+#U-net(crop)#    Test: Loss 1.272197, mIOU 0.3536
+#U-net(crop)# [2022-06-04 15:37:54] Epoch 37
+#U-net(crop)#    Train: Loss 0.226534, mIOU 0.5063
+#U-net(crop)#    Test: Loss 1.509136, mIOU 0.3431
+#U-net(crop)# [2022-06-04 15:39:45] Epoch 38
+#U-net(crop)#    Train: Loss 0.218789, mIOU 0.5107
+#U-net(crop)#    Test: Loss 1.405972, mIOU 0.3411
+#U-net(crop)# [2022-06-04 15:41:37] Epoch 39
+#U-net(crop)#    Train: Loss 0.208106, mIOU 0.5140
+#U-net(crop)#    Test: Loss 1.312845, mIOU 0.3424
+#U-net(crop)# [2022-06-04 15:43:29] Epoch 40
+#U-net(crop)#    Train: Loss 0.198249, mIOU 0.5188
+#U-net(crop)#    Test: Loss 1.164820, mIOU 0.3619
+#U-net(crop)# [2022-06-04 15:45:19] Epoch 41
+#U-net(crop)#    Train: Loss 0.186273, mIOU 0.5233
+#U-net(crop)#    Test: Loss 1.222341, mIOU 0.3612
+#U-net(crop)# [2022-06-04 15:47:10] Epoch 42
+#U-net(crop)#    Train: Loss 0.178876, mIOU 0.5262
+#U-net(crop)#    Test: Loss 1.224437, mIOU 0.3627
+#U-net(crop)# [2022-06-04 15:49:00] Epoch 43
+#U-net(crop)#    Train: Loss 0.176132, mIOU 0.5252
+#U-net(crop)#    Test: Loss 1.295907, mIOU 0.3585
+#U-net(crop)# [2022-06-04 15:50:50] Epoch 44
+#U-net(crop)#    Train: Loss 0.166504, mIOU 0.5290
+#U-net(crop)#    Test: Loss 1.230371, mIOU 0.3610
+#U-net(crop)# [2022-06-04 15:52:39] Epoch 45
+#U-net(crop)#    Train: Loss 0.160246, mIOU 0.5309
+#U-net(crop)#    Test: Loss 1.326267, mIOU 0.3483
+#U-net(crop)# [2022-06-04 15:54:29] Epoch 46
+#U-net(crop)#    Train: Loss 0.152709, mIOU 0.5347
+#U-net(crop)#    Test: Loss 1.330133, mIOU 0.3498
+#U-net(crop)# [2022-06-04 15:56:19] Epoch 47
+#U-net(crop)#    Train: Loss 0.145716, mIOU 0.5386
+#U-net(crop)#    Test: Loss 1.355986, mIOU 0.3528
+#U-net(crop)# [2022-06-04 15:58:12] Epoch 48
+#U-net(crop)#    Train: Loss 0.139635, mIOU 0.5412
+#U-net(crop)#    Test: Loss 1.303920, mIOU 0.3515
+#U-net(crop)# [2022-06-04 16:00:02] Epoch 49
+#U-net(crop)#    Train: Loss 0.136495, mIOU 0.5424
+#U-net(crop)#    Test: Loss 1.310088, mIOU 0.3479
+#U-net(crop)# [2022-06-04 16:01:52] Epoch 50
+#U-net(crop)#    Train: Loss 0.131700, mIOU 0.5448
+#U-net(crop)#    Test: Loss 1.302122, mIOU 0.3468
+#U-net(crop)# [2022-06-04 16:03:43] Epoch 51
+#U-net(crop)#    Train: Loss 0.129537, mIOU 0.5460
+#U-net(crop)#    Test: Loss 1.411137, mIOU 0.3440
+#U-net(crop)# [2022-06-04 16:05:33] Epoch 52
+#U-net(crop)#    Train: Loss 0.125267, mIOU 0.5473
+#U-net(crop)#    Test: Loss 1.381271, mIOU 0.3461
+#U-net(crop)# [2022-06-04 16:07:23] Epoch 53
+#U-net(crop)#    Train: Loss 0.118599, mIOU 0.5514
+#U-net(crop)#    Test: Loss 1.402041, mIOU 0.3433
+#U-net(crop)# [2022-06-04 16:09:16] Epoch 54
+#U-net(crop)#    Train: Loss 0.115947, mIOU 0.5524
+#U-net(crop)#    Test: Loss 1.335054, mIOU 0.3405
+#U-net(crop)# [2022-06-04 16:11:07] Epoch 55
+#U-net(crop)#    Train: Loss 0.111803, mIOU 0.5538
+#U-net(crop)#    Test: Loss 1.341879, mIOU 0.3383
+#U-net(crop)# [2022-06-04 16:12:59] Epoch 56
+#U-net(crop)#    Train: Loss 0.107125, mIOU 0.5574
+#U-net(crop)#    Test: Loss 1.365977, mIOU 0.3406
+#U-net(crop)# [2022-06-04 16:14:51] Epoch 57
+#U-net(crop)#    Train: Loss 0.107071, mIOU 0.5571
+#U-net(crop)#    Test: Loss 1.382271, mIOU 0.3428
+#U-net(crop)# [2022-06-04 16:16:42] Epoch 58
+#U-net(crop)#    Train: Loss 0.105830, mIOU 0.5581
+#U-net(crop)#    Test: Loss 1.455908, mIOU 0.3414
+#U-net(crop)# [2022-06-04 16:18:34] Epoch 59
+#U-net(crop)#    Train: Loss 0.106211, mIOU 0.5581
+#U-net(crop)#    Test: Loss 1.391736, mIOU 0.3435
+#U-net(crop)# [2022-06-04 16:20:25] Epoch 60
+#U-net(crop)#    Train: Loss 0.102693, mIOU 0.5595
+#U-net(crop)#    Test: Loss 1.372532, mIOU 0.3413
