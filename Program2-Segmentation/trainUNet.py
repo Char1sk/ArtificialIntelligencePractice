@@ -7,7 +7,7 @@ import numpy as np
 
 from modeling.unet import Unet
 from dataset.custom_dataset import MyDataset
-from myTransforms import ScaleCrop
+from myTransforms import FixScaleCrop
 from utils import calMIOU, calPA
 
 
@@ -16,14 +16,14 @@ def loadData():
     image_transforms = transforms.Compose([
         # transforms.RandomCrop(32, padding=4), #随机裁剪
         # transforms.RandomHorizontalFlip(), # 翻转图片
-        ScaleCrop((240, 320), True),
+        FixScaleCrop((240, 320), True),
         # transforms.Resize((240, 320), transforms.InterpolationMode.BILINEAR),
         transforms.ToTensor()
     ])
     mask_transforms = transforms.Compose([
         # transforms.RandomCrop(32, padding=4), #随机裁剪
         # transforms.RandomHorizontalFlip(), # 翻转图片
-        ScaleCrop((240, 320), False),
+        FixScaleCrop((240, 320), False),
         # transforms.Resize((240, 320), transforms.InterpolationMode.NEAREST),
         transforms.ToTensor()
     ])
