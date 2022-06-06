@@ -19,24 +19,31 @@ class MyDataset(Dataset):
         self.imageTransform = imageTransform
         self.maskTransform = maskTransform
         
-        self.horizonPath = 'horizons.txt'
+        # self.horizonPath = 'horizons.txt'
+        self.listPath = 'trainList.txt' if self.isTrain else 'testList.txt'
         self.imagesPath = 'images'
         self.labelsPath = 'labels'
         
         self.names = []
-        with open(os.path.join(self.path, self.horizonPath)) as f:
+        with open(os.path.join(self.path, self.listPath), 'r') as f:
             while True:
-                line = f.readline()
+                line = f.readline().strip()
                 if not line:
                     break
-                m = [i for i in line.split(' ')]
-                isStandard = int(m[1]) == 320 and int(m[2]) == 240
-                if (self.isTrain and isStandard) or \
-                        (not self.isTrain and not isStandard):
-                    self.names.append(m)
+                self.names.append(line)
+        # with open(os.path.join(self.path, self.horizonPath)) as f:
+        #     while True:
+        #         line = f.readline()
+        #         if not line:
+        #             break
+        #         m = [i for i in line.split(' ')]
+        #         isStandard = int(m[1]) == 320 and int(m[2]) == 240
+        #         if (self.isTrain and isStandard) or \
+        #                 (not self.isTrain and not isStandard):
+        #             self.names.append(m[0])
         
     def __getitem__(self, index):
-        fn = self.names[index][0]
+        fn = self.names[index]
         image = self.loadimage(fn)
         mask = self.loadmask(fn)
         # return {'img': image, 'mask': mask,}
@@ -73,12 +80,12 @@ if __name__ == '__main__':
         transforms.ToTensor()
     ])
     
-    fpath = './iccv09Data'
+    fpath = './iccv09Data/'
     
-    train_set = MyDataset(fpath, True, transform)
+    train_set = MyDataset(fpath, True, transform, transform)
     train_loader = DataLoader(train_set, batch_size=1, shuffle=True)
 
-    test_set = MyDataset(fpath, False, transform)
+    test_set = MyDataset(fpath, False, transform, transform)
     test_loader = DataLoader(test_set, batch_size=1, shuffle=True)
 
     count = 0

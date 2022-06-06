@@ -5,8 +5,8 @@ import numpy as np
 from PIL import Image, ImageOps, ImageFilter
 
 
-class ScaleCrop(object):
-    def __init__(self, crop_size, isImg):
+class FixScaleCrop(object):
+    def __init__(self, crop_size, isImg=True):
         if isinstance(crop_size, tuple):
             self.crop_size_h, self.crop_size_w = crop_size
         else:
@@ -30,29 +30,45 @@ class ScaleCrop(object):
 
         return sample
 
+class RandomScaleCrop(object):
+    def __init__(self, base_size, crop_size, fill=8, isImg=True):
+        if isinstance(base_size, tuple):
+            self.base_size_h, self.base_size_w = base_size
+        else:
+            self.base_size_h, self.base_size_w = base_size, base_size
+        if isinstance(crop_size, tuple):
+            self.crop_size_h, self.crop_size_w = crop_size
+        else:
+            self.crop_size_h, self.crop_size_w = crop_size, crop_size
+        self.fill = fill
+        self.isImg = isImg
 
-# class ScaleCrop(object):
-#     def __init__(self, crop_size):
-#         self.crop_size = crop_size
+    def __call__(self, sample):
+        # random scale (short edge)
+        # short_size_h = random.randint(int(self.base_size_h * 0.5), int(self.base_size_h * 2.0))
+        # short_size_w = random.randint(int(self.base_size_w * 0.5), int(self.base_size_w * 2.0))
+        short_size_h = random.randint(int(self.base_size_h * 1.0), int(self.base_size_h * 1.0))
+        short_size_w = random.randint(int(self.base_size_w * 1.0), int(self.base_size_w * 1.0))
+        w, h = sample.size
+        if w/self.base_size_w > h/self.base_size_h:
+            oh = short_size_h
+            ow = int(1.0 * w * oh / h)
+        else:
+            ow = short_size_w
+            oh = int(1.0 * h * ow / w)
+        sample = sample.resize((ow, oh), Image.BILINEAR if self.isImg else Image.NEAREST)
+        # pad crop
+        padh, padw = 0, 0
+        if oh < self.crop_size_h:
+            padh = self.crop_size_h - oh if oh < self.crop_size_h else 0
+        if ow < self.crop_size_w:
+            padw = self.crop_size_w - ow if ow < self.crop_size_w else 0
+        sample = ImageOps.expand(sample, border=(0, 0, padw, padh), fill=(0 if self.isImg else self.fill))
+            
+        # random crop crop_size
+        w, h = sample.size
+        x1 = random.randint(0, w - self.crop_size_w)
+        y1 = random.randint(0, h - self.crop_size_h)
+        sample = sample.crop((x1, y1, x1 + self.crop_size_w, y1 + self.crop_size_h))
 
-#     def __call__(self, sample):
-#         img = sample['image']
-#         mask = sample['label']
-#         w, h = img.size
-#         if w > h:
-#             oh = self.crop_size
-#             ow = int(1.0 * w * oh / h)
-#         else:
-#             ow = self.crop_size
-#             oh = int(1.0 * h * ow / w)
-#         img = img.resize((ow, oh), Image.BILINEAR)
-#         mask = mask.resize((ow, oh), Image.NEAREST)
-#         # center crop
-#         w, h = img.size
-#         x1 = int(round((w - self.crop_size) / 2.))
-#         y1 = int(round((h - self.crop_size) / 2.))
-#         img = img.crop((x1, y1, x1 + self.crop_size, y1 + self.crop_size))
-#         mask = mask.crop((x1, y1, x1 + self.crop_size, y1 + self.crop_size))
-
-#         return {'image': img,
-#                 'label': mask}
+        return sample
