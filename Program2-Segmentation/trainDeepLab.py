@@ -58,14 +58,14 @@ with open("./config.yml", "r") as f:
 def loadData():
     datapath = './iccv09Data'
     image_transforms = transforms.Compose([
-        # transforms.RandomCrop(32, padding=4), #随机裁剪
+        # transforms.RandomCrop(80), #随机裁剪
         # transforms.RandomHorizontalFlip(), # 翻转图片
         # ScaleCrop((240, 320), True),
         # transforms.Resize((240, 320)),
         transforms.ToTensor()
     ])
     mask_transforms = transforms.Compose([
-        # transforms.RandomCrop(32, padding=4), #随机裁剪
+        # transforms.RandomCrop(80), #随机裁剪
         # transforms.RandomHorizontalFlip(), # 翻转图片
         # ScaleCrop((240, 320), False),
         # transforms.Resize((240, 320)),
