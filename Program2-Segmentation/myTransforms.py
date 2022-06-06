@@ -45,8 +45,10 @@ class RandomScaleCrop(object):
 
     def __call__(self, sample):
         # random scale (short edge)
-        short_size_h = random.randint(int(self.base_size_h * 0.5), int(self.base_size_h * 2.0))
-        short_size_w = random.randint(int(self.base_size_w * 0.5), int(self.base_size_w * 2.0))
+        # short_size_h = random.randint(int(self.base_size_h * 0.5), int(self.base_size_h * 2.0))
+        # short_size_w = random.randint(int(self.base_size_w * 0.5), int(self.base_size_w * 2.0))
+        short_size_h = random.randint(int(self.base_size_h * 1.0), int(self.base_size_h * 1.0))
+        short_size_w = random.randint(int(self.base_size_w * 1.0), int(self.base_size_w * 1.0))
         w, h = sample.size
         if w/self.base_size_w > h/self.base_size_h:
             oh = short_size_h
