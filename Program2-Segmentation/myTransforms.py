@@ -30,6 +30,7 @@ class FixScaleCrop(object):
 
         return sample
 
+
 class RandomScaleCrop(object):
     def __init__(self, base_size, crop_size, fill=8, isImg=True):
         if isinstance(base_size, tuple):
@@ -71,4 +72,34 @@ class RandomScaleCrop(object):
         y1 = random.randint(0, h - self.crop_size_h)
         sample = sample.crop((x1, y1, x1 + self.crop_size_w, y1 + self.crop_size_h))
 
+        return sample
+
+
+class PadCrop(object):
+    def __init__(self, base_size, fill=8, isImg=True):
+        if isinstance(base_size, tuple):
+            self.base_size_h, self.base_size_w = base_size
+        else:
+            self.base_size_h, self.base_size_w = base_size, base_size
+        self.fill = fill
+        self.isImg = isImg
+    
+    def __call__(self, sample):
+        # center pad
+        w, h = sample.size
+        pad_wl, pad_wr = 0, 0
+        if self.base_size_w > w:
+            pad_wl = int((self.base_size_w - w) / 2)
+            pad_wr = self.base_size_w - w - pad_wl
+        pad_ht, pad_hd = 0, 0
+        if self.base_size_h > h:
+            pad_ht = int((self.base_size_h - h) / 2)
+            pad_hd = self.base_size_h - h - pad_ht
+        sample = ImageOps.expand(sample, border=(pad_wl, pad_ht, pad_wr, pad_hd), fill=(0 if self.isImg else self.fill))
+        # center crop
+        w, h = sample.size
+        x1 = int(round((w - self.base_size_w) / 2.))
+        y1 = int(round((h - self.base_size_h) / 2.))
+        sample = sample.crop((x1, y1, x1 + self.base_size_w, y1 + self.base_size_h))
+        
         return sample
