@@ -58,23 +58,25 @@ with open("./config.yml", "r") as f:
 def loadData():
     datapath = './iccv09Data'
     image_transforms = transforms.Compose([
-        # transforms.RandomCrop(32, padding=4), #随机裁剪
+        # transforms.RandomCrop(80), #随机裁剪
         # transforms.RandomHorizontalFlip(), # 翻转图片
+        # transforms.RandomVerticalFlip(),
         # FixScaleCrop((240, 320), True),
-        # transforms.Resize((240, 320)),
+        transforms.Resize((240, 320)),
         transforms.ToTensor()
     ])
     mask_transforms = transforms.Compose([
-        # transforms.RandomCrop(32, padding=4), #随机裁剪
+        # transforms.RandomCrop(80), #随机裁剪
         # transforms.RandomHorizontalFlip(), # 翻转图片
+        # transforms.RandomVerticalFlip(),
         # FixScaleCrop((240, 320), False),
-        # transforms.Resize((240, 320)),
+        transforms.Resize((240, 320)),
         transforms.ToTensor()
     ])
     train_dataset = MyDataset(datapath, True, image_transforms, mask_transforms)
-    train_loader = DataLoader(train_dataset, config['TRAIN_BATCH_SIZE'])
+    train_loader = DataLoader(train_dataset, config['TRAIN_BATCH_SIZE'], shuffle=True)
     test_dataset = MyDataset(datapath, False, image_transforms, mask_transforms)
-    test_loader = DataLoader(test_dataset, config['TEST_BATCH_SIZE'])
+    test_loader = DataLoader(test_dataset, config['TEST_BATCH_SIZE'], shuffle=True)
     return (train_loader, test_loader)
 
 
@@ -136,11 +138,11 @@ def init_dir(config):
 
 def get_result_file_name(config):
     n = 1
-    name = "DeepLab-" + config['BACKBONE'] + '-' + str(n) + '.txt'
-    while os.path.exists(config['RESULT_DIR'] + os.sep + name):
+    name = "DeepLab-" + config['BACKBONE'] + '-' + str(n)
+    while os.path.exists(config['RESULT_DIR'] + os.sep + name + '.txt'):
         n += 1
-        name = "DeepLab-" + config['BACKBONE'] + '-' + str(n) + '.txt'
-    return config['RESULT_DIR'] + os.sep + name
+        name = "DeepLab-" + config['BACKBONE'] + '-' + str(n)
+    return name
 
 def main():
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -160,12 +162,13 @@ def main():
         lossFunction = FocalLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=config['LR'])
     # lr_scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=5, factor=0.8)
-    lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=8, gamma=0.7)
+    lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=config['STEP_SIZE'], gamma=config['STEP_GAMMA'])
 
     init_dir(config)
     print("Begin Training")
     init_msg = ">> DeepLabv3\n".format(config['BACKBONE'])
-    result_file_name = get_result_file_name(config)
+    name = get_result_file_name(config)
+    result_file_name = config['RESULT_DIR'] + os.sep + name + '.txt'
     with open(result_file_name, "w") as f:
         f.write(init_msg)
         f.write('---------------config.yml-------------------\n')
@@ -186,7 +189,7 @@ def main():
             f.write(f'    Train: Loss {trainLoss:>7.6f}, mIOU {trainAcc:>6.4f}\n')
             f.write(f'    Test:  Loss {testLoss :>7.6f}, mIOU {testAcc :>6.4f}\n')
 
-        torch.save(model.state_dict(), './saves/model.pth')
+        torch.save(model.state_dict(), config['SAVE_MODEL_DIR'] + os.sep + name + '.pth')
         # lr_scheduler.step(trainLoss)
         lr_scheduler.step()
 
