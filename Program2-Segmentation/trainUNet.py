@@ -7,7 +7,7 @@ import numpy as np
 
 from modeling.unet import Unet
 from dataset.custom_dataset import MyDataset
-from myTransforms import FixScaleCrop
+from myTransforms import FixScaleCrop, RandomScaleCrop, PadCrop
 from utils import calMIOU, calPA
 
 
@@ -17,6 +17,7 @@ def loadData():
         # transforms.RandomCrop(32, padding=4), #随机裁剪
         # transforms.RandomHorizontalFlip(), # 翻转图片
         FixScaleCrop((240, 320), True),
+        # PadCrop((240, 320), 8, True)
         # transforms.Resize((240, 320), transforms.InterpolationMode.BILINEAR),
         transforms.ToTensor()
     ])
@@ -24,6 +25,7 @@ def loadData():
         # transforms.RandomCrop(32, padding=4), #随机裁剪
         # transforms.RandomHorizontalFlip(), # 翻转图片
         FixScaleCrop((240, 320), False),
+        # PadCrop((240, 320), 8, False)
         # transforms.Resize((240, 320), transforms.InterpolationMode.NEAREST),
         transforms.ToTensor()
     ])
