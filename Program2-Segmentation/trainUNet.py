@@ -19,6 +19,7 @@ def loadData():
         FixScaleCrop((240, 320), True),
         # PadCrop((240, 320), 8, True)
         # transforms.Resize((240, 320), transforms.InterpolationMode.BILINEAR),
+        transforms.Normalize((0.4817, 0.4906, 0.4749), (0.2500, 0.2495, 0.2752)),
         transforms.ToTensor()
     ])
     mask_transforms = transforms.Compose([

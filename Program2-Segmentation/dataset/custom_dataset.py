@@ -10,17 +10,21 @@ from torchvision import transforms, utils
 from PIL import Image
 import os
 import numpy as np
+import random
 
 class MyDataset(Dataset):
     
-    def __init__(self, path, isTrain, imageTransform, maskTransform):
+    def __init__(self, path, isTrain, imageTransform, maskTransform, flipProb=0):
         self.path = path
         self.isTrain = isTrain
         self.imageTransform = imageTransform
         self.maskTransform = maskTransform
+        self.flipProb = flipProb
         
         # self.horizonPath = 'horizons.txt'
         self.listPath = 'trainList.txt' if self.isTrain else 'testList.txt'
+        # self.listPath1 = 'trainList.txt'
+        # self.listPath2 = 'testList.txt'
         self.imagesPath = 'images'
         self.labelsPath = 'labels'
         
@@ -31,6 +35,18 @@ class MyDataset(Dataset):
                 if not line:
                     break
                 self.names.append(line)
+        # with open(os.path.join(self.path, self.listPath1), 'r') as f:
+        #     while True:
+        #         line = f.readline().strip()
+        #         if not line:
+        #             break
+        #         self.names.append(line)
+        # with open(os.path.join(self.path, self.listPath2), 'r') as f:
+        #     while True:
+        #         line = f.readline().strip()
+        #         if not line:
+        #             break
+        #         self.names.append(line)
         # with open(os.path.join(self.path, self.horizonPath)) as f:
         #     while True:
         #         line = f.readline()
@@ -44,8 +60,13 @@ class MyDataset(Dataset):
         
     def __getitem__(self, index):
         fn = self.names[index]
-        image = self.loadimage(fn)
-        mask = self.loadmask(fn)
+        if random.random() < self.flipProb:
+            # print('!!!!!!!!!!!!!!!!!!!!!!!')
+            doTrans = True
+        else:
+            doTrans = False
+        image = self.loadimage(fn, doTrans)
+        mask = self.loadmask(fn, doTrans)
         # return {'img': image, 'mask': mask,}
         # print(image.shape, mask.shape)
         return (image, mask)
@@ -53,12 +74,15 @@ class MyDataset(Dataset):
     def __len__(self):
         return len(self.names)
     
-    def loadimage(self, path):
+    def loadimage(self, path, doTrans):
         img_pil = Image.open(os.path.join(self.path, self.imagesPath, f'{path}.jpg'))
+        if doTrans:
+            # print('!!!!!!!!!!!!!!!!')
+            img_pil = transforms.RandomHorizontalFlip(1)(img_pil)
         img_pil = self.imageTransform(img_pil)
         return img_pil
     
-    def loadmask(self, path):
+    def loadmask(self, path, doTrans):
         mask=[]
         with open(os.path.join(self.path, self.labelsPath, f'{path}.regions.txt')) as f:
             while True:
@@ -70,6 +94,9 @@ class MyDataset(Dataset):
                 mask.append(m)
         # mask = Image.fromarray(np.array(mask))
         mask = Image.fromarray(np.int8(np.array(mask)))
+        if doTrans:
+            # print('!!!!!!!!!!!!!!!!')
+            mask = transforms.RandomHorizontalFlip(1)(mask)
         mask = self.maskTransform(mask)
         return mask
     
