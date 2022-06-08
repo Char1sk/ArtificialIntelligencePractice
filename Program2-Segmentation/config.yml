@@ -8,17 +8,22 @@ LOSS: 'FocalLoss'
   # - 'CE'
 
 # model
-BACKBONE: 'xception'
+BACKBONE: 'resnet'
   # - 'resnet'
   # - 'mobilenet'
   # - 'drn'
   # - 'xception'
-OUTPUT_STRIDE: 8
+OUTPUT_STRIDE: 16
 
 
 # results
 RESULT_DIR: './results'
 SAVE_MODEL_DIR: './saves'
+
+# StepLR
+STEP_SIZE: 10
+STEP_GAMMA: 0.7
+
 
 # else
 DEBUG_MODE: False
