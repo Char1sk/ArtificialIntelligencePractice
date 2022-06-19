@@ -1,25 +1,9 @@
->> DeepLabv3
----------------config.yml-------------------
-NUM_EPOCH:100
-TRAIN_BATCH_SIZE:4
-TEST_BATCH_SIZE:1
-LR:0.01
-LOSS:FocalLoss
-BACKBONE:mobilenet
-OUTPUT_STRIDE:16
-RESULT_DIR:./results
-SAVE_MODEL_DIR:./saves
-STEP_SIZE:10
-STEP_GAMMA:0.7
-DEBUG_MODE:False
---------------------------------------------
-
 [2022-06-07 05:00:04] Epoch  1, lr = 0.01
     Train: Loss 1.292577, mIOU 0.2051
     Test:  Loss 0.941636, mIOU 0.2340
 [2022-06-07 05:01:11] Epoch  2, lr = 0.01
     Train: Loss 1.008238, mIOU 0.2514
-    Test:  Loss 10.287341, mIOU 0.0713
+    Test: Loss 10.287341, mIOU 0.0713
 [2022-06-07 05:02:19] Epoch  3, lr = 0.01
     Train: Loss 1.001558, mIOU 0.2648
     Test:  Loss 1.057022, mIOU 0.2597

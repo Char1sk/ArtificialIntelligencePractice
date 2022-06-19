@@ -6,6 +6,7 @@ import time
 import numpy as np
 
 from modeling.unet import Unet
+# from modeling.unet2 import Unet
 from dataset.custom_dataset import MyDataset
 from myTransforms import FixScaleCrop, RandomScaleCrop, PadCrop
 from utils import calMIOU, calPA

@@ -89,15 +89,26 @@ class Unet(nn.Module):
         self.outc = OutConv(64, n_classes)
  
     def forward(self, x):
+        # 3 240 320
+        # 64 240 320
         x1 = self.inc(x)
+        # 128 120 160
         x2 = self.down1(x1)
+        # 256 60 80
         x3 = self.down2(x2)
+        # 512 30 40
         x4 = self.down3(x3)
+        # 512 15 20
         x5 = self.down4(x4)
+        # 256 30 40
         x = self.up1(x5, x4)
+        # 128 60 80
         x = self.up2(x, x3)
+        # 64 120 160
         x = self.up3(x, x2)
+        # 32 240 320
         x = self.up4(x, x1)
+        # 9 240 320
         logits = self.outc(x)
         return logits
 
